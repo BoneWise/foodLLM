@@ -8,19 +8,22 @@
   },
   {
     "path": "CHANGELOG.md",
-    "source_sha256": "de9d61432a9ccd285939be022147c5134cde2ce61153a3cf7aa2c820c1ac4398",
-    "exported_sha256": "de9d61432a9ccd285939be022147c5134cde2ce61153a3cf7aa2c820c1ac4398",
-    "bytes": 36956,
-    "transformations": []
+    "source_sha256": "e057628d74bf6715add33495689e501a5df85ea2a7e70b16f4fb58abadfb1540",
+    "exported_sha256": "97aa4c3dfc410fd317b4ac36d98becbb3dc6ccf78389f76f58f38ff93d3b305e",
+    "bytes": 37452,
+    "transformations": [
+      "publication_status_update; share retains prior snapshot history"
+    ]
   },
   {
     "path": "README.md",
     "source_sha256": "45dd851a2c3b67175bce0ee11d1033902c21fea899e9f0b814885816399fd3cf",
-    "exported_sha256": "7b16082859d432e0d008acac2cd84763e8af399b56220ba1ca7a9d13a120cd46",
-    "bytes": 10978,
+    "exported_sha256": "a8b8ef808f295f58e5470400ae1f5cd954bb7682e0c0734b5803318d1aa1d339",
+    "bytes": 11182,
     "transformations": [
       "omitted_dependency_links_annotated",
-      "share_scope_banner"
+      "share_scope_banner",
+      "publication_status_and_authorized_share_policy"
     ]
   },
   {
@@ -539,12 +542,13 @@
   },
   {
     "path": "docs/研究状态与下一阶段.md",
-    "source_sha256": "fb178a9ff8c6758acc3e4d7ba9b1667ce8f6ab67e40f47a510286706c2b13f7b",
-    "exported_sha256": "853710f82c5a145b857a35022a067ebff6df72865c8ac1f0124dc69de2785385",
-    "bytes": 17573,
+    "source_sha256": "0e5367754d82d7ca9ebeef45270f6c27db23597d5e8a7c936d4d98ca6b52abd2",
+    "exported_sha256": "9ffb0a8890b28f053854cc9df0a39f90c2e494dd105b8c345e9ee4db770a741f",
+    "bytes": 18080,
     "transformations": [
       "deployment_path_or_host_placeholder",
-      "omitted_dependency_links_annotated"
+      "omitted_dependency_links_annotated",
+      "publication_status_update; share retains prior snapshot history"
     ]
   },
   {

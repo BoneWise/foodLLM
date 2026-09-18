@@ -1,9 +1,9 @@
 {
   ".gitignore": "36c977b2c26c2d9cca4cfbdeb0e580c0ae0571d4207e10ad9f1ce1727356be24",
   "AGENTS.md": "82952e1c5b83bd787adbeaadc8f049d3b06c62dff9f61a113cf8068c4eb055af",
-  "CHANGELOG.md": "de9d61432a9ccd285939be022147c5134cde2ce61153a3cf7aa2c820c1ac4398",
-  "README.md": "7b16082859d432e0d008acac2cd84763e8af399b56220ba1ca7a9d13a120cd46",
-  "SHARING.md": "c933f7702bee764d6f22ef1477abcd4f46d3883b03a45e86fa1a05f0af32e2c6",
+  "CHANGELOG.md": "97aa4c3dfc410fd317b4ac36d98becbb3dc6ccf78389f76f58f38ff93d3b305e",
+  "README.md": "a8b8ef808f295f58e5470400ae1f5cd954bb7682e0c0734b5803318d1aa1d339",
+  "SHARING.md": "553f4b234ef17d52108813892285c80fda849f8cd55e03ae22e828677bff14e5",
   "configs/controls_v09_execution_v01.json": "02113a0e517346d985afa2aaa0469cf37f81ed4a621f66d58bc1f6f26f7c8e93",
   "configs/fmri_quality_diagnostics_v01.json": "7082c5243738327107ff53c3dee72a59b2329d6683eeb8d59970809fc999499d",
   "configs/fmri_quality_diagnostics_v02.json": "a00a558f145a8365f53d091b8ac4228de899d725bc9c223a7f6afd703ca8cb82",
@@ -71,7 +71,7 @@
   "docs/research/inputs/20260916_用户提供_逐层wanting与vmPFC对齐意见.txt": "fb9a119df1e22c8169a7107637fcb42f256f7444cb8dc39687873f042ec3522b",
   "docs/templates/experiment.md": "1c7271fcd08486626e6eadcac30c5466b4f176e1c9a399322a5691e6df81529f",
   "docs/数据与迁移.md": "8aaa78f73837ef22cf1eda10b14ee190f448bf8cbb3c70acb3c614d57fa5422d",
-  "docs/研究状态与下一阶段.md": "853710f82c5a145b857a35022a067ebff6df72865c8ac1f0124dc69de2785385",
+  "docs/研究状态与下一阶段.md": "9ffb0a8890b28f053854cc9df0a39f90c2e494dd105b8c345e9ee4db770a741f",
   "excluded_links.json": "d7fca47264ef92b5419c0b6f3c2ad9e47184a09850f2619c69060eec44d7338f",
   "outputs/20260917_HCP_RSA_v01/absolute_alignment_curves.csv": "4e09fabad683391d2125df8777cd1063195bd9e39fc3c3f9101cb282293d0187",
   "outputs/20260917_HCP_RSA_v01/acquisition_and_consistency_QC.csv": "699c6e48b5118a7cd3d85e1495843787d40bff6eec37aa13074d3e7e30ac91f2",
@@ -460,5 +460,5 @@
   "scripts/write_controls_complete_narrative.py": "c79068f925a26162aea3d3414253f007b70a009438259762f3c517b89a1c20fe",
   "scripts/write_controls_report_v09.py": "81b0e1110ef2cfcf15d0c0837e9ddd770bd8fbb8fda5ebc8c467c8f7787b44e8",
   "scripts/write_controls_report_v09_1.py": "872ebdc80a19de72b62fa2660576e85381735b186c2b4a74aa85cfe51d4eb919",
-  "source_manifest.json": "7084a80d1c05a6752c7c2474641289ca6805cbaef5f6f44a3ddc58b57120171d"
+  "source_manifest.json": "d946a0471b28158d8ad1fef61ae3b2000e13d655bdb98135cd830140d12324cd"
 }
