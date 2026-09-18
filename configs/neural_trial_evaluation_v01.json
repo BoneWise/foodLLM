@@ -1,0 +1,42 @@
+{
+  "version": "v01",
+  "date": "2026-09-16",
+  "status": "user_trial_estimand_confirmed_fold_manifest_ready_model_refit_pending",
+  "authorization": {
+    "no_session_holdout": "被试有3个session只是原始数据的划分，不需要考虑，只考虑trial",
+    "trial_generalization": "预测未见过的脑试次：每位被试各自随机分trial，允许其他人同图评分参与训练"
+  },
+  "unit": "subject_specific_observed_neural_trial",
+  "generalization": "new_neural_trials_within_subject_on_foods_observed_in_other_subjects_behavior",
+  "neural_outer_folds": 5,
+  "fold_count_origin": "existing_five_retained_as_operational_default_not_a_user_mandated_number",
+  "seed": 20260916,
+  "fold_manifest": "outputs/20260916_trial划分与缺失均值评估_v01/neural_trial_folds.csv",
+  "validation": "outputs/20260916_trial划分与缺失均值评估_v01/validation.json",
+  "analysis_root": "outputs/20260916_分析输入索引_v02",
+  "matrix_root": "outputs/20260916_Qwen_AB分析矩阵_v01",
+  "session_holdout": false,
+  "food_group_holdout_for_neural_trials": false,
+  "subject_independent_fold_assignment": true,
+  "same_fold_within_subject_across_conditions_prompts_layers": true,
+  "samples": [
+    "primary",
+    "full_VT"
+  ],
+  "separate_sample_folds": true,
+  "target_subject_behavior_allowed_for_neural_wanting_readout": false,
+  "other_subject_same_image_behavior_allowed": true,
+  "target_test_beta_allowed_in_training": false,
+  "human_ratings_target": "existing_available_case_image_mean_not_new_adjusted_mean",
+  "neural_aggregation": "within_subject_pool_heldout_squared_errors_then_equal_subject_mean",
+  "behavior_prediction_branch_split_changed": false,
+  "implementation_pending": [
+    "Adapt brain evaluation to subject-specific outer trial folds; old run_layer_analysis.py cannot directly consume this manifest",
+    "Specify and implement the separate H_minus_s readout training and hyperparameter selection using allowed other-subject image labels",
+    "Recompute neural predictions under this trial estimand, then validate full-refit inference"
+  ],
+  "old_estimates": "outputs/20260916_逐层行为与脑预测_v02",
+  "old_estimates_match_new_trial_design": false,
+  "decision_after_existing_effects_visible": true,
+  "record": "docs/research/20260916_trial划分决定与缺失均值复核.md"
+}

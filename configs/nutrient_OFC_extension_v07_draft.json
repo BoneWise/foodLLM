@@ -1,0 +1,179 @@
+{
+  "version": "v07_draft",
+  "date": "2026-09-17",
+  "status": "design_only_not_executed",
+  "protocol": "docs/research/20260917_多营养属性与OFC扩展设计_v07.md",
+  "user_decisions": [
+    "design_other_workbook_nutrients_as_experiments",
+    "design_RSA_for_Suzuki_OFC_regions",
+    "do_not_run_new_experiments_this_turn"
+  ],
+  "assistant_proposals_not_all_frozen": true,
+  "existing_protocol_preserved": "configs/nutrient_conditioned_rsa_v06_1.json",
+  "source_inventory": "outputs/20260917_多营养OFC设计核对_v01/nutrition_inventory.json",
+  "experiments": [
+    {
+      "id": "existing_kcal_new_OFC",
+      "reuse_model_features": true,
+      "images": 493,
+      "conditions": [
+        "V",
+        "T",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "new_ROIs": [
+        "lOFC",
+        "mOFC"
+      ],
+      "historical_reference": "vmPFC",
+      "status": "planned"
+    },
+    {
+      "id": "four_single_nutrient_manipulations",
+      "nutrients": [
+        "protein_100g",
+        "fat_100g",
+        "carbs_100g",
+        "fibre_100g"
+      ],
+      "one_field_per_input": true,
+      "unit": "g/100 g",
+      "base_images": 493,
+      "complete_candidate_images": 489,
+      "candidate_missing_fibre_images": [
+        "134",
+        "150",
+        "294",
+        "306"
+      ],
+      "final_common_sample": "pending_joint_P_feasibility_input_metadata_only",
+      "conditions_per_nutrient": [
+        "V_shared",
+        "T_j",
+        "P_j1",
+        "P_j2",
+        "P_j3",
+        "P_j4",
+        "P_j5"
+      ],
+      "ROIs": [
+        "lOFC",
+        "mOFC",
+        "vmPFC_reference"
+      ],
+      "status": "planned"
+    }
+  ],
+  "model": {
+    "repo": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "layers": 32,
+    "enable_thinking": false,
+    "dtype": "bfloat16",
+    "readout": "last_pre_answer_prompt_token_post_block_pre_final_norm",
+    "prompt_config": "configs/prompt_and_interface_v02.json",
+    "order": [
+      "A_primary",
+      "B_robustness_after_correctness_gate"
+    ],
+    "reuse_V": true
+  },
+  "new_field_format_proposal": {
+    "protein_100g": "Protein: {value:.2f} g per 100 g.",
+    "fat_100g": "Fat: {value:.2f} g per 100 g.",
+    "carbs_100g": "Carbohydrate: {value:.2f} g per 100 g.",
+    "fibre_100g": "Fibre: {value:.2f} g per 100 g."
+  },
+  "P_design_proposal": {
+    "reuse_kcal_donors": false,
+    "within_existing_food_form_groups": true,
+    "different_image": true,
+    "different_formatted_value": true,
+    "one_to_one_permutation_within_final_common_sample": true,
+    "preserve_attribute_marginal_distribution": true,
+    "zero_values_allowed": true,
+    "kcal_ratio_threshold_reused": false,
+    "replicas": 5,
+    "replica_unique_donors_per_image_required": false,
+    "shared_between_prompts_ROIs_layers": true,
+    "numeric_distance_limits": "pending_input_only_plausibility_review_before_effects",
+    "seeds": null,
+    "no_human_or_brain_effect_based_selection": true,
+    "final_manifest_created": false
+  },
+  "ROI_design_proposal": {
+    "literature": "Suzuki_Cross_ODoherty_2017_Supplementary_Fig_S2a",
+    "lOFC": {
+      "hemispheres": "bilateral_union",
+      "paper_labels": [
+        "MNI_Frontal_Mid_Orb",
+        "MNI_Frontal_Inf_Orb",
+        "MNI_Frontal_Sup_Orb"
+      ],
+      "role_proposed": "nutrient_hypothesis_primary"
+    },
+    "mOFC": {
+      "hemispheres": "bilateral_union",
+      "paper_labels": [
+        "MNI_Frontal_Med_Orb"
+      ],
+      "role_proposed": "theory_comparison",
+      "add_Rectus": false
+    },
+    "vmPFC": {
+      "role": "historical_reference_retained",
+      "config": "configs/roi_preparation_v01.json"
+    },
+    "atlas": "original_AAL_label_scheme_version_label_table_and_hash_pending",
+    "atlas_file_selected": null,
+    "local_candidate_not_validated": "/Applications/MRIcroGL.app/Contents/Resources/atlas/aal.nii.gz",
+    "target_space": "MNI152NLin2009cAsym",
+    "template_transform": "source_space_verification_and_documented_transform_pending_not_just_reslicing",
+    "source_beta": "raw_unsmoothed_valuation_LSA",
+    "fixed_voxels": "anatomical_ROI_intersection_all_subject_run_valid_masks",
+    "coverage_and_hemisphere_QC": "required_before_RSA",
+    "reliability_threshold": null,
+    "mask_built": false,
+    "peak_voxel_selection": false,
+    "overlap_with_old_vmPFC": "quantify_before_interpretation",
+    "cross_ROI_comparison": "same_subjects_and_food_pairs"
+  },
+  "RSA": {
+    "brain_model_distance": "1-Pearson",
+    "RDM_comparison": "Spearman",
+    "sessions": "pooled_big_RDM_per_subject_ROI",
+    "P_aggregation": "mean_of_separate_RSA_scores",
+    "contrasts": [
+      "T_j-V",
+      "T_j-mean_P_j"
+    ],
+    "participant_equal_weight": true,
+    "layer_selection": false,
+    "first_pass": "descriptive_only",
+    "inference": "not_frozen_nutrition_ROI_layer_contrast_multiplicity_must_be_addressed_if_added",
+    "session_run_QC": "descriptive_only_no_automatic_preprocessing",
+    "nutrient_reference": "absolute_difference_per_attribute",
+    "wanting_reference": "fixed_group_mean_RDM",
+    "multi_nutrient_bundle": "not_first_pass",
+    "cross_ROI_claim_requires_direct_paired_difference": true
+  },
+  "scope_limits": [
+    "no_independent_sugar_sodium_vitamin_fields",
+    "totals_not_independent_per100g_nutrients",
+    "fibre_not_vitamin_replication",
+    "database_values_not_subjective_nutrient_beliefs",
+    "new_OFC_not_independent_replication_of_old_vmPFC",
+    "new_design_after_kcal_and_behavior_results_seen"
+  ],
+  "resource_upper_bound_if_489_survive": {
+    "new_inputs_per_prompt": 11736,
+    "new_inputs_A_plus_B": 23472,
+    "new_model_RDMs": 1536,
+    "new_model_inference_multiplier_for_multiple_ROIs": 1
+  },
+  "scientific_results_this_turn": false
+}

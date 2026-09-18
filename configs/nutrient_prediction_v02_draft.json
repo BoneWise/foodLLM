@@ -1,0 +1,54 @@
+{
+  "design_version": "v02",
+  "status": "revised_working_draft_not_preregistered",
+  "protocol": "docs/research/20260915_营养辅助预测精简方案_v02.md",
+  "data_audit": "outputs/20260915_设计数据核对_v02/audit.json",
+  "research_target": "nutrient_assisted_prediction_of_original_image_only_human_wanting",
+  "nutrient": {
+    "field": "kcal_100g",
+    "unit": "kcal/100g",
+    "meaning": "database_reference_energy_density",
+    "selection_status": "adopted_for_this_draft_not_frozen_for_execution"
+  },
+  "conditions": ["V_image_only", "T_matched_reference", "P_plausible_mismatch"],
+  "model_checkpoint": null,
+  "prompt": null,
+  "rating_labels_original_japanese": null,
+  "output_target": "expected_rating_over_prespecified_valid_answers_1_to_4",
+  "mismatch": {
+    "proposed_replicates": 5,
+    "aggregation": "mean_loss_across_replicates_not_mean_prediction",
+    "pairing_file": null,
+    "seeds": null,
+    "eligible_image_ids": null,
+    "review_blind_to_behavior_and_brain": true
+  },
+  "behavior": {
+    "source": "data/prepared/image_agreement_nutrition.csv",
+    "target": "mean_rating",
+    "proposed_outer_folds": 5,
+    "grouping": "normalized_food_name_with_duplicate_review",
+    "fold_file": null,
+    "common_calibration": "affine_nonnegative_slope_fit_on_V_training_images_only",
+    "calibration_applied_to": ["V", "T", "P"],
+    "primary_metric": "paired_heldout_MSE_difference",
+    "incremental_models_use": "raw_model_output_without_human_calibration"
+  },
+  "shared_controls": ["log1p(grams_total)", "intensity_norm", "object_size"],
+  "brain": {
+    "source_mapping": "data/external/behavior_to_singletrial_beta_29subjects.csv",
+    "predictors": "raw_frozen_model_outputs_and_reference_metadata_no_human_label_fit",
+    "outer_split": "leave_one_run_out_within_subject",
+    "candidate_roi": {"name": "vmPFC", "center_mm": [-2, 40, -6], "radius_mm": 8},
+    "roi_definition_source": "archive/source_code/dataset_author/fig2cdef_EstimateGLMsROI.m",
+    "roi_status": "proposed_not_created_or_quality_validated",
+    "roi_file": null,
+    "roi_response_table": null,
+    "quality_rules": null,
+    "apply_legacy_quality_labels_automatically": false,
+    "human_calibration_cross_fitting_required": false,
+    "reason": "No human-supervised transformation is used upstream of the brain regression"
+  },
+  "excluded_from_current_design": ["I_irrelevant_number", "E_self_estimate", "hidden_states", "multiple_nutrients", "fat_carb_factorial", "whole_brain", "RSA", "correction_mechanism"],
+  "execution_ready": false
+}

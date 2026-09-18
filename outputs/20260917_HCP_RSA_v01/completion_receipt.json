@@ -1,0 +1,41 @@
+{
+  "status": "complete_descriptive_verified",
+  "completed": "2026-09-17T21:16:48.978736+09:00",
+  "config": "configs/hcp_regional_execution_v01.json",
+  "frozen_config_sha256": "cadb3ed2526a03353526740be0e9e6c1197f96067f5b832ea2d3d739142e7223",
+  "participants": 29,
+  "common_images": 401,
+  "trials_per_ROI": 11207,
+  "HCP_unilateral_parcels": 36,
+  "HCP_bilateral_parcels": 18,
+  "legacy_ROIs": 3,
+  "all_nine_OFC_parcels_and_sides_retained": true,
+  "new_exclusions": [],
+  "new_model_inference": false,
+  "brain_extra_preprocessing": [],
+  "inference_run": false,
+  "source_templates_and_patterns_preserved": true,
+  "documents_and_audits_sha256": {
+    "outputs/20260917_HCP_RSA_v01/audit.json": "74f2c3f4d9023e66e8cb4095cdcbe9c7cefe233de3fb07ff6a97cd1e8467f791",
+    "outputs/20260917_HCP_RSA_v01/validation.json": "09764536af52a25639e619bd4759d63e6b53e5d0d59b6347eb99c80badf80396",
+    "outputs/20260917_HCP_RSA_v01/report_audit.json": "4595e62caf88ffd9ded779ca02cdb6eebe35068fdaeaf7f4487cd5e4585cbc38",
+    "outputs/20260917_HCP_RSA_v01/visual_QA.json": "29413f653760bbeb6297f4fcec7b9fd09014bf8a663f01d30744ef726d0cb8a0",
+    "outputs/20260917_HCP_RSA_v01/\u7ed3\u679c\u89e3\u8bfb.md": "f1ff5774a954a86d027fe168af4ba2b2445ca5badc9b81d07483e72cbe27f987",
+    "outputs/20260917_HCP\u56fe\u8c31\u51c6\u5907_v01/audit.json": "9919bb908c6dbaa13b31b76e49a09ccd3c98a5782394621467a0d2288c146dc1",
+    "outputs/20260917_HCP\u56fe\u8c31\u51c6\u5907_v01/visual_QA.json": "9d5de994b73221d57c003ae0ec6687d156dbd57ae5140e663bb00dd6dd872359",
+    "outputs/20260917_HCP\u539f\u59cb\u6a21\u5f0f_v01/audit.json": "a25f36455b00b423ab7b4b26d1561cf727ce516dfaa1847603aaf4a803b493aa",
+    "docs/research/20260917_HCP\u6267\u884c\u4e0e\u6838\u67e5_v08_1.md": "6584d370ce96c658b0d875e4dc1598901a5cc800a7e96c9daf11cea5dc66cd79"
+  },
+  "script_sha256": {
+    "scripts/prepare_hcp_atlas.py": "e921a40e5afb6a2a53367131c0fa490c8924a3d5105851ff542242dec7130ced",
+    "scripts/extract_hcp_patterns.py": "efcbcd90d54595c920feaccd031f2b445f20311788b02450cebfd8bc5f5d5772",
+    "scripts/run_hcp_rsa.py": "7307b24cb06ef629a600ae684f23dfe9d17491d407745b1f7ecfaac9b8b1a69d",
+    "scripts/report_hcp_rsa.py": "7490b09ce245909188f332c8bf02cdd7faa7574677c2b1a596fff4e9134f2d20",
+    "scripts/validate_hcp_results.py": "6d3bc0a09646c447726ad6a90d87338d25055cca9e1442c71ddc8506aa92fec7",
+    "scripts/rsa_core.py": "09048ad68b1d2f19d15d71742928c8022a597a8cf9682a7b2d3591a1b35c9f5a",
+    "scripts/prepare_roi.py": "04d700c09d30ef55a1452d3229cba61bb75e36356d7760e0fdfc090c856b9644"
+  },
+  "git_base": "67533af75fc8a377598fce1ddebb8a3c016da912",
+  "code_snapshot_policy": "executed_script_snapshots_and_hashes_record_uncommitted_project_work",
+  "link_check": "passed"
+}

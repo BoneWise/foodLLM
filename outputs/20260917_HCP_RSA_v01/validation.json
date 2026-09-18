@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "created": "2026-09-17T21:09:13.746992+09:00",
+  "all_saved_output_hashes_match": true,
+  "shared_V_exact": true,
+  "all_hemisphere_parcel_group_and_regional_aggregations_checked": true,
+  "maximum_aggregation_error": 2.7755575615628914e-17,
+  "P_is_mean_of_five_scores": true,
+  "legacy_reference_arrays_exact": true,
+  "score_export_rows": 3222016,
+  "sample": "29 participants; 401 image range; same within-person pair mask across all 39 input ROIs",
+  "inference_run": false,
+  "input_audit_sha256": "74f2c3f4d9023e66e8cb4095cdcbe9c7cefe233de3fb07ff6a97cd1e8467f791",
+  "script_sha256": "6d3bc0a09646c447726ad6a90d87338d25055cca9e1442c71ddc8506aa92fec7"
+}

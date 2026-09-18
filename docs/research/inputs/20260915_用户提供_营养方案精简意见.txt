@@ -1,0 +1,431 @@
+总体上，我认为这个 v01 已经是一个**可以实施的方案**，而且比我们前面头脑风暴的版本严谨很多。第 2 节四个“解释跳跃”的纠正都应该保留。Food-Pics 的宏量营养确实是研究助理根据数据库和包装信息估计的参考值，而不是化学测量；原始论文报告了复核子样本较高的一致性。([Frontiers][1]) 你们这套 fMRI 数据也已经证明 subjective value 在控制 protein、fat、carbohydrate 后仍然与 vmPFC 反应相关，因此“模型得到营养后变得更好”必须和“营养数字本身就是预测变量”区分开，这正好支持你设置 F1→F2 的必要性。([PubMed Central (PMC)][2])
+
+但如果目标仍然是**项目不要做太大**，我会再砍掉大约三分之一。现在最大的问题已经不是严谨性不足，而是严谨性继续累积后容易变成一个“四条件 × 多基线 × 行为 × 脑 × hidden state × 多营养”的新项目。
+
+## 1. 最应该钉死的，是这个实验究竟在证明什么
+
+我建议把主问题进一步缩成：
+
+> **给冻结的多模态模型提供一个与食物图片正确匹配的营养属性，是否使其产生的价值预测更接近原始 image-only 人类 wanting，并且这种新增预测信息是否延伸到 vmPFC response？**
+
+这里的关键词是 **nutrient-assisted prediction**，不是 human nutrient integration。
+
+因为人的实验条件始终是：
+
+$$
+Image\rightarrow HumanWanting / vmPFC
+$$
+
+模型则变成：
+
+$$
+Image+Nutrient\rightarrow ModelPrediction
+$$
+
+模型实际上获得了**人没有在实验现场看到的 privileged side information**。因此，好的结果意味着：
+
+> objective nutrient metadata contains information that allows the model to better approximate human valuation.
+
+而不是：
+
+> 人脑看到脂肪后进行了这种计算。
+
+Hare 2011 和 Enax 2015 确实证明，**真的给人**健康线索或营养标签可以改变选择以及与 vmPFC 相关的价值计算，但那是另一种实验设计。([PubMed Central (PMC)][3])
+
+所以全文最好少用“解释 vmPFC”，多用：
+
+**predict vmPFC response / neural predictive alignment / incremental neural prediction**。
+
+这会精准很多。
+
+---
+
+# 2. V/T/P 很有价值，但我建议把 I 删除
+
+现在四个条件：
+
+$$
+V,\ T,\ P,\ I
+$$
+
+我认为最小版本其实只需要：
+
+$$
+\boxed{V,\ T,\ P}
+$$
+
+其中：
+
+**V** = Image only
+**T** = Image + correctly matched nutrient
+**P** = Image + plausibly mismatched nutrient
+
+P 已经同时控制了：
+
+“fat”这个词、营养语境、数字 token、额外文本长度、重新处理一次图片。
+
+因此 I 的主要作用只是诊断“任意数字文本有没有作用”，不是回答核心研究问题。它可以等结果异常以后再做，而不必进入 confirmatory design。
+
+但是 **P 的构造要比现在更重要**。
+
+不要简单全局随机交换，因为：
+
+> 汉堡 + 0.3 g fat/100g
+
+这种明显荒谬的输入会让 T>P 变成：
+
+> coherent information > contradictory information
+
+而不是：
+
+> correct nutrient value > incorrect nutrient value。
+
+所以我倾向于把 **同食品大类内的 plausible permutation** 直接作为主要 P，而不是敏感性分析。可以做几个事先固定的 permutation，再对其平均。
+
+这样项目反而更简单，因为不需要再用 I 去解释 P 的问题。
+
+---
+
+# 3. 我认为当前方案遗漏了一个很重要的“校准选择”
+
+这是我最建议修改的统计点。
+
+你现在说：
+
+> 每条件使用同类、同训练量的校准器。
+
+这对于比较“每个条件经过最佳适配后能预测多好”是公平的。
+
+但如果核心问题是：
+
+> **加入营养信息是否改变了模型，使输出朝正确方向移动？**
+
+那么分别拟合：
+
+$$
+Cal_V(M_V)
+$$
+
+和
+
+$$
+Cal_T(M_T)
+$$
+
+会把**输入操纵效应**和**另外学了一套 human-supervised 映射**混在一起。
+
+我更建议 primary analysis 使用：
+
+$$
+\boxed{\text{一个共同 calibration}}
+$$
+
+例如只在 training images 上用 V 学：
+
+$$
+HumanRating=f(M_V)
+$$
+
+然后冻结 \(f\)，同时应用：
+
+$$
+f(M_V),\quad f(M_T),\quad f(M_P)
+$$
+
+这样：
+
+$$
+f(M_T)-f(M_V)
+$$
+
+才能比较干净地解释为**同一个评分量尺下，营养信息使模型预测发生的改变**。
+
+各条件分别最佳校准可以保留为 secondary：
+
+> 如果允许每种输入条件分别重新校准，其最大 predictive utility 是多少？
+
+这个修改还有一个巨大好处：到了 fMRI 部分，不需要为了三个 condition 各自做一套复杂的上游 human-label cross-fitting，项目会简单很多。
+
+---
+
+# 4. F1→F2 是这个方案真正最有价值的部分
+
+你现在这个设计：
+
+$$
+F1:Y\sim Z+M_V+N
+$$
+
+$$
+F2:Y\sim Z+M_V+N+M_T
+$$
+
+我会完整保留。
+
+它回答的其实非常漂亮：
+
+> 在已经知道 baseline model judgment 和真实 nutrient number 的情况下，**让 MLLM 自己处理“图片 + nutrient”之后形成的 judgment，还有没有新增预测信息？**
+
+如果：
+
+$$
+Prediction(F2)>Prediction(F1)
+$$
+
+就说明 \(M_T\) 做的事情不能被当前指定的：
+
+$$
+M_V+\beta N
+$$
+
+完全替代。
+
+但你的 v01 在解释上也控制得对：这还不能叫“human-like integration”。
+
+因为：
+
+$$
+M_T=f(Image,N)
+$$
+
+可能包含非线性 \(N\)、category × N、语义唤起等各种作用。
+
+所以我建议只给它一个中性的名字：
+
+> **model-mediated nutrient gain**
+
+或者：
+
+> **nutrient-conditioned incremental prediction**
+
+不用发明一个“integration gain”然后赋予太强机制含义。
+
+---
+
+# 5. T 与 P 的比较其实应该比 I 更重要，甚至可以写进核心判据
+
+因为即使：
+
+$$
+F2_T>F1
+$$
+
+还有一种解释：
+
+> 只要把模型带进“营养思考模式”，不管数字对不对，输出都会变化，并碰巧改善预测。
+
+所以真正比较强的结果应该是：
+
+$$
+F1+M_T > F1+M_P
+$$
+
+其中 F1 仍然包含**正确的** \(N\)。
+
+这相当于问：
+
+> 当统计模型已经知道真实 N 时，只有让 MLLM 处理“正确 image–nutrient pairing”产生的输出，才提供额外价值吗？
+
+这是一个很好的 negative-control test。
+
+我甚至会把整个证据定义成两层，而不是继续增加更多 controls：
+
+| 结果                                   | 可以支持什么                                             |
+| ------------------------------------ | -------------------------------------------------- |
+| \(T>V\) 且 \(T>P\)                    | 正确匹配的营养 side information 改善了模型对 human wanting 的预测  |
+| \(F1+M_T>F1\)，最好同时 \(F1+M_T>F1+M_P\) | 改善不只是 raw nutrient 数值的简单线性贡献，也不只是营养语境/错误数字带来的重处理效应 |
+
+到这里就够了。
+
+不需要立即再加入 spline、类别×营养、各种 nonlinear learners。
+
+如果主要结果出来以后 reviewer 会问，可以预先指定**一个**简单的非线性 robustness model，比如 restricted cubic spline \(s(N)\) 加 \(M_V\times N\)。超过它仍然只叫 robustness，不作为第三个主假设。
+
+---
+
+# 6. 脑实验最好完全复制行为部分的结构，而不要再长出自己的实验体系
+
+我赞成你现在的：
+
+$$
+F1^{brain}:
+vmPFC\sim Z+M_V+N
+$$
+
+$$
+F2^{brain}:
+vmPFC\sim Z+M_V+N+M_T
+$$
+
+然后问 held-out run/session：
+
+$$
+\Delta Error_{brain}
+=
+Error(F1)-Error(F2)
+$$
+
+是否可靠大于 0。
+
+你们的数据非常适合预先指定 vmPFC：原数据论文使用独立 meta-analysis 坐标定义 vmPFC ROI，而且该区域的 subjective-value effect 在控制 RGB 和 protein/fat/carbohydrate 后仍存在。([PubMed Central (PMC)][2])
+
+因此这里完全没必要：
+
+全脑搜索 → 多 ROI → RSA → multivoxel hidden-state encoding。
+
+至少这一篇都不要做。
+
+每位参与者产生一个 held-out：
+
+$$
+\Delta MSE_s
+$$
+
+最后在参与者层面检验这项 paired improvement，就已经非常清楚。
+
+D residual 图我同意你现在的处理：
+
+> **只当 visualization，不作为第四条证据。**
+
+你对 FWL 的纠正是对的。
+
+---
+
+# 7. 我还会进一步删除当前第 7 节的大部分内容
+
+“模型先估计营养 \(N_{\hat{}}\)”“E 条件”“反事实梯度”“\(\Delta h\)”这些想法都不错，但它们回答的是另一个问题：
+
+> **为什么 T 会起作用？**
+
+而当前实验首先应该回答：
+
+> **T 到底会不会起作用？**
+
+两者不要同时做。
+
+因此建议本版本直接写：
+
+> 模型自身营养估计、E condition、counterfactual nutrient manipulation 和内部 representation change 均不属于当前 confirmatory experiment；只有主要输出结果成立后作为独立后续研究。
+
+尤其 hidden state。
+
+它虽然能和你们原来的 representation–output 主线连接，但如果这个营养实验本身就是一个扩展分支，再把 hidden state 拉回来，就会迅速膨胀。
+
+---
+
+# 8. “脂肪还是热量”是目前唯一真正需要重新决定的问题
+
+你现在表格写“脂肪首轮操作验证”，在**工程意义**上成立。
+
+但如果只允许做一个 nutrient，而且希望研究意义直接连接 vmPFC，我会略微倾向：
+
+$$
+\boxed{\text{energy density (kcal/100g)}}
+$$
+
+原因不是说热量一定效果最大，而是它的理论桥最短。
+
+Tang 等人发现 caloric density 与食物 WTP 和 vmPFC food-cue response 相关，而参与者自己的显式 calorie estimate 并不好。([PubMed][4]) 这刚好提供一个与你当前问题非常接近的出发点：
+
+> human image-only valuation may carry information associated with caloric density even though the numeric calorie value was not explicitly presented.
+
+另一方面，fat 的证据链稍微绕一点。Suzuki 等发现人的**主观 nutritive beliefs**（fat、carbohydrate、protein、vitamin）可以预测 food value，并发现 nutrient-related information 与 integrated food value 在 OFC 中存在相应表征。([Nature][5]) DiFeliceantonio 的 fat+carb 结果也很有趣，但主要 supra-additive neural result 是 striatum/thalamus，并不能直接为“fat prompt → vmPFC”背书。([科学直接][6])
+
+所以：
+
+> **如果目标是测试方法是否跑通：fat 可以。**
+>
+> **如果只能选一个、并且希望最直接服务于 vmPFC neural-validation narrative：我会优先考虑 energy density。**
+
+而且一旦只做一个，就不要把研究问题写成：
+
+> “哪个营养维度最好？”
+
+因为实验根本没有回答这个比较问题。
+
+应该写成：
+
+> **“预先指定的营养信息能否改善模型对 human food valuation 的预测？”**
+
+---
+
+# 9. 我会把整个实验最后压缩成这样
+
+真正的 minimum design 只剩：
+
+$$
+\boxed{V,\ T,\ P}
+$$
+
+一个预先指定 nutrient，例如 energy density。
+
+一个 frozen MLLM。
+
+一个共同 calibration。
+
+两个行为问题：
+
+$$
+T>V,\quad T>P
+$$
+
+以及一个关键统计增量：
+
+$$
+HumanWanting\sim M_V+N
+$$
+
+vs.
+
+$$
+HumanWanting\sim M_V+N+M_T
+$$
+
+然后完全相同地复制到独立 vmPFC ROI：
+
+$$
+vmPFC\sim M_V+N
+$$
+
+vs.
+
+$$
+vmPFC\sim M_V+N+M_T.
+$$
+
+如果需要一条最严格的 negative control，再比较：
+
+$$
+vmPFC\sim M_V+N+M_T
+$$
+
+vs.
+
+$$
+vmPFC\sim M_V+N+M_P.
+$$
+
+**到这里停止。**
+
+不做 I，不做 E，不做人为寻找最好 nutrient，不做 fat×carb，不做 hidden layers，不做全脑，不做“纠错”机制。
+
+---
+
+## 最后我对 v01 的判断
+
+这个方案现在**逻辑上没有明显硬伤**，并且你修正 FWL、privileged information、人类未受营养操纵、reference nutrient ≠ ground truth 等地方是很重要的。
+
+我认为现在最值得修改的三点是：
+
+1. **把四条件缩成 V/T/P，P 做成 plausible mismatch。**
+2. **主分析采用共同 calibration，而不是 V/T/P 各自重新校准。**
+3. **如果项目只做一个 nutrient，认真考虑把 energy density 而不是 fat 定为 confirmatory attribute。**
+
+做完这三个修改以后，它就从“非常全面的实验草案”变成了一个**足够严谨、但仍然能做完的实验**。而且最后即便结果阳性，结论也很清楚：**与图片正确匹配的营养 side information 能使同一个 MLLM 形成更有预测价值的 food-value judgment，这种增益超出 raw nutrient covariate，并可进一步检验是否泛化到独立的 vmPFC response。**
+
+[1]: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2014.00617/full?utm_source=chatgpt.com "Frontiers | Food-pics: an image database for experimental research on eating and appetite"
+[2]: https://pmc.ncbi.nlm.nih.gov/articles/PMC13323986/ "A densely sampled fMRI dataset for investigating food valuation - PMC"
+[3]: https://pmc.ncbi.nlm.nih.gov/articles/PMC6623079/?utm_source=chatgpt.com "Focusing Attention on the Health Aspects of Foods Changes Value Signals in vmPFC and Improves Dietary Choice - PMC"
+[4]: https://pubmed.ncbi.nlm.nih.gov/25304885/ "Behavioral and neural valuation of foods is driven by implicit knowledge of caloric content - PubMed"
+[5]: https://www.nature.com/articles/s41593-017-0008-x?utm_source=chatgpt.com "Elucidating the underlying components of food valuation in the human orbitofrontal cortex | Nature Neuroscience"
+[6]: https://www.sciencedirect.com/science/article/pii/S1550413118303255?utm_source=chatgpt.com "Supra-Additive Effects of Combining Fat and Carbohydrate on Food Reward - ScienceDirect"

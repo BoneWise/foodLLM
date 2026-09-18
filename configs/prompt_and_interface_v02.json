@@ -1,0 +1,62 @@
+{
+  "version": "v02",
+  "status": "user_requested_task_only_prompts_fixed_pending_new_interface_audit",
+  "language": "English",
+  "nutrition_line_template": "Energy density: {kcal:.1f} kcal per 100 g.\n",
+  "original_verbal_anchors": "user_specified_ordinal_endpoints_not_claimed_verbatim_original_Japanese",
+  "image_before_text": true,
+  "enable_thinking": false,
+  "candidate_continuations": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "primary_readout": "last_nonpadding_prompt_token_post_each_language_block_before_final_norm",
+  "model_repo": "Qwen/Qwen3.5-9B",
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "dtype": "bfloat16",
+  "image_max_pixels": 262144,
+  "image_min_pixels": 65536,
+  "batch_size": 1,
+  "pilot_image_ids": [
+    "1",
+    "45",
+    "192",
+    "330",
+    "514"
+  ],
+  "pilot_condition_variants": [
+    "V",
+    "T",
+    "P1"
+  ],
+  "pilot_repeat": "repeat_exact_all_30_inputs_in_reverse_order",
+  "stimulus_manifest": "outputs/20260916_刺激与错配准备_v03/stimulus_manifest.csv",
+  "P_permutations": "outputs/20260916_刺激与错配准备_v03/P_permutations.csv",
+  "design_version": "v05",
+  "prompts": {
+    "A": {
+      "role": "primary",
+      "text": "How much do you want to eat this food?\nRate from 1 to 4, where 1 means the lowest desire to eat and 4 means the highest desire to eat.\nAnswer only with 1, 2, 3, or 4."
+    },
+    "B": {
+      "role": "robustness_only",
+      "text": "Rate your desire to eat the food shown in this image.\nUse a scale from 1 to 4, with 1 indicating the lowest desire to eat and 4 indicating the highest desire to eat.\nAnswer only with 1, 2, 3, or 4."
+    }
+  },
+  "nutrition_position": "after_image_before_task_text",
+  "include_participant_context": false,
+  "include_fast_context": false,
+  "include_experiment_context": false,
+  "target": "model_food_wanting_judgment_aligned_posthoc_to_observed_human_targets",
+  "match_token_count": false,
+  "match_display_character_count": false,
+  "normalization_check": "same_position_final_norm_for_interface_QA_only_not_extra_scientific_readout",
+  "pilot_prompts": [
+    "A",
+    "B"
+  ],
+  "current_prompt_interface_validated": false,
+  "prior_prompt_interface_audit": "outputs/20260916_Qwen_interface_v02/audit.json"
+}

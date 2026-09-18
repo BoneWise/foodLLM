@@ -1,0 +1,789 @@
+对，我认为这里需要把 v03 再改回来一点：**“逐层对齐”应该是方法，不应该是研究问题本身；真正的研究问题应该是“正确营养信息进入模型后，human-value information 在层级处理过程中怎样发生变化，以及这种变化是否变得更 human/brain-aligned”。**
+
+这样就和已有的“哪一层最像脑”研究拉开了距离。
+
+## 1. 我建议把核心问题改成这个
+
+> **当模型获得与食物图片正确匹配的能量密度信息后，人类 appetitive value 相关信息在模型内部不同深度如何改变？这种营养诱导的表征变化，是否提高了对人类 wanting 和 vmPFC 反应的泛化预测？**
+
+于是模型内部不再只有一条曲线，而是三条：
+
+$$
+h_l^V,\quad h_l^T,\quad h_l^P
+$$
+
+其中：
+
+* \(V\)：image + wanting question
+* \(T\)：image + **correctly matched** kcal/100g + question
+* \(P\)：image + **plausibly mismatched** kcal/100g + question
+
+真正关注：
+
+$$
+T-V
+$$
+
+以及更重要的：
+
+$$
+T-P.
+$$
+
+因为 \(T-V\) 同时包含了“多了一段营养文字/数字”这个变化，而 **T-P 才更接近“正确匹配的营养信息本身”**。
+
+---
+
+# 2. 不要把“层变化”定义成 hidden-state 距离变大
+
+这是很重要的一点。
+
+可以计算：
+
+$$
+\Delta h_l=h_l^T-h_l^V
+$$
+
+但 \(\|\Delta h_l\|\) 大，不意味着变化更“有价值”。
+
+而且 Qwen 不同层的尺度、几何结构可能本来就不同。
+
+所以最有意义的定义应该是：
+
+> **营养信息有没有让这一层的表征更能预测 human wanting / vmPFC？**
+
+对于每层 \(l\)，定义：
+
+$$
+G_l^{behavior}
+=
+Perf(h_l^T\rightarrow Human)
+-
+Perf(h_l^V\rightarrow Human)
+$$
+
+以及 specificity：
+
+$$
+S_l^{behavior}
+=
+Perf(h_l^T\rightarrow Human)
+-
+Perf(h_l^P\rightarrow Human)
+$$
+
+脑端同理：
+
+$$
+G_l^{brain}
+=
+Perf(h_l^T\rightarrow vmPFC)
+-
+Perf(h_l^V\rightarrow vmPFC)
+$$
+
+$$
+S_l^{brain}
+=
+Perf(h_l^T\rightarrow vmPFC)
+-
+Perf(h_l^P\rightarrow vmPFC)
+$$
+
+你最终真正想画的其实是：
+
+```text
+                 nutrient-induced gain
+
+early                                      late
+layer 1 ─ layer 2 ─ ... ─ layer 18 ─ ... ─ layer 32
+   │         │                 │                │
+   0        +.01              +.12             +.04
+                              ↑
+                    correct nutrition begins
+                    to improve value prediction
+```
+
+于是研究问题就从：
+
+> 哪层像 vmPFC？
+
+变成：
+
+> **正确营养信息在哪个处理阶段开始被转化成对 human valuation 有用的信息？**
+
+我觉得这个问题明显更有意思。
+
+---
+
+# 3. 有一个分析我尤其推荐：固定 V 条件学出的 wanting direction
+
+这个设计能非常漂亮地回答“营养信息让层发生了什么变化”。
+
+假设第 \(l\) 层。
+
+只用 **V 条件的训练食品**学习：
+
+$$
+HumanWanting
+=
+w_l^\top h_l^V
+$$
+
+也就是说，在 image-only condition 下定义一个 human-wanting direction：
+
+$$
+w_l
+$$
+
+然后**冻结这个方向**。
+
+在测试食品上分别计算：
+
+$$
+\hat H_l^V=w_l^\top h_l^V
+$$
+
+$$
+\hat H_l^T=w_l^\top h_l^T
+$$
+
+$$
+\hat H_l^P=w_l^\top h_l^P.
+$$
+
+注意这里 **T 和 P 不重新训练 probe**。
+
+如果：
+
+$$
+Error(\hat H_l^T)
+<
+Error(\hat H_l^V)
+$$
+
+并且：
+
+$$
+Error(\hat H_l^T)
+<
+Error(\hat H_l^P),
+$$
+
+这个结果非常有解释力：
+
+> 当正确 energy-density information 被加入以后，该层的表示本身沿着一个原先由 image-only human wanting 定义的价值方向发生了有利移动。
+
+这比“分别在 T 条件重新训练一个 ridge，然后 T probe 更强”要强。
+
+因为后者可能只是：
+
+> T 改变了 representation geometry，然后新的 decoder 学会了新的映射。
+
+---
+
+## 4. 两种 probe 可以回答两个不同问题
+
+所以我甚至建议 primary / secondary 分开。
+
+### Primary：fixed-readout transfer
+
+训练：
+
+$$
+w_l: h_l^V\rightarrow Human
+$$
+
+冻结，应用到 V/T/P。
+
+回答：
+
+> **营养信息是否使已有的 human-value representation 朝更正确方向移动？**
+
+这是最符合你刚才说的“知道具体营养成分后层的变化”。
+
+### Secondary：condition-specific readout
+
+分别训练：
+
+$$
+h_l^V\rightarrow Human
+$$
+
+$$
+h_l^T\rightarrow Human
+$$
+
+$$
+h_l^P\rightarrow Human
+$$
+
+回答：
+
+> **不同条件下，该层总共有多少 human-value information 可以被线性恢复？**
+
+两者出现不同结果反而很有意义：
+
+* fixed readout 也改善 → 原有价值方向被增强/校正；
+* 只有 T-specific readout 改善 → 新信息出现了，但编码方式发生了重新组织；
+* 都不改善 → 当前营养信息没有增加这一层的 human-value utility。
+
+这已经开始接近真正的 mechanistic characterization 了。
+
+---
+
+# 5. 然后怎么和 vmPFC 连？
+
+我建议脑部分不要第一步就让每层 4096 维 hidden state 任意预测 vmPFC。
+
+因为那会产生一个问题：
+
+> 它可能找到的是任何能预测 vmPFC 的信息，不一定是我们关心的 **human wanting information**。
+
+更干净的连接是使用上面行为定义出来的：
+
+$$
+\hat H_l^V,\hat H_l^T,\hat H_l^P
+$$
+
+再预测 vmPFC。
+
+比如 baseline：
+
+$$
+B_0:
+vmPFC
+\sim
+EnergyDensity + ModelOutput_V
+$$
+
+然后：
+
+$$
+B_l^V:
+B_0+\hat H_l^V
+$$
+
+$$
+B_l^T:
+B_0+\hat H_l^T
+$$
+
+$$
+B_l^P:
+B_0+\hat H_l^P.
+$$
+
+核心比较：
+
+$$
+B_l^T>B_l^V
+$$
+
+以及：
+
+$$
+B_l^T>B_l^P.
+$$
+
+这样证据链是：
+
+```text
+Correct nutrient information
+          ↓
+changes hidden representation
+          ↓
+more human-wanting information
+          ↓
+that improved value signal
+also predicts vmPFC better
+```
+
+这比：
+
+```text
+layer 17 correlates with vmPFC
+```
+
+强得多。
+
+直接的：
+
+$$
+h_l\rightarrow vmPFC
+$$
+
+我会留作 secondary neural encoding analysis。
+
+---
+
+# 6. “留食品”与“留被试”其实在回答两个完全不同的问题
+
+这个问题很关键。
+
+## A. 留出食品作为测试集
+
+训练：
+
+> 一部分 foods
+
+测试：
+
+> 从来没有参加过 probe/brain mapping 的新 foods。
+
+它回答：
+
+> **营养条件下形成的 layer representation，是否包含可以泛化到新食物的 valuation structure？**
+
+这是对你们**当前核心研究问题最重要的泛化**。
+
+因为模型特征本身是：
+
+$$
+Food_j\rightarrow h_j
+$$
+
+你的科学问题本质上也是：
+
+> 模型获得某个 food 的 nutrition information 后，能不能更好地表示这个 food 的人类价值？
+
+如果同一张图片在 train 和 test 都出现，只是换了一个参与者，那么 decoder 已经见过这个刺激。
+
+它完全可能学到了：
+
+> “Food 127 → vmPFC 大概高”
+
+而不是一个能泛化到新 food 的价值映射。
+
+所以如果只能选一个，我会明确选：
+
+$$
+\boxed{\text{leave-food-out 为 primary}}
+$$
+
+而且是**全局 food-group holdout**：
+
+> 测试 food group 不能出现在任何参与者的训练数据中。
+
+刺激泛化是 encoding-model 工作常用的核心检验：例如用模型特征预测脑反应时，会直接保留未见刺激来检验 learned feature-to-brain mapping 是否泛化，而不是只测试同一刺激的新重复。([PubMed Central (PMC)][1])
+
+---
+
+# 7. 留被试作为测试集回答什么？
+
+训练：
+
+> 28 个人
+
+测试：
+
+> 第 29 个人。
+
+如果食品完全相同，它回答的是：
+
+> **其他人建立的 model→vmPFC relationship 能否泛化到一个从未参与训练的人？**
+
+也就是：
+
+$$
+\boxed{\text{population generalization}}
+$$
+
+这个问题也有价值，但它更强地支持：
+
+> 这种 neural alignment 是一个**跨人的共享结构**。
+
+而不是：
+
+> 这种模型 representation 能泛化到新的 stimuli。
+
+LOSO 在神经影像里正是用来评估跨参与者泛化，但它隐含了不同人之间存在可对齐的共享 population response；所以解释与留刺激 CV 不同。([PubMed Central (PMC)][2])
+
+---
+
+# 8. 对你们而言，二者支持的 claim 可以这样区分
+
+| CV                         | 能支持的核心结论                                     | 不能充分支持                     |
+| -------------------------- | -------------------------------------------- | -------------------------- |
+| **留 food**                 | representation→wanting/vmPFC 关系可以泛化到**未见食物** | 未证明同一 mapping 可以直接预测一个全新的人 |
+| **留 participant**          | learned neural relationship 可以泛化到**未见的人**    | 如果食品重复，未证明对新食物泛化           |
+| **同时留 food + participant** | 对**新人、新食物**都泛化                               | 最严格，但复杂度和方差最高              |
+
+---
+
+# 9. 我不建议直接把“留被试”换成 primary
+
+因为你们当前最核心的是：
+
+> **营养信息是否改变 food representation。**
+
+这个 manipulator 本身发生在**刺激层面**。
+
+因此最自然的独立单位就是 food。
+
+### 我会这样设计：
+
+**Primary：leave-food-group-out**
+
+每一折全局冻结一组 foods。
+
+对于每个参与者：
+
+$$
+train\ foods\rightarrow mapping
+$$
+
+$$
+heldout\ foods\rightarrow vmPFC
+$$
+
+最后得到 29 个参与者各自的：
+
+$$
+\Delta R^2_{T-V}
+$$
+
+然后在人群层面检验这个效应。
+
+这个结果可以解释成：
+
+> 对一个典型参与者而言，nutrition-informed layer representations 能否更好预测其面对**新食物**时的 vmPFC response。
+
+这是非常自然的 claim。
+
+---
+
+# 10. LOSO 可以作为一个有价值的 secondary test
+
+如果主结果成立，再增加：
+
+$$
+Train: participants_{1\ldots28}
+$$
+
+$$
+Test: participant_{29}
+$$
+
+来问：
+
+> nutrient-induced alignment 是否属于群体共享结构，而不是每个人都需要重新学习一个 decoder？
+
+如果 LOSO 也成立，结论会更强：
+
+> **这种 nutrient-conditioned neural alignment 不只存在于个体内部，而且具有跨个体共享性。**
+
+但它不是当前主假设成立所必需的。
+
+---
+
+# 11. 最强的设计当然是 crossed generalization
+
+即：
+
+$$
+\text{train participants}\neq test participant
+$$
+
+同时：
+
+$$
+\text{train foods}\neq test foods.
+$$
+
+于是：
+
+```text
+Training:
+28 people × training foods
+
+Testing:
+1 completely new person × completely new foods
+```
+
+它回答：
+
+> **能否用模型营养条件下的 representation，预测一个新人面对新食物时的 vmPFC？**
+
+这是最强的 generalization。
+
+但是我暂时不会把它设为 primary。
+
+原因很实际：
+
+* 29 人不算特别多；
+* fMRI 单 trial noisy；
+* shared group mapping 比 within-subject mapping 更严格；
+* 又同时丢掉测试 foods；
+* power 很可能下降很多。
+
+适合作为 robustness / strongest test，而不是让主结论依赖它。
+
+---
+
+# 12. 还有一个脑端很容易忽略的 leakage
+
+如果你用 human wanting 来训练 layer probe，然后拿这个 probe 的预测去解释 participant \(i\) 的 vmPFC：
+
+**human target 最好排除 participant \(i\) 自己。**
+
+也就是：
+
+$$
+H_{-i,j}
+$$
+
+而不是：
+
+$$
+H_{\mathrm{all},j}.
+$$
+
+否则：
+
+participant \(i\) 的行为评分
+→ 参与了 probe training
+→ probe prediction
+→ 再预测 participant \(i\) 的 brain
+
+虽然不是直接 brain-label leakage，但会人为加强行为—脑连接。
+
+所以每个脑测试参与者 \(i\)：
+
+> human-value direction 最好由其他 28 人定义。
+
+如果再结合 food holdout，就非常干净：
+
+$$
+\text{other humans + training foods}
+$$
+
+定义价值方向，
+
+然后预测：
+
+$$
+\text{participant }i+\text{held-out foods}.
+$$
+
+---
+
+# 13. Qwen3.5-9B：我认为非常适合作为第一个模型
+
+而且比选一个巨大模型更合理。
+
+目前官方的 **Qwen3.5-9B** 是原生 image-text-to-text 模型，有 9B language model、4096 hidden dimension 和 **32 个语言层**；另有 27 层 vision encoder。官方 Transformers 实现能够通过 `output_hidden_states=True` 返回 embedding 加每层 hidden states，所以你们需要的逐层提取在接口上是直接支持的。([Hugging Face][3])
+
+### 为什么适合 pilot
+
+第一，它是真的多模态模型，不需要另接 CLIP。
+
+第二，32 层刚好适合 layer-profile analysis：
+
+$$
+32\times V/T/P
+$$
+
+还不会夸张到难以分析。
+
+第三，4096 维 hidden state 足够丰富，但 ridge + 568 foods 仍然可以处理。
+
+第四，模型是开放权重，可以真正拿到 hidden states；API-only 模型在这个研究问题上基本没法做。
+
+---
+
+# 14. 但 Qwen3.5 有一个你们必须知道的特殊点
+
+它的 32 层并不是 32 个完全相同的标准 Transformer block。
+
+官方架构是重复 8 次：
+
+> **3 个 Gated DeltaNet / linear-attention blocks + 1 个 gated full-attention block**
+
+即大致：
+
+$$
+(DDD A)\times8.
+$$
+
+([Hugging Face][4])
+
+这个事情对你们非常重要。
+
+因为如果最后发现：
+
+```text
+layer 4   ↑
+layer 8   ↑
+layer 12  ↑
+layer 16  ↑
+...
+```
+
+千万不要立即解释成：
+
+> 每隔四层 human value 被重新构建一次。
+
+那很可能只是 architecture periodicity——那些正好是 full-attention layer。
+
+所以最终 layer plot 应该直接标出来：
+
+```text
+D D D A | D D D A | D D D A | ...
+```
+
+并把：
+
+> layer depth
+
+与：
+
+> block type
+
+两个因素区分。
+
+这个模型反而因此很有研究价值，但解释要更小心。
+
+---
+
+# 15. Qwen3.5 还有第二个必须固定的东西：thinking mode
+
+官方 Qwen3.5 默认会先产生 `<think>...</think>` 再回答；同时官方允许通过 chat template 关闭 thinking。([Hugging Face][5])
+
+你们这里我强烈建议：
+
+$$
+\boxed{\text{disable thinking}}
+$$
+
+因为否则“答案产生前 hidden state”变得非常难定义：
+
+```text
+image
+→ question
+→ 500 tokens internal textual reasoning
+→ answer
+```
+
+那你逐层分析研究的就不再只是 multimodal food valuation，而混进了长链文本 reasoning。
+
+当前任务应该固定成：
+
+> image + nutrient + exact question → direct 1–4 response
+
+甚至最好**不真正 sample**，而是在 answer position 直接读取：
+
+$$
+P(1),P(2),P(3),P(4).
+$$
+
+这样最终显式 output 和 hidden-layer readout 都来自同一个 deterministic forward pass。
+
+---
+
+# 16. 对 hidden states，我也不建议量化模型作为 primary
+
+9B 参数用 BF16 权重大约是 18GB 量级；实际运行还要考虑 vision encoder、KV/activation 等开销。
+
+但你们不需要保存每层所有 token。
+
+每个 image-condition 只保存：
+
+$$
+32/33\times4096
+$$
+
+个数，也就是**每层一个固定 token**。
+
+568 张图 × 3 条件 × 33 hidden states × 4096，在 BF16 下最终缓存大概只有 **0.43 GiB**，FP32 也不到 1 GiB。
+
+所以存储完全不是问题。
+
+我反而建议：
+
+> **primary 用 BF16，不用 4-bit quantization。**
+
+因为你们研究对象本身就是 hidden representation。量化如果改变 hidden-state geometry，就不再只是计算优化，而变成了模型本身的变化。
+
+---
+
+# 17. 我会怎么修改你现在的 v03
+
+不是：
+
+> “逐层 wanting + vmPFC alignment”
+
+而改成类似：
+
+### RQ1 — Nutrient-induced behavioral representation change
+
+> 正确匹配的 energy-density information 是否改变模型不同深度的表征，使其更能预测未见食品的人类 wanting？
+
+核心：
+
+$$
+T_l>V_l,\quad T_l>P_l
+$$
+
+并重点使用 frozen V-derived wanting readout。
+
+### RQ2 — Nutrient-induced neural alignment
+
+> 这种营养诱导的 human-value representation gain 是否同时提高对未见食品 vmPFC response 的预测？
+
+核心：
+
+$$
+BrainPerf(T_l)>BrainPerf(V_l)
+$$
+
+并且：
+
+$$
+BrainPerf(T_l)>BrainPerf(P_l).
+$$
+
+### RQ3 — Where does useful nutrient information emerge?
+
+> 上述 T-specific gain 随计算深度如何变化？
+
+而不是“哪个 layer 最大”本身。
+
+这时候 layer 是**定位营养信息转化为价值信息的计算位置**。
+
+---
+
+## 我现在最推荐的最小矩阵
+
+只需要：
+
+| 维度                     | Primary                                      |
+| ---------------------- | -------------------------------------------- |
+| 模型                     | **Qwen3.5-9B**                               |
+| 条件                     | **V / T / P**                                |
+| 层                      | 32 decoder layers，同一 pre-answer token        |
+| 营养                     | **energy density kcal/100g**                 |
+| 行为 target              | human wanting                                |
+| Brain target           | vmPFC ROI beta                               |
+| 主泛化                    | **globally held-out food groups**            |
+| 次要泛化                   | LOSO participant                             |
+| Primary layer analysis | **V-trained frozen wanting readout → V/T/P** |
+| Secondary              | 各条件独立 ridge、direct hidden→vmPFC              |
+
+我认为这样比当前 v03 更有潜力。
+
+因为已有研究可以问：
+
+> **“模型哪一层最像脑？”**
+
+你们真正可以问的是：
+
+> **“当模型获得一个人类价值计算相关但从图片中不完全可见的营养属性后，这项信息在模型内部从哪一阶段开始被转化成更 human-aligned 的价值表征，并且这种变化能否泛化预测未见食物诱发的 vmPFC response？”**
+
+这已经是一个明显不同、也更有机制意味的问题。Qwen3.5-9B 很适合先把这一整套方法跑通；如果结果成立，再用第二个架构不同的开放 VLM 做 replication，比一开始同时上多个大模型更划算。
+
+[1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC9981816/?utm_source=chatgpt.com "Predicting brain activation maps for arbitrary tasks with cognitive encoding models - PMC"
+[2]: https://pmc.ncbi.nlm.nih.gov/articles/PMC8596303/?utm_source=chatgpt.com "What do across-subject analyses really tell us about neural coding? Across-subject analyses and neural coding - PMC"
+[3]: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/README.md?utm_source=chatgpt.com "README.md · Qwen/Qwen3.5-9B at main"
+[4]: https://huggingface.co/Qwen/Qwen3.5-9B-Base/blame/main/README.md?utm_source=chatgpt.com "README.md · Qwen/Qwen3.5-9B-Base at main"
+[5]: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/README.md "README.md · Qwen/Qwen3.5-9B at main"

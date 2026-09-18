@@ -1,0 +1,127 @@
+{
+  "design_version": "v03",
+  "status": "working_draft_not_preregistered",
+  "user_decided_direction": "layerwise_human_wanting_and_vmPFC_predictive_alignment",
+  "protocol": "docs/research/20260916_逐层wanting与vmPFC对齐方案_v03.md",
+  "execution_ready": false,
+  "model": {
+    "checkpoint": null,
+    "revision": null,
+    "precision": null,
+    "prompt": null,
+    "original_japanese_labels": null,
+    "condition": "image_and_fixed_wanting_question_only",
+    "fine_tune": false
+  },
+  "features": {
+    "layer_family": "image_context_accessible_decoder_blocks",
+    "readout_token": "last_nonpadding_prompt_token_before_answer_generation",
+    "hook_definition": null,
+    "primary_state": "post_block_residual_pre_final_normalization",
+    "terminal_normalized_state": "save_as_separate_control",
+    "all_decoder_blocks": true,
+    "hidden_dimension": null,
+    "layer_count": null
+  },
+  "output": {
+    "raw_score": "expected_rating_1_to_4",
+    "primary_baseline": "linear_readout_of_three_independent_answer_probability_components",
+    "record_valid_probability_mass": true,
+    "probability_tokenization_rule": null
+  },
+  "readout": {
+    "method": "train_fold_standardization_then_ridge",
+    "pca": false,
+    "loss": "mean_squared_error_plus_lambda_squared_l2_weight_norm",
+    "lambda_grid_proposed": [
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0,
+      1000000.0
+    ],
+    "tie_alpha": "larger_lambda",
+    "tie_layer": "shallower_layer",
+    "metric": "heldout_MSE_and_training_mean_reference_Q2"
+  },
+  "behavior": {
+    "target": "current_29_subject_image_mean_rating",
+    "outer_folds_proposed": 5,
+    "inner_folds_proposed": 4,
+    "groups": "normalized_food_name_plus_near_duplicate_review",
+    "fold_file": null,
+    "seed": null,
+    "layer_selection": "inner_folds_only"
+  },
+  "brain": {
+    "candidate_roi": {
+      "name": "vmPFC",
+      "center_mm": [
+        -2,
+        40,
+        -6
+      ],
+      "radius_mm": 8
+    },
+    "roi_file": null,
+    "roi_quality_rules": null,
+    "response_table": null,
+    "outer": "leave_one_run_out_with_training_food_group_purge",
+    "inner_folds_proposed": 4,
+    "inner": "run_grouped_with_training_food_group_purge",
+    "features": "raw_frozen_hidden_states_or_raw_output_probabilities",
+    "legacy_quality_labels_auto_apply": false
+  },
+  "bridge": {
+    "layer_selection_target": "other_subject_mean_wanting_on_allowed_brain_training_images",
+    "exclude_target_subject_ratings": true,
+    "exclude_test_food_groups_from_all_behavior_selection": true,
+    "repeat_behavior_selection_within_brain_inner_training": true,
+    "brain_input": "selected_layer_raw_vector_not_human_trained_scalar",
+    "baseline_controls": [
+      "red",
+      "green",
+      "blue",
+      "object_size",
+      "log1p(grams_total)",
+      "kcal_100g"
+    ],
+    "low_dimensional_baseline": "unpenalized_controls_and_three_output_probability_components",
+    "hidden_block": "ridge_penalized",
+    "population_uncertainty": "participant_resampling_rebuilds_leave_target_identity_out_behavior_targets_and_selection",
+    "inference_validation": null
+  },
+  "statistics": {
+    "five_contrasts": [
+      "wanting_selected_vs_output",
+      "wanting_selected_vs_final_block",
+      "brain_selected_vs_output",
+      "brain_selected_vs_final_block",
+      "behavior_selected_hidden_brain_increment"
+    ],
+    "proposed_family_intervals": "two_sided_99_percent_Bonferroni_and_95_percent_estimation_intervals",
+    "uncertainty_simulation_verified": false,
+    "layerwise_curve_correlation": "descriptive_only",
+    "per_layer_significance": "only_with_simultaneous_band",
+    "stimulus_population_brain_inference": false
+  },
+  "deferred": [
+    "nutrient_prompt_VTP",
+    "multiple_models",
+    "multiple_prompts",
+    "vision_tower_layer_sweep",
+    "multivoxel_encoding",
+    "RSA",
+    "whole_brain",
+    "human_trained_scalar_to_brain",
+    "causal_intervention"
+  ]
+}

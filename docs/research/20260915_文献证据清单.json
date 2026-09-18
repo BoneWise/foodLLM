@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-15",
+  "scope": "本轮已落地的有效文献证据；完整纳入来源见文献索引，不是全部检索结果或全部文献全文。",
+  "files": [
+    {
+      "reference_id": "R10",
+      "path": "archive/literature_20260915/food_valuation_dataset_2026.pdf",
+      "source_url": "https://www.nature.com/articles/s41597-026-07323-y_reference.pdf",
+      "description": "出版方 PDF",
+      "bytes": 651784,
+      "sha256": "237545129d0ba71f0c2831f82314d6c4c4da0cdc23357505a9d95744caec08bc"
+    },
+    {
+      "reference_id": "R10",
+      "path": "archive/literature_20260915/food_valuation_dataset_2026.txt",
+      "source_url": "https://www.nature.com/articles/s41597-026-07323-y_reference.pdf",
+      "description": "从本地 PDF 提取文本",
+      "bytes": 39457,
+      "sha256": "450669750a4fe2f8c93c61492f7804a0cca93b9510eb27fbd17a239db0e78357"
+    },
+    {
+      "reference_id": "R10",
+      "path": "archive/literature_20260915/task_page.png",
+      "source_url": "https://www.nature.com/articles/s41597-026-07323-y_reference.pdf",
+      "description": "本地 PDF 第 7 页渲染，已视觉核对任务图",
+      "bytes": 244285,
+      "sha256": "8c9b6978e34e5121eee80b8210bff7afc2572cd63684296a203c0fe2582bffe2"
+    },
+    {
+      "reference_id": "R09",
+      "path": "archive/literature_20260915/food_quality_crossref.json",
+      "source_url": "https://api.crossref.org/works/10.64898/2026.08.25.747006",
+      "description": "出版方登记的元数据和作者摘要，非全文",
+      "bytes": 13696,
+      "sha256": "334379e04e80707f743488a5c4400f53163fe3c6e5aabce27f7dce635669fc44"
+    }
+  ],
+  "excluded_failed_artifacts": [
+    "archive/literature_20260915/food_quality_biorxiv_metadata.json"
+  ]
+}

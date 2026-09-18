@@ -1,0 +1,317 @@
+[
+  {
+    "source": "README.md",
+    "label": "完整交接",
+    "original_target": "archive/handoff_20260915/START_HERE_项目交接.md"
+  },
+  {
+    "source": "README.md",
+    "label": "连接记录",
+    "original_target": "docs/服务器连接.md"
+  },
+  {
+    "source": "docs/research/20260915_现有数据与精简方案对照.md",
+    "label": "audit.json",
+    "original_target": "../../outputs/20260915_设计数据核对_v02/audit.json"
+  },
+  {
+    "source": "docs/research/20260916_RSA适用性与MSE后续路线.md",
+    "label": "划分核查",
+    "original_target": "../../outputs/20260916_RSA划分与MSE后续评估_v01/split_audit.json"
+  },
+  {
+    "source": "docs/research/20260916_fMRI与LLM对应及beta阶段核查.md",
+    "label": "本轮逐试次对应表",
+    "original_target": "../../outputs/20260916_fMRI与LLM对应核查_v01/trial_correspondence.csv"
+  },
+  {
+    "source": "docs/research/20260916_fMRI与LLM对应及beta阶段核查.md",
+    "label": "本轮审计",
+    "original_target": "../../outputs/20260916_fMRI与LLM对应核查_v01/audit.json"
+  },
+  {
+    "source": "docs/research/20260916_fMRI与LLM对应及beta阶段核查.md",
+    "label": "历史实际 SPM 审计",
+    "original_target": "../../outputs/20260916_vmPFC准备_v01/audit.json"
+  },
+  {
+    "source": "docs/research/20260916_fMRI与LLM对应及beta阶段核查.md",
+    "label": "既有 LSA 源码",
+    "original_target": "../../archive/source_code/run_minimal_lsa.m"
+  },
+  {
+    "source": "docs/research/20260916_trial划分决定与缺失均值复核.md",
+    "label": "trial折号",
+    "original_target": "../../outputs/20260916_trial划分与缺失均值评估_v01/neural_trial_folds.csv"
+  },
+  {
+    "source": "docs/research/20260916_trial划分决定与缺失均值复核.md",
+    "label": "验证",
+    "original_target": "../../outputs/20260916_trial划分与缺失均值评估_v01/validation.json"
+  },
+  {
+    "source": "docs/research/20260916_trial划分决定与缺失均值复核.md",
+    "label": "本轮评估",
+    "original_target": "../../outputs/20260916_trial划分与缺失均值评估_v01/missingness_assessment.json"
+  },
+  {
+    "source": "docs/research/20260916_trial划分决定与缺失均值复核.md",
+    "label": "审计",
+    "original_target": "../../outputs/20260916_trial划分与缺失均值评估_v01/audit.json"
+  },
+  {
+    "source": "docs/research/20260916_两条截断试次正式剔除记录.md",
+    "label": "完整脑资格表",
+    "original_target": "../../outputs/20260916_脑试次剔除_v01/roi_trial_responses.csv"
+  },
+  {
+    "source": "docs/research/20260916_两条截断试次正式剔除记录.md",
+    "label": "纳入脑观测表",
+    "original_target": "../../outputs/20260916_脑试次剔除_v01/roi_trial_responses_included.csv"
+  },
+  {
+    "source": "docs/research/20260916_两条截断试次正式剔除记录.md",
+    "label": "剔除清单",
+    "original_target": "../../outputs/20260916_脑试次剔除_v01/excluded_trials.csv"
+  },
+  {
+    "source": "docs/research/20260916_两条截断试次正式剔除记录.md",
+    "label": "逐层结果摘要v02",
+    "original_target": "../../outputs/20260916_逐层结果汇总_v02/结果摘要.md"
+  },
+  {
+    "source": "docs/research/20260916_两条截断试次正式剔除记录.md",
+    "label": "数据",
+    "original_target": "../../outputs/20260916_脑试次剔除_v01/validation.json"
+  },
+  {
+    "source": "docs/research/20260916_两条截断试次正式剔除记录.md",
+    "label": "128任务",
+    "original_target": "../../outputs/20260916_逐层行为与脑预测_v02/adoption_validation.json"
+  },
+  {
+    "source": "docs/research/20260916_两条截断试次正式剔除记录.md",
+    "label": "结果汇总",
+    "original_target": "../../outputs/20260916_逐层结果汇总_v02/validation.json"
+  },
+  {
+    "source": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+    "label": "实际 SPM、β 重提取与可估计性审计",
+    "original_target": "../../outputs/20260916_实际SPM与beta复核_v01/audit.json"
+  },
+  {
+    "source": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+    "label": "BOLD 输入身份与时间覆盖审计",
+    "original_target": "../../outputs/20260916_BOLD输入身份复核_v02/audit.json"
+  },
+  {
+    "source": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+    "label": "两个采集不完整试次",
+    "original_target": "../../outputs/20260916_估值事件采集覆盖诊断_v01/incomplete_valuation_trials.csv"
+  },
+  {
+    "source": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+    "label": "全部试次采集覆盖与方差因子",
+    "original_target": "../../outputs/20260916_估值事件采集覆盖诊断_v01/trial_acquisition_coverage.csv"
+  },
+  {
+    "source": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+    "label": "原人类正对照",
+    "original_target": "../../outputs/20260916_人类wanting脑正对照_v01/summary.json"
+  },
+  {
+    "source": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+    "label": "时窗敏感性",
+    "original_target": "../../outputs/20260916_人类wanting脑正对照_时窗敏感性_v01/summary.json"
+  },
+  {
+    "source": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+    "label": "全部层神经时窗敏感性",
+    "original_target": "../../outputs/20260916_截断试次脑敏感性_v01/summary.json"
+  },
+  {
+    "source": "docs/research/20260916_简化提示与逐层营养对齐方案_v05.md",
+    "label": "P与划分清单",
+    "original_target": "../../outputs/20260916_刺激与错配准备_v03/stimulus_manifest.csv"
+  },
+  {
+    "source": "docs/research/20260916_简化提示与逐层营养对齐方案_v05.md",
+    "label": "p,l",
+    "original_target": "h[p,l,c]"
+  },
+  {
+    "source": "docs/research/20260916_营养诱导逐层价值对齐方案_v04.md",
+    "label": "公开资料记录",
+    "original_target": "../../outputs/20260916_营养逐层方案修订_v01/source_record.json"
+  },
+  {
+    "source": "docs/research/20260916_逐层行为与vmPFC首轮结果.md",
+    "label": "完整数值摘要与全层图",
+    "original_target": "../../outputs/20260916_逐层结果汇总_v01/结果摘要.md"
+  },
+  {
+    "source": "docs/research/20260916_逐层行为与vmPFC首轮结果.md",
+    "label": "全层图 PNG",
+    "original_target": "../../outputs/20260916_逐层结果汇总_v01/layerwise_effects.png"
+  },
+  {
+    "source": "docs/research/20260916_逐层行为与vmPFC首轮结果.md",
+    "label": "PDF",
+    "original_target": "../../outputs/20260916_逐层结果汇总_v01/layerwise_effects.pdf"
+  },
+  {
+    "source": "docs/research/20260916_逐层行为与vmPFC首轮结果.md",
+    "label": "逐层预测与审计",
+    "original_target": "../../outputs/20260916_逐层行为与脑预测_v01/audit.json"
+  },
+  {
+    "source": "docs/research/20260916_逐层行为与vmPFC首轮结果.md",
+    "label": "输出基线",
+    "original_target": "../../outputs/20260916_输出基线_v01/metrics.csv"
+  },
+  {
+    "source": "docs/research/20260916_逐层行为与vmPFC首轮结果.md",
+    "label": "条件内读出摘要",
+    "original_target": "../../outputs/20260916_条件内读出与迁移诊断_v01/mean32_metrics.json"
+  },
+  {
+    "source": "docs/research/20260916_逐层行为与vmPFC首轮结果.md",
+    "label": "逐层偏移诊断",
+    "original_target": "../../outputs/20260916_条件内读出与迁移诊断_v01/frozen_transfer_bias_diagnostics.csv"
+  },
+  {
+    "source": "docs/research/20260917_HCP执行与核查_v08_1.md",
+    "label": "图谱目录",
+    "original_target": "../../outputs/20260917_HCP图谱准备_v01/"
+  },
+  {
+    "source": "docs/research/20260917_raw_RSA首轮执行与结果.md",
+    "label": "pattern审计",
+    "original_target": "../../outputs/20260917_RSA原始模式_v01/audit.json"
+  },
+  {
+    "source": "docs/research/20260917_raw_RSA首轮执行与结果.md",
+    "label": "RSA审计",
+    "original_target": "../../outputs/20260917_raw_RSA_v01/audit.json"
+  },
+  {
+    "source": "docs/research/20260917_多营养与OFC执行记录_v07_1.md",
+    "label": "逐人覆盖",
+    "original_target": "../../outputs/20260917_OFC原始模式_v01/coverage.csv"
+  },
+  {
+    "source": "docs/research/20260917_多营养与OFC执行记录_v07_1.md",
+    "label": "ROI重叠",
+    "original_target": "../../outputs/20260917_OFC原始模式_v01/ROI_overlap.csv"
+  },
+  {
+    "source": "docs/research/20260917_多营养与OFC执行记录_v07_1.md",
+    "label": "图谱准备目录",
+    "original_target": "../../outputs/20260917_OFC图谱准备_v01"
+  },
+  {
+    "source": "docs/research/20260917_多营养与OFC执行记录_v07_1.md",
+    "label": "401图与错配清单",
+    "original_target": "../../outputs/20260917_四营养共同刺激_v02"
+  },
+  {
+    "source": "docs/research/20260917_多营养与OFC执行记录_v07_1.md",
+    "label": "466图可行性版本",
+    "original_target": "../../outputs/20260917_四营养共同刺激_v01"
+  },
+  {
+    "source": "docs/research/20260917_多营养属性与OFC扩展设计_v07.md",
+    "label": "字段核对",
+    "original_target": "../../outputs/20260917_多营养OFC设计核对_v01/nutrition_inventory.json"
+  },
+  {
+    "source": "docs/research/20260918_无关词与随机分区健壮性设计_v09.md",
+    "label": "输入冻结目录",
+    "original_target": "../../outputs/20260918_控制输入冻结_v01/"
+  },
+  {
+    "source": "docs/数据与迁移.md",
+    "label": "迁移文件清单",
+    "original_target": "migration/manifest_20260915.json"
+  },
+  {
+    "source": "docs/数据与迁移.md",
+    "label": "迁移验证记录",
+    "original_target": "migration/validation_20260915.json"
+  },
+  {
+    "source": "docs/研究状态与下一阶段.md",
+    "label": "audit.json",
+    "original_target": "../outputs/20260917_HCP设计对齐核查_v01/audit.json"
+  },
+  {
+    "source": "docs/研究状态与下一阶段.md",
+    "label": "本轮入口核对",
+    "original_target": "../outputs/20260916_RSA最小方案修订_v01/plan_audit.json"
+  },
+  {
+    "source": "docs/研究状态与下一阶段.md",
+    "label": "服务器连接与存储",
+    "original_target": "服务器连接.md"
+  },
+  {
+    "source": "outputs/20260917_HCP_RSA_v01/结果解读.md",
+    "label": "全部单侧、双侧、旧ROI与组摘要的逐人逐层逐条件分数",
+    "original_target": "all_subject_scores.csv.gz"
+  },
+  {
+    "source": "outputs/20260917_HCP_RSA_v01/结果解读.md",
+    "label": "单侧脑pattern、RDM与试次映射",
+    "original_target": "../20260917_HCP原始模式_v01/"
+  },
+  {
+    "source": "outputs/20260917_HCP_RSA_v01/结果解读.md",
+    "label": "图谱、mask、标签和覆盖",
+    "original_target": "../20260917_HCP图谱准备_v01/"
+  },
+  {
+    "source": "outputs/20260917_RSA描述性报告_v01/结果摘要.md",
+    "label": "全部逐人分数",
+    "original_target": "../20260917_raw_RSA_v01/neural_scores.csv"
+  },
+  {
+    "source": "outputs/20260917_RSA描述性报告_v01/结果摘要.md",
+    "label": "配对差值",
+    "original_target": "../20260917_raw_RSA_v01/contrasts.csv"
+  },
+  {
+    "source": "outputs/20260917_RSA描述性报告_v01/结果摘要.md",
+    "label": "逐层群体与行为曲线",
+    "original_target": "../20260917_raw_RSA_v01/group_curves.csv"
+  },
+  {
+    "source": "outputs/20260917_RSA描述性报告_v01/结果摘要.md",
+    "label": "采集QC明细",
+    "original_target": "../20260917_raw_RSA_v01/acquisition_QC.csv"
+  },
+  {
+    "source": "outputs/20260917_RSA描述性报告_v01/结果摘要.md",
+    "label": "RSA计算审计",
+    "original_target": "../20260917_raw_RSA_v01/audit.json"
+  },
+  {
+    "source": "outputs/20260918_控制实验报告_v01/结果报告.md",
+    "label": "重叠表",
+    "original_target": "../20260918_随机HCP图谱核查_v01/legacy_overlap.csv"
+  },
+  {
+    "source": "outputs/20260918_控制实验报告_v01/结果报告.md",
+    "label": "全部token记录",
+    "original_target": "../20260918_控制Token核查_v01/token_counts.csv"
+  },
+  {
+    "source": "outputs/20260918_控制实验报告_v02/结果报告.md",
+    "label": "全部token记录",
+    "original_target": "../20260918_控制Token核查_v01/token_counts.csv"
+  },
+  {
+    "source": "outputs/20260918_控制实验报告_v02/结果报告.md",
+    "label": "重叠表",
+    "original_target": "../20260918_随机HCP图谱核查_v01/legacy_overlap.csv"
+  }
+]

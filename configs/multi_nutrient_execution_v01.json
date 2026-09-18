@@ -1,0 +1,84 @@
+{
+  "version": "multi_nutrient_execution_v01",
+  "date": "2026-09-17",
+  "user_direction": "continue_v07_extension",
+  "implementation_choice": "assistant_conservative_default; optional preference question pending; not explicit user selection",
+  "status": "inputs_frozen_before_new_model_effects",
+  "source_design": "configs/nutrient_OFC_extension_v07_draft.json",
+  "metadata_preparation": "outputs/20260917_\u56db\u8425\u517b\u5171\u540c\u523a\u6fc0_v02",
+  "input_manifest_root": "outputs/20260917_\u56db\u8425\u517b\u6a21\u578b\u8f93\u5165_v01",
+  "prompt_config": "configs/multi_nutrient_prompt_v01.json",
+  "common_images": 401,
+  "nutrients": [
+    "protein_100g",
+    "fat_100g",
+    "carbs_100g",
+    "fibre_100g"
+  ],
+  "P_rule": "0.05 <= abs(T-P)/max(T,P,1g100g) <= 0.50; input-only operational choice, not human validated",
+  "selection_seed": 20260917,
+  "P_seeds": {
+    "protein_100g": [
+      20261018,
+      20261019,
+      20261020,
+      20261021,
+      20261022
+    ],
+    "fat_100g": [
+      20261118,
+      20261119,
+      20261120,
+      20261121,
+      20261122
+    ],
+    "carbs_100g": [
+      20261218,
+      20261219,
+      20261220,
+      20261221,
+      20261222
+    ],
+    "fibre_100g": [
+      20261318,
+      20261319,
+      20261320,
+      20261321,
+      20261322
+    ]
+  },
+  "primary_prompt": "A",
+  "robustness_prompt": "B",
+  "B_gate": "A_computational_validation_not_effect",
+  "readout": "32_post_block_pre_final_norm_at_last_prompt_token",
+  "conditions": [
+    "V_reuse",
+    "T",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "P_aggregation": "mean_RSA_scores_not_hidden_or_RDM_mean",
+  "ROIs": [
+    "lOFC",
+    "mOFC",
+    "vmPFC"
+  ],
+  "analysis": "descriptive_raw_RDM_1-Pearson_Spearman",
+  "inference_run": false,
+  "extra_brain_preprocessing": [],
+  "review": "extreme pairs inspected using metadata only; conservative limits remove 0.01g differences and implausible large swaps; not human plausibility validation",
+  "limitations": [
+    "common sample selects foods admitting all four nutrient permutations",
+    "unequal mismatch strength across nutrients; no strongest-nutrient ranking",
+    "database values not measured nutrient beliefs",
+    "same historical human brain data; not independent replication"
+  ],
+  "manifest_sha256": {
+    "stimulus_manifest.csv": "1d0ca2592c67cd180596da4d20d43d0df13e3cb80998922667938c4125da1864",
+    "P_permutations.csv": "8ed642627e0a6b3c637e7229ace8cc24f5c8c54deb0834751d0e656065fc1690"
+  },
+  "git_base": "de02242dd80e90ea9d936651e313330316a2688f"
+}

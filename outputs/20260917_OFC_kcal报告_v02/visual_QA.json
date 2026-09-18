@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "review": "Both prompt layer plots and coverage/QC plot inspected; labels, condition colors, numeric scale and P range (not CI) are explicit. Panel axes autoscale independently; use numeric values for cross-ROI size comparisons.",
+  "figures": {
+    "coverage_and_acquisition_QC.png": "da661dc898d59dd628a9a5b1a56f41e64e7d2b0cd4fdc2cbe2fde71e3cae3aff",
+    "A_layer_curves.png": "5238dffb82b3e4d707b793a178d30180b57f35154b4c5e9eb207f3c9991b6e33",
+    "B_layer_curves.png": "38339c31ad95c487920d3618dc782a9072b5f3c5513f5595bd71961c7d5be706"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "created": "2026-09-18T05:28:27.508731+09:00",
+  "original_VTP_bitwise_preserved": true,
+  "all_79_ROIs_common_participant_pairs": true,
+  "all_401_image_ID_order_consistent": true,
+  "all_saved_output_hashes_verified": true,
+  "hemisphere_and_group_aggregation_verified": true,
+  "N_V_plus_T_N_equals_T_V": true,
+  "N_P_score_means_not_RDM_means": true,
+  "full_and_deep_window_exports_verified": true,
+  "nine_group_independent_checks": true,
+  "matching_calipers_and_insufficient_rule_verified": true,
+  "independent_Spearman_max_error": 6.938893903907228e-18,
+  "no_p_values_or_CIs": true,
+  "inputs": {
+    "RSA_audit": "6e5cca3376ab25c0949809ebec0ca480c2262246ec6ddcc00d683a0b185c53f3",
+    "report_audit": "6c2f3ac063dcd259b01f1b4436ecac8e57e3192aad0a0c7ac0b82f705bcd404e",
+    "transfer_verification": "8be39b6bac4d7e6cd5e35b0c5f4de0c3c44b06ab0adfc6e65477ca258bdecbd5"
+  },
+  "script_sha256": "6c0daad1007e162ce1668e0eb18ab5fafda711376384e9bd5f7b38ce25986f1f"
+}

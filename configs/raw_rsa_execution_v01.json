@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-17",
+  "version": "v01",
+  "status": "complete_descriptive_only",
+  "protocol": "configs/nutrient_conditioned_rsa_v06_1.json",
+  "post_result_follow_up": true,
+  "paths": {
+    "patterns": "outputs/20260917_RSA原始模式_v01",
+    "RSA": "outputs/20260917_raw_RSA_v01",
+    "report": "outputs/20260917_RSA描述性报告_v01"
+  },
+  "sample": {
+    "subjects": 29,
+    "images": 493,
+    "brain_trials": 13765,
+    "voxel_range": [
+      257,
+      272
+    ]
+  },
+  "completed": [
+    "unsmoothed_source_trace",
+    "raw_pattern_extraction",
+    "fixed_pattern_and_mean_identity_QC",
+    "brain_and_model_RDMs",
+    "prompt_A_descriptive_RSA",
+    "wanting_kcal_references",
+    "session_run_QC",
+    "prompt_B_after_A_correctness_gate",
+    "figures_and_report"
+  ],
+  "no_new_exclusions": true,
+  "preprocessing_added": [],
+  "inference_run": false,
+  "sensitivity_run": false,
+  "random_resampling_seed": null,
+  "numerical_fixture_seed": 2026091701,
+  "future_work_status": "review_acquisition_structure_before_deciding_reserved_sensitivity_or_formal_inference",
+  "audits": {
+    "patterns": "outputs/20260917_RSA原始模式_v01/audit.json",
+    "RSA": "outputs/20260917_raw_RSA_v01/audit.json",
+    "report": "outputs/20260917_RSA描述性报告_v01/report_audit.json"
+  }
+}

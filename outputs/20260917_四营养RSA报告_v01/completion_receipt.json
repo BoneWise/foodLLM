@@ -1,0 +1,53 @@
+{
+  "status": "complete_descriptive_verified",
+  "date": "2026-09-17",
+  "prompts": [
+    "A",
+    "B"
+  ],
+  "primary": "A",
+  "images": 401,
+  "participants": 29,
+  "new_inputs": 19248,
+  "neural_scores": 155904,
+  "inference_run": false,
+  "sensitivity_run": false,
+  "execution_config_unchanged_sha256": "ec0f889e8e10bc1792e5ac17d92c66989809966c93f4aaee3db9e5bc3c061d68",
+  "git_base": "82f8b25bcd7cdf1282a375cc75601f4d7aba7424",
+  "git_dirty_at_report": true,
+  "verification_files": {
+    "outputs/20260917_四营养A特征审计_v01/local_transfer_verification.json": "ef73a1a4e03094e54607747a62eb3aa902b00c89cf333d924aaf9feed6ff5bba",
+    "outputs/20260917_四营养B特征审计_v01/local_transfer_verification.json": "c6413ea99c59affd60411bd977e18a78b3b9b216ed7db84056f7d9ddea4a817b",
+    "outputs/20260917_四营养B_RSA_v01/AB_brain_pair_verification.json": "056d5379df16131d3d747f3799dcc03e8484508c53e6508841e3270de4ea9aef"
+  },
+  "report_files_sha256": {
+    "A_alignment.pdf": "4dd73088d0b609e3365865bbe3b588be24d052e2ee67406ea380fbde94ae0b8b",
+    "descriptive_summary.csv": "6dc1c0e78c8641b17e2dd86e9009947b8828709ba6dc90e09f7dc6f81aa5bdd4",
+    "B_participant_delta_0.pdf": "6597304cbf837c13f3c3c0f2d78b7508cc76c6acfa21ff5b29cefc6cfdfc4d47",
+    "B_participant_delta_1.pdf": "33e35921dc2b2959a0b4ffbb9d3fde62679e31c1c2e587f2d7b33804a91c75a1",
+    "B_participant_delta_1.png": "b199b8c153468d218fd37aaa628bdb8c0c1bf4ad890915d810046107cbe9a0e7",
+    "A_alignment.png": "d2083a4f6c60b2b7fab321fbe9997643fbd9137ba041f33addf9a0afe9de1b4f",
+    "B_participant_delta_0.png": "867d879b665ba4e91f827a3ed82aec96d126d5506f0b1ab508de90cb1ab6dfd0",
+    "结果摘要.md": "bd5035c2d1677a6d39b8309244bafcf14ba8ec968f8874352c58c7a416edfa7f",
+    "B_wanting.png": "c53a1536d15eb2e33df08008f916bbea2890e10050dc95fa3969d6322a01a7de",
+    "B_alignment.png": "5735b8652f284b2e94ab3607c7d6dd5ea963802394f90c9093e3a17931a706f6",
+    "B_alignment.pdf": "50c653bb983cba3fc35ff13688c35ede659f0d7b29db8d9bb9f3e04a672a1053",
+    "script_snapshot.py": "60556d0e5b151078f7d3c429f3b502fbc5741a8b9e7c2d639d29cff3b6378d0b",
+    "B_wanting.pdf": "05ee2c0c227676dbdc9276f30f35f16b355729c8d50694af78debd32d8000446",
+    "B_contrasts.pdf": "28d84107ae47ad04b4872dad533aea3a62b920f53bab20ca0045c9b96dcf7bda",
+    "A_wanting.pdf": "f6268a9ec6f75c1244b10022e690d6466f3bb5b3cbcdd5317a6158f7cbe2ac63",
+    "B_contrasts.png": "a585e108a44ad61697c3e55880f54cef949208c8a0052a9a2b0e2e8144975e34",
+    "A_wanting.png": "86573c6ddab60d9e164379cb42c5de56e68d37076630b2982bd369e38e0d850a",
+    "A_participant_delta_1.png": "963d2be814254b0738315f161ffafff51131cde3aa865fb557aba9acee4128e2",
+    "A_participant_delta_0.png": "13e8c04f7059336fa22ffd4dd87a40168f380491d065eacb9bac2e9064263d94",
+    "A_contrasts.png": "47e0a13871bd2dc56f8a7d26c0c94be534287881b0dea097aae951e26f539f98",
+    "A_participant_delta_0.pdf": "e82ab9366fee0d24198af132afc87b9a336c01efbd68b288c94ab692740a14ad",
+    "A_contrasts.pdf": "8ae009d07f027f133e8661fcb7dc54d6c0ff41b99ef7b7ec3257547e881e7a7f",
+    "A_participant_delta_1.pdf": "df1647f4c130a77d04f80c43f5f198774b031722a821030b8f731475486857f3",
+    "visual_QA.json": "6700a564fca79c9732309130681e60fb3bda3b1d5f3aa299968f9f1e5073ee0e",
+    "report_audit.json": "99d39e7d4d24cd49d2f4e44cf919bd64324ebbce95595644d4e2ceb28fa2d5be",
+    "综合解读.md": "7132b32dc8c65e3b459f6ca95fd44d24814a12a64232422b8b3703e7b63cb387",
+    "participant_layer_mean_descriptive.csv": "458051fb40ddce6e43e5b614176e891a0d0e64ab496cbce70acfb2c112680a20",
+    "group_curves.csv": "9a534ce1d9c52df7dea2f81db1250a59e4bf6593ab3cc952ce19633619f0fd84"
+  }
+}

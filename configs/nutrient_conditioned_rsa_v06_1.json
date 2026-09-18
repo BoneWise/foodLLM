@@ -1,0 +1,263 @@
+{
+  "version": "v06.1",
+  "date": "2026-09-16",
+  "analysis_family": "RSA",
+  "status": "descriptive_measurement_protocol_revised_not_executed",
+  "post_result_follow_up": true,
+  "protocol": "docs/research/20260916_raw试次RSA最小执行方案_v06_1.md",
+  "scientific_decisions_origin": "user_20260916_raw_trial_RSA_simplification",
+  "inputs": {
+    "analysis_index": "outputs/20260916_分析输入索引_v02",
+    "model_matrices": "outputs/20260916_Qwen_AB分析矩阵_v01",
+    "stimulus_manifest": "outputs/20260916_刺激与错配准备_v03/stimulus_manifest.csv",
+    "permutations": "outputs/20260916_刺激与错配准备_v03/P_permutations.csv",
+    "beta_mapping": "data/external/behavior_to_singletrial_beta_29subjects.csv",
+    "brain_eligibility": "outputs/20260916_脑试次剔除_v01/roi_trial_responses.csv",
+    "fixed_roi_support": "outputs/20260916_vmPFC准备_v01",
+    "roi_config": "configs/roi_preparation_v01.json",
+    "trial_exclusions": "configs/neural_trial_exclusions_v01.json",
+    "prompt_config": "configs/prompt_and_interface_v02.json"
+  },
+  "sample": {
+    "subjects": 29,
+    "primary_images": 493,
+    "primary_behavior_ratings": 13767,
+    "primary_brain_trials": 13765,
+    "excluded_subjects": [
+      "sub-004",
+      "sub-010"
+    ],
+    "retain_sub_016": true,
+    "brain_only_excluded_trials": 2,
+    "missingness": "participant_available_images_no_imputation",
+    "pair_mask": "same_for_all_prompts_layers_conditions_within_participant",
+    "all_subject_image_intersection_required": false
+  },
+  "model": {
+    "repo": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "inference_dtype": "bfloat16",
+    "layers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "hidden_size": 4096,
+    "readout": "last_nonpadding_pre_answer_prompt_token_post_block_pre_final_norm",
+    "enable_thinking": false,
+    "prompts": {
+      "A": "primary",
+      "B": "robustness"
+    },
+    "conditions": [
+      "V",
+      "T",
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "nutrient": "kcal_per_100g",
+    "reuse_existing_features": true,
+    "execution_order": [
+      "A",
+      "B_after_A_pipeline_validation"
+    ],
+    "B_gate": "numerical_and_index_correctness_not_effect_sign_or_size"
+  },
+  "brain": {
+    "beta_stage": "valuation_single_trial_LSA",
+    "input": "multivoxel_patterns_not_roi_mean",
+    "roi": "independent_vmPFC_sphere",
+    "center_mm": [
+      -2,
+      40,
+      -6
+    ],
+    "radius_mm": 8,
+    "one_RDM_per_participant": true,
+    "pool_sessions": true,
+    "voxel_mask": "existing_participant_fixed_support_across_all_runs",
+    "main_pattern_session_centering": false,
+    "pattern_matrix_extraction_status": "pending",
+    "reliability_status": "not_established_by_geometric_QC",
+    "required_source": "single_trial_LSA_from_unsmoothed_input_no_additional_spatial_smoothing",
+    "unsmoothed_provenance": {
+      "status": "supported_by_existing_audit_direct_trace_required_at_pattern_extraction",
+      "evidence": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+      "new_upstream_reaudit_this_revision": false
+    },
+    "additional_RSA_preprocessing": [],
+    "entry_checks": [
+      "unsmoothed_source_trace",
+      "ROI_voxel_count_and_geometry",
+      "fixed_voxel_identity_and_order",
+      "finite_values",
+      "nonconstant_patterns",
+      "trial_image_beta_mapping_and_ROI_mean_identity"
+    ]
+  },
+  "rdm": {
+    "model_distance": "1_minus_Pearson",
+    "brain_distance": "1_minus_Pearson",
+    "calculation_dtype": "float64",
+    "comparison": "Spearman",
+    "ties": "average_rank",
+    "vectorization": "strict_lower_triangle",
+    "P_baseline": "mean_of_five_RSA_scores_after_separate_comparisons",
+    "P_variability": "report_five_scores_and_range",
+    "pca": false,
+    "feature_standardization": false,
+    "train_test_split": null,
+    "layer_selection": false
+  },
+  "neural_inference": {
+    "status": "deferred_not_frozen",
+    "run_in_first_pass": false,
+    "unit": "participant",
+    "n": 29,
+    "contrasts": [
+      "T-V",
+      "T-mean_P_RSA"
+    ],
+    "group_summary": "equal_weight_mean_raw_rho_or_paired_difference",
+    "method": null,
+    "layer_correction": null,
+    "confidence_interval_method": null,
+    "resampling_count": null,
+    "seed": null,
+    "selection_timing": "record_visible_RSA_results_when_future_procedure_is_chosen",
+    "generalization": "not_claimed_from_descriptive_curves",
+    "historical_proposal": "configs/nutrient_conditioned_rsa_v06.json"
+  },
+  "behavior_anchor": {
+    "target": "single_fixed_group_mean_wanting_RDM",
+    "distance": "absolute_difference",
+    "images": 493,
+    "comparison": "Spearman",
+    "first_pass": "V_T_mean_P_layer_curves_and_P_range",
+    "bootstrap_enabled": false,
+    "confidence_intervals_enabled": false,
+    "significance_family": null,
+    "copy_group_RDM_as_29_independent_results": false,
+    "future_uncertainty": "deferred_reassess_subject_resampling_and_rebuild_mean_RDM_if_needed"
+  },
+  "kcal_baseline": {
+    "distance": "absolute_difference_raw_kcal_per_100g",
+    "targets": [
+      "participant_brain_RDM",
+      "group_mean_wanting_RDM"
+    ],
+    "role": "descriptive_explanatory_baseline_not_incremental_causality_test"
+  },
+  "retired_from_current_workflow": [
+    "MSE",
+    "encoding",
+    "supervised_wanting_readout",
+    "H_minus_s_crossfit",
+    "trial_fivefold",
+    "food_by_session_holdout",
+    "automatic_568_image_supplement"
+  ],
+  "validation": {
+    "input_audit": "outputs/20260916_RSA最小方案修订_v01/plan_audit.json",
+    "previous_input_audit": "outputs/20260916_RSA方案修订_v01/plan_audit.json",
+    "method_numerics": "required_before_reporting_RSA",
+    "inference_simulations": "deferred_not_first_pass_prerequisite",
+    "real_RSA_effects_computed": false
+  },
+  "result_interpretation": {
+    "nonsignificance_is_equivalence": false,
+    "model_effect_is_human_nutrition_label_effect": false,
+    "layer_depth_is_biological_time": false
+  },
+  "acquisition_QC": {
+    "mode": "descriptive_only",
+    "session_distance": "zero_same_session_one_different_session",
+    "run_distance": "zero_same_joint_run_one_different_joint_run",
+    "run_identity": [
+      "session_id",
+      "run_id"
+    ],
+    "within_participant": true,
+    "comparison": "Spearman_to_brain_RDM",
+    "report": [
+      "subject_scores",
+      "same_different_pair_counts",
+      "distance_summaries"
+    ],
+    "automatic_preprocessing": false,
+    "automatic_exclusions": false,
+    "materiality_threshold": null,
+    "decision": "review_QC_and_document_any_future_sensitivity_choice_no_effect_optimization"
+  },
+  "reserved_sensitivity": {
+    "run_in_first_pass": false,
+    "replace_primary": false,
+    "methods": {
+      "session_centering": "subtract_session_mean_pattern_voxelwise_then_full_RDM",
+      "within_session_only": "pool_same_session_pairs_then_rerank_for_RSA",
+      "exclude_same_run": "exclude_same_session_and_run_pairs_then_rerank_for_RSA"
+    },
+    "activation": "future_documented_review_if_acquisition_structure_warrants_investigation"
+  },
+  "first_pass_reporting": {
+    "primary_prompt": "A",
+    "neural": [
+      "V_T_mean_P_curves",
+      "T_minus_V_curve",
+      "T_minus_mean_P_curve",
+      "individual_participant_distributions",
+      "five_P_scores_and_range"
+    ],
+    "p_values": false,
+    "significance_stars": false,
+    "confidence_bands": false,
+    "descriptive_spread_is_CI": false,
+    "best_layer_selection": false
+  },
+  "execution_phases": [
+    "input_validity_and_raw_pattern_extraction",
+    "brain_RDMs_and_A_model_RDMs_with_numerical_validation",
+    "A_descriptive_RSA",
+    "wanting_and_kcal_references",
+    "session_and_run_descriptive_QC",
+    "B_unchanged_after_pipeline_validation",
+    "future_inference_and_sensitivity_design"
+  ],
+  "randomness": {
+    "new_resampling": false,
+    "new_seed": null,
+    "P_assignments": "reuse_existing_five_permutations_unchanged"
+  }
+}

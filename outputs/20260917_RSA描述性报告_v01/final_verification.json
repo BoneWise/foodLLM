@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "score_table_NPY_identity": true,
+  "paired_contrasts_recomputed_from_saved_scores": true,
+  "report_aggregate_identity": true,
+  "links_and_current_paths_exist": true,
+  "visual_QA": "four_PNGs_inspected_no_clipping",
+  "inference_run": false,
+  "sensitivity_run": false
+}

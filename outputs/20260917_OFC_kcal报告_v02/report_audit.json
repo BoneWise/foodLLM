@@ -1,0 +1,20 @@
+{
+  "status": "generated_pending_visual_QA",
+  "input_sha256": {
+    "/path/to/foodLLM/outputs/20260917_OFC_kcal_RSA_v01/audit.json": "dea7c719bac1612b147b275a19a36ddfbb0394c249b58ca345f8e945785deea3",
+    "/path/to/foodLLM/outputs/20260917_OFC_kcal_RSA_v01/summary.json": "af8093e92f070f608e0c6bf6ce0024f3ab76c9a86f8c6a4f564316c8893a0570",
+    "/path/to/foodLLM/outputs/20260917_OFC_kcal_RSA_v01/group_curves.csv": "2c7696f28d48443637625a5204238a0d6c561b53e00742b35e029945c70e03c6",
+    "/path/to/foodLLM/outputs/20260917_raw_RSA_v01/group_curves.csv": "6a862c8391673b46eb7304be3aadbc74be13655ca6e4c8d0b3ab826984affd29",
+    "/path/to/foodLLM/outputs/20260917_OFC\u539f\u59cb\u6a21\u5f0f_v01/coverage.csv": "48bc0b8618f3e6811dc009f167214a4f3d17403ebdf2a274a8eaa6e3010ff3fe"
+  },
+  "outputs": {
+    "\u7ed3\u679c\u6458\u8981.md": "26bcf6013f6450d8e2f9ada51985d905adcad50b780eaf4090a1db923be8a797",
+    "script_snapshot.py": "88d5f7b5a01851e295bd7837c93e8d4b905aac4813d5d63a73778adcc5ce2849",
+    "coverage_and_acquisition_QC.png": "da661dc898d59dd628a9a5b1a56f41e64e7d2b0cd4fdc2cbe2fde71e3cae3aff",
+    "coverage_and_acquisition_QC.pdf": "96af66df1dec948b92ec2fa04e235d42d6fec41a59d83f85b7f7f35d661a13ae",
+    "A_layer_curves.png": "5238dffb82b3e4d707b793a178d30180b57f35154b4c5e9eb207f3c9991b6e33",
+    "A_layer_curves.pdf": "55358e0c3d5e842adece1132fa42599d856b32a14b714accbb5b20d5dc2de157",
+    "B_layer_curves.pdf": "21f4de984899aca7ba1d6127ff40d14ccd4bad46ebac1034185208a43e77dc91",
+    "B_layer_curves.png": "38339c31ad95c487920d3618dc782a9072b5f3c5513f5595bd71961c7d5be706"
+  }
+}

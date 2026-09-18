@@ -1,0 +1,409 @@
+可以。若目标是把项目收紧，我建议把它压缩成**一个核心问题、两个行为/模型研究问题、一个神经验证**。营养属性、提示词操纵、多层扫描、human-only residual 都先不作为主线。
+
+下面是一版可以直接作为 proposal 框架的精简版本。
+
+# 一、核心研究问题
+
+## 核心问题
+
+**当多模态模型对人类“想吃程度”的判断与人类不一致时，这种差异主要是因为模型内部没有形成相关的人类价值信息，还是因为这些信息已经存在于内部表征中，但没有被默认输出充分表达？**
+
+本研究关注的是看到食物图片时的 **desire-to-eat / appetitive value（想吃程度）**，而不是一般的美味、健康或喜欢程度。
+
+研究的核心不是判断模型是否具有“食欲”，而是考察：
+
+**模型的内部表征在多大程度上包含能够预测人类 appetitive valuation 的信息，以及这些信息与模型显式判断之间是否存在 representation–output gap。**
+
+---
+
+# 二、研究意义
+
+多模态模型可以识别食物及其视觉、语义和营养相关属性，也能够直接回答“这张食物有多想吃”。
+
+但模型的显式评分存在两个不同层面的可能限制：
+
+1. **表征限制（representation limitation）**
+   模型内部本身没有充分形成与人类 appetitive value 对齐的信息。
+
+2. **表达／读出限制（readout or expression limitation）**
+   模型内部已经包含相关信息，但默认生成评分的过程没有充分利用这些信息。
+
+仅比较模型评分和人类评分，无法区分这两种解释。
+
+因此，本研究通过比较：
+
+**模型直接输出 → 校准后的模型输出 → 模型内部表征的监督读出**
+
+来定位模型—人类差距主要发生在哪一个环节。
+
+进一步利用已有 fMRI 数据，检验内部表征相对于显式输出新增的人类价值信息，是否同样对应人类 vmPFC 中的价值反应。
+
+因此，fMRI 在本研究中不是独立研究“食物价值的脑机制”，而是作为一个独立的人类价值指标，用来验证模型内部新增的信息是否具有神经价值相关性。
+
+---
+
+# 三、研究问题
+
+## RQ1：模型的显式判断与人类 appetitive value 存在多大的差异？
+
+对相同食物图片，比较模型直接预测的“想吃程度”和人类群体评分。
+
+重点区分：
+
+* 模型与人的差异是否主要来自评分尺度不同，例如均值、方差或评分范围不同；
+* 在进行简单校准以后，模型是否仍然无法充分预测不同食物在人类中的相对价值。
+
+### RQ1 的目的
+
+RQ1 不试图解释所有模型错误的来源，而是建立一个严格的 **external-output baseline**：
+
+> 在允许模型评分进行合理校准以后，模型显式输出最多能够解释多少人类 appetitive value？
+
+这个结果将成为 RQ2 的比较基准。
+
+---
+
+## RQ2：模型内部表征能否恢复显式输出没有充分表达的人类 appetitive-value 信息？
+
+从同一个多模态模型中提取预先指定的内部表征。
+
+使用训练图片及其人类评分，通过简单的正则化线性模型学习：
+
+**internal representation → human wanting**
+
+然后在完全未参与训练的图片上预测人类评分。
+
+核心比较为：
+
+**校准后的模型显式评分 vs. 内部表征读出**
+
+如果内部读出在 held-out images 上稳定优于校准后的显式评分，则说明：
+
+> 模型内部包含额外的、与人类 appetitive value 对齐且可线性恢复的信息，而这些信息没有被默认评分过程充分表达。
+
+这一结论只说明信息在内部表征中 **可读出（decodable）**，不证明模型在正常生成评分时实际使用了这些信息。
+
+---
+
+# 四、fMRI：只做一个核心神经验证
+
+为了避免项目扩张，fMRI 不再单独发展成一个复杂的第三研究方向。
+
+只回答一个问题：
+
+## 神经验证
+
+**模型内部相对于显式输出新增的 human-aligned value information，是否能够进一步解释 vmPFC 对食物图片的反应？**
+
+首先得到两种针对每张图片的 out-of-sample prediction：
+
+* \(M^{out}\)：校准后的模型显式预测；
+* \(M^{int}\)：内部表征对人类 wanting 的预测。
+
+在预先定义的 vmPFC ROI 中比较：
+
+$$
+Brain \sim M^{out}
+$$
+
+与
+
+$$
+Brain \sim M^{out} + M^{int}
+$$
+
+重点考察：
+
+> 加入内部读出以后，是否产生可靠的增量解释或预测能力。
+
+也可以等价地将 \(M^{int}\) 中不能被 \(M^{out}\) 解释的部分提取出来：
+
+$$
+InternalUnique
+=
+M^{int}
+-
+\widehat{M^{int}\mid M^{out}}
+$$
+
+然后检验：
+
+$$
+Brain
+\sim
+M^{out}
++
+InternalUnique
+$$
+
+### 神经结果的解释
+
+如果内部读出不仅比显式输出更好地预测人类评分，而且它独有的部分还能进一步预测 vmPFC，则能够形成两层相互支持的证据：
+
+**行为证据：**
+内部表征包含显式输出没有充分表达的人类价值信息。
+
+**神经证据：**
+这些新增信息并不只是提高了评分拟合，而是与独立的人类价值神经信号存在对应。
+
+如果神经增量不显著，则只保留较谨慎的结论：
+
+> 内部表征能够改善对人类行为评分的预测，但目前没有证据证明其新增信息具有独立的神经价值相关性。
+
+---
+
+# 五、最精简的整体研究流程
+
+整个研究只保留四个步骤。
+
+## Step 1：任务与数据固定
+
+使用现有：
+
+* 29 名参与者；
+* 568 张食物图片；
+* 人类 desire-to-eat 评分；
+* 对应 fMRI 数据。
+
+确定：
+
+* 一个主要多模态模型；
+* 一个固定提示词；
+* 一个固定输出评分格式；
+* 一套按图片划分的 cross-validation folds。
+
+整个研究共享同一套 image-level train/test partition。
+
+---
+
+## Step 2：建立模型显式输出基线
+
+让模型对全部食物图片进行 desire-to-eat 评分。
+
+分析：
+
+1. raw model rating 与 human mean rating 的一致性；
+2. 模型与人的评分范围和尺度差异；
+3. 使用训练图片学习简单 calibration；
+4. 在 held-out images 上评价 calibrated output。
+
+主要指标建议保留两个：
+
+* Spearman correlation：评价食物排序；
+* \(R^2\) 或 MAE：评价实际评分预测。
+
+最终得到：
+
+**best external-output baseline。**
+
+---
+
+## Step 3：内部表征读出
+
+从同一个模型提取一个预先指定的 late multimodal representation。
+
+不进行大规模 layer search。
+
+使用 ridge regression：
+
+$$
+InternalRepresentation
+\rightarrow
+HumanWanting
+$$
+
+模型训练和超参数选择仅使用训练图片。
+
+最终只看 held-out images 上：
+
+$$
+Performance(M^{int})
+\quad vs.\quad
+Performance(M^{out})
+$$
+
+这是全文最核心的 statistical comparison。
+
+### 核心假设
+
+$$
+M^{int} > M^{out}
+$$
+
+如果成立，支持：
+
+**human-aligned appetitive information is represented more strongly than it is explicitly expressed.**
+
+---
+
+## Step 4：vmPFC 神经验证
+
+使用相同 held-out predictions。
+
+从预先定义的 vmPFC ROI 获取 image/trial-level neural responses。
+
+比较：
+
+$$
+Brain \sim M^{out}
+$$
+
+与：
+
+$$
+Brain \sim M^{out}+M^{int}
+$$
+
+考察内部预测是否具有增量脑预测能力。
+
+不进行全脑搜索作为主分析，不重新寻找 wanting-related ROI，也不把 ventral striatum 等多个区域加入主要假设。
+
+如需要，可以将其他 ROI 或 multivariate RSA 放在 supplementary / exploratory analyses。
+
+---
+
+# 六、整个研究的核心证据链
+
+最终论文只需要证明三件事情：
+
+### 1. External gap
+
+模型直接评分与人类 appetitive value 并不完全一致，而且差异不能完全由评分尺度解释。
+
+↓
+
+### 2. Representation–output gap
+
+同一个模型的内部表征能够在未见图片上比校准后的直接评分更好地预测人类 appetitive value。
+
+↓
+
+### 3. Neural relevance
+
+内部表征相对于直接评分新增的信息，还能够解释 vmPFC 中的额外价值相关反应。
+
+因此最终回答的是：
+
+> **模型与人类 food valuation 的差距，不一定完全来自模型缺少相关信息；其中一部分可能来自内部已有的人类价值相关信息没有被默认输出过程充分表达。**
+
+---
+
+# 七、建议从主研究中删除的内容
+
+为了控制项目规模，以下内容暂时全部降为探索性分析或后续研究。
+
+### 1. 不把纤维、脂肪、碳水作为主要 RQ
+
+营养属性分析容易把论文带向另一个问题：
+
+> 模型和人分别如何给不同食物属性加权？
+
+这是有价值的问题，但不是目前 representation–output gap 的必要条件。
+
+如果最后需要解释结果，可以做少量 post-hoc descriptive analysis，但不要放进主要研究问题。
+
+### 2. 暂时不做 food name / nutrition / prompt manipulation
+
+这些实验是在回答：
+
+> 为什么模型默认输出没有利用内部信息？
+
+这是第二篇研究可以进一步做的问题。
+
+当前研究只需要先证明：
+
+> 这个 gap 是否真实存在。
+
+### 3. 不做 exhaustive layer-wise probing
+
+不需要几十层全部扫一遍并寻找最好的一层。
+
+预先选择一个有明确理由的 late multimodal representation 作为主分析。
+
+最多补充一个 middle layer 作为 robustness analysis。
+
+### 4. 暂时不研究 human-only residual
+
+也就是先不问：
+
+> 连内部 probe 都没有捕捉到的人类价值是否还能预测脑反应？
+
+它非常有意思，但会增加一整层理论和统计复杂度。
+
+当前 fMRI 只验证：
+
+> internal > external 的新增信息是否具有 neural relevance。
+
+已经足够支撑主问题。
+
+### 5. 不以全脑分析作为核心
+
+使用已有文献独立定义的 vmPFC ROI。
+
+全脑结果、ventral striatum、RSA 和 multivoxel encoding 都可以留作 supplementary。
+
+---
+
+# 八、最简框架图
+
+```text
+                    Human appetitive value
+                             ▲
+                             │
+                 held-out human ratings
+                             │
+            ┌────────────────┴────────────────┐
+            │                                 │
+            │                                 │
+   Model explicit output             Model internal representation
+            │                                 │
+        calibration                     linear probe
+            │                                 │
+            ▼                                 ▼
+         M(out)       ───── compare ─────   M(int)
+                                              │
+                                              │
+                         Does M(int) explain human value
+                         beyond M(out)?
+                                              │
+                                              ▼
+                                    vmPFC neural response
+                                              │
+                           Does internal information also
+                           explain brain response beyond
+                           explicit output?
+```
+
+---
+
+# 九、一句话版本
+
+如果需要用一句话向导师或审稿人解释整个项目，可以概括为：
+
+> **本研究检验多模态模型与人类食物欲求判断之间的差距究竟源于相关价值信息尚未被内部表征，还是已经存在于模型内部但未被显式输出充分读出，并利用 vmPFC 反应检验这种内部新增信息是否具有独立的人类价值相关性。**
+
+---
+
+# 十、项目最小可行版本
+
+如果进一步压到最小，我认为实际上只需要三个主要分析：
+
+**Analysis 1**
+
+Human wanting ↔ calibrated model output
+
+**Analysis 2**
+
+Human wanting ↔ cross-validated internal linear probe
+并正式检验 internal probe 是否优于 calibrated output。
+
+**Analysis 3**
+
+vmPFC response ~ calibrated output + internal prediction
+检验 internal prediction 的增量贡献。
+
+做到这三个分析，已经能够完整回答核心研究问题。
+
+其余分析都应该服从这三项，而不是继续扩大项目范围。
+
+我更建议采用这个“最小可行版本”。它把论文真正压缩成一个清楚的 **representation vs. expression** 问题，同时让 fMRI 有明确作用，但不会把项目膨胀成“行为 + 营养机制 + probing + 干预 + 全脑神经科学”五个项目拼在一起。

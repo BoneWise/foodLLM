@@ -1,0 +1,3286 @@
+[
+  {
+    "path": "AGENTS.md",
+    "source_sha256": "82952e1c5b83bd787adbeaadc8f049d3b06c62dff9f61a113cf8068c4eb055af",
+    "exported_sha256": "82952e1c5b83bd787adbeaadc8f049d3b06c62dff9f61a113cf8068c4eb055af",
+    "bytes": 1886,
+    "transformations": []
+  },
+  {
+    "path": "CHANGELOG.md",
+    "source_sha256": "de9d61432a9ccd285939be022147c5134cde2ce61153a3cf7aa2c820c1ac4398",
+    "exported_sha256": "de9d61432a9ccd285939be022147c5134cde2ce61153a3cf7aa2c820c1ac4398",
+    "bytes": 36956,
+    "transformations": []
+  },
+  {
+    "path": "README.md",
+    "source_sha256": "45dd851a2c3b67175bce0ee11d1033902c21fea899e9f0b814885816399fd3cf",
+    "exported_sha256": "7b16082859d432e0d008acac2cd84763e8af399b56220ba1ca7a9d13a120cd46",
+    "bytes": 10978,
+    "transformations": [
+      "omitted_dependency_links_annotated",
+      "share_scope_banner"
+    ]
+  },
+  {
+    "path": "configs/controls_v09_execution_v01.json",
+    "source_sha256": "02113a0e517346d985afa2aaa0469cf37f81ed4a621f66d58bc1f6f26f7c8e93",
+    "exported_sha256": "02113a0e517346d985afa2aaa0469cf37f81ed4a621f66d58bc1f6f26f7c8e93",
+    "bytes": 3823,
+    "transformations": []
+  },
+  {
+    "path": "configs/fmri_quality_diagnostics_v01.json",
+    "source_sha256": "7082c5243738327107ff53c3dee72a59b2329d6683eeb8d59970809fc999499d",
+    "exported_sha256": "7082c5243738327107ff53c3dee72a59b2329d6683eeb8d59970809fc999499d",
+    "bytes": 1696,
+    "transformations": []
+  },
+  {
+    "path": "configs/fmri_quality_diagnostics_v02.json",
+    "source_sha256": "a00a558f145a8365f53d091b8ac4228de899d725bc9c223a7f6afd703ca8cb82",
+    "exported_sha256": "a00a558f145a8365f53d091b8ac4228de899d725bc9c223a7f6afd703ca8cb82",
+    "bytes": 2171,
+    "transformations": []
+  },
+  {
+    "path": "configs/hcp_regional_alignment_v08_draft.json",
+    "source_sha256": "9cbbc10fa8662f080ad51d738e007976edda63f2408cfb06e98e9383a4c56b7f",
+    "exported_sha256": "9cbbc10fa8662f080ad51d738e007976edda63f2408cfb06e98e9383a4c56b7f",
+    "bytes": 4275,
+    "transformations": []
+  },
+  {
+    "path": "configs/hcp_regional_execution_v01.json",
+    "source_sha256": "cadb3ed2526a03353526740be0e9e6c1197f96067f5b832ea2d3d739142e7223",
+    "exported_sha256": "cadb3ed2526a03353526740be0e9e6c1197f96067f5b832ea2d3d739142e7223",
+    "bytes": 5080,
+    "transformations": []
+  },
+  {
+    "path": "configs/layer_alignment_v03_draft.json",
+    "source_sha256": "e279b9a3b5fbbbc5c6a4948fc93cbe132d5407b3e7c27f5370f09640f32f5457",
+    "exported_sha256": "e279b9a3b5fbbbc5c6a4948fc93cbe132d5407b3e7c27f5370f09640f32f5457",
+    "bytes": 4051,
+    "transformations": []
+  },
+  {
+    "path": "configs/layer_estimation_v01.json",
+    "source_sha256": "94f2d0510afb19da9fc18e8928dc6d0ba05a454c61dc0e26a81b888ec6de4f57",
+    "exported_sha256": "94f2d0510afb19da9fc18e8928dc6d0ba05a454c61dc0e26a81b888ec6de4f57",
+    "bytes": 2096,
+    "transformations": []
+  },
+  {
+    "path": "configs/layer_estimation_v02.json",
+    "source_sha256": "5f65775266e2724d26338dbb636ef6bdc89c607eea59ad72f20953e93a6e2008",
+    "exported_sha256": "5f65775266e2724d26338dbb636ef6bdc89c607eea59ad72f20953e93a6e2008",
+    "bytes": 2263,
+    "transformations": []
+  },
+  {
+    "path": "configs/multi_nutrient_execution_v01.json",
+    "source_sha256": "ec0f889e8e10bc1792e5ac17d92c66989809966c93f4aaee3db9e5bc3c061d68",
+    "exported_sha256": "ec0f889e8e10bc1792e5ac17d92c66989809966c93f4aaee3db9e5bc3c061d68",
+    "bytes": 2557,
+    "transformations": []
+  },
+  {
+    "path": "configs/multi_nutrient_prompt_v01.json",
+    "source_sha256": "5076cb0b4b05b11e1baf48599b53fb077aeacb0d7af2ee62dc166d6260d0c5fa",
+    "exported_sha256": "5076cb0b4b05b11e1baf48599b53fb077aeacb0d7af2ee62dc166d6260d0c5fa",
+    "bytes": 1564,
+    "transformations": []
+  },
+  {
+    "path": "configs/neural_trial_evaluation_v01.json",
+    "source_sha256": "d80666f776d60b726b20af367efb0b6b3aae7cb4c64e5b8ab8ebb667b1e96ae4",
+    "exported_sha256": "d80666f776d60b726b20af367efb0b6b3aae7cb4c64e5b8ab8ebb667b1e96ae4",
+    "bytes": 2348,
+    "transformations": []
+  },
+  {
+    "path": "configs/neural_trial_exclusions_v01.json",
+    "source_sha256": "2dc115bcdf90072571a469b652cdd4ba83700a21577709ed9365db12920a92bf",
+    "exported_sha256": "2dc115bcdf90072571a469b652cdd4ba83700a21577709ed9365db12920a92bf",
+    "bytes": 1242,
+    "transformations": []
+  },
+  {
+    "path": "configs/nutrient_OFC_extension_v07_draft.json",
+    "source_sha256": "79c887f75c43bef094a60555fb2113f364e8c74fe083b0d46329260459c8731e",
+    "exported_sha256": "79c887f75c43bef094a60555fb2113f364e8c74fe083b0d46329260459c8731e",
+    "bytes": 5816,
+    "transformations": []
+  },
+  {
+    "path": "configs/nutrient_conditioned_rsa_v06.json",
+    "source_sha256": "fa74b2c0c5bf2281f811895da22a4ec4275b5eec75b169074b091b7481af249c",
+    "exported_sha256": "fa74b2c0c5bf2281f811895da22a4ec4275b5eec75b169074b091b7481af249c",
+    "bytes": 6334,
+    "transformations": []
+  },
+  {
+    "path": "configs/nutrient_conditioned_rsa_v06_1.json",
+    "source_sha256": "398af6a6023f007c16b33b39e5a020cceffd0f74c74a4f59e89a350e99c8d496",
+    "exported_sha256": "398af6a6023f007c16b33b39e5a020cceffd0f74c74a4f59e89a350e99c8d496",
+    "bytes": 8292,
+    "transformations": []
+  },
+  {
+    "path": "configs/nutrient_layer_alignment_v04_draft.json",
+    "source_sha256": "663abda3be56b254ce25da3580850fc9f07c12def1f22fb24c5875f8f257c099",
+    "exported_sha256": "663abda3be56b254ce25da3580850fc9f07c12def1f22fb24c5875f8f257c099",
+    "bytes": 5795,
+    "transformations": []
+  },
+  {
+    "path": "configs/nutrient_layer_alignment_v04_prepared_v01.json",
+    "source_sha256": "1947346f6f415569bc72450f11e89b31ffc3faf1fb3f2ee5042161d2e344df05",
+    "exported_sha256": "2adea8369ed39006f002f4f04ba9331fcc45a2868523d73d02e39c7e5eb9152d",
+    "bytes": 7915,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "configs/nutrient_layer_alignment_v05_prepared_v01.json",
+    "source_sha256": "d4e08f48d01ee28170f9c80319133b48c2e534a37e7e7bb586826b86b6f1ebd4",
+    "exported_sha256": "ba8e03848751199d73dd506b6f4c6f68c24069a9a223e1fffa2b62124b80a55d",
+    "bytes": 9379,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "configs/nutrient_layer_alignment_v05_prepared_v02.json",
+    "source_sha256": "f9fbdb6e01e75719546f114ad891f666d2e8a324be474490682926ea65af2b6f",
+    "exported_sha256": "a24c5bc2cdbd59a88e58acc358fb8e103f102ad7b4e838a2ee04498411e1ada6",
+    "bytes": 10148,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "configs/nutrient_layer_alignment_v05_prepared_v03.json",
+    "source_sha256": "26015dcc0068c85c46b1db2aef5e79085202f7f542c732a37ce15fa275544242",
+    "exported_sha256": "f237bf7883813959c8913ceefa791a9eba213c77444cbb0b7f1d29f519388ef8",
+    "bytes": 11488,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "configs/nutrient_layer_alignment_v05_prepared_v04.json",
+    "source_sha256": "e79f1bd7d02948eb279169ae4a2a4cd7100c07b246884e24432d34f5c21aa22b",
+    "exported_sha256": "1ac716d782fd23af2deb123df42f182db27f626d1d603c9591690c71e8d90063",
+    "bytes": 11874,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "configs/nutrient_prediction_v02_draft.json",
+    "source_sha256": "971c4f9dfee2d391358c66a56f9300471ddd5ddbf47727cdd093b719fa15646a",
+    "exported_sha256": "971c4f9dfee2d391358c66a56f9300471ddd5ddbf47727cdd093b719fa15646a",
+    "bytes": 2560,
+    "transformations": []
+  },
+  {
+    "path": "configs/ofc_rsa_execution_v01.json",
+    "source_sha256": "db72e4c282a8dd91bac50cd6685ef32d92a1a213b4f0c4724154bde247724dca",
+    "exported_sha256": "db72e4c282a8dd91bac50cd6685ef32d92a1a213b4f0c4724154bde247724dca",
+    "bytes": 1532,
+    "transformations": []
+  },
+  {
+    "path": "configs/project.json",
+    "source_sha256": "4f696c94d9723a4f463083f3254f6ccbcfd2fa32d4d95a6e806a5188dbf511cd",
+    "exported_sha256": "2c80b146d5a94d3b56f214217eea3a70f9e6be89d41a9e172a9614075ed3a1f0",
+    "bytes": 8177,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "configs/prompt_and_interface_v01.json",
+    "source_sha256": "89224556531d38094e4da13bd42308ee88b0fbf932c4736850394fe4d645de56",
+    "exported_sha256": "89224556531d38094e4da13bd42308ee88b0fbf932c4736850394fe4d645de56",
+    "bytes": 1883,
+    "transformations": []
+  },
+  {
+    "path": "configs/prompt_and_interface_v02.json",
+    "source_sha256": "38a8d1b03f538b10ec4b3e181277269ef639e97fed2ac78261ca629baab28440",
+    "exported_sha256": "38a8d1b03f538b10ec4b3e181277269ef639e97fed2ac78261ca629baab28440",
+    "bytes": 2263,
+    "transformations": []
+  },
+  {
+    "path": "configs/qwen35_server_requirements.lock.txt",
+    "source_sha256": "d99cc75d0d2a8dede52572312c07c42ab8e3cc44fe961bfca89f34c240a11ad6",
+    "exported_sha256": "d99cc75d0d2a8dede52572312c07c42ab8e3cc44fe961bfca89f34c240a11ad6",
+    "bytes": 1098,
+    "transformations": []
+  },
+  {
+    "path": "configs/qwen_feature_extraction_v01.json",
+    "source_sha256": "8afab54e8a7bb529f095fc430e708bde2b04b66d9dc2a5e47e1034437d772068",
+    "exported_sha256": "8afab54e8a7bb529f095fc430e708bde2b04b66d9dc2a5e47e1034437d772068",
+    "bytes": 1217,
+    "transformations": []
+  },
+  {
+    "path": "configs/raw_rsa_execution_v01.json",
+    "source_sha256": "7b2c1aced995369c317e75d643a1299a2de2698457d8c50449cad59060b4973c",
+    "exported_sha256": "7b2c1aced995369c317e75d643a1299a2de2698457d8c50449cad59060b4973c",
+    "bytes": 1305,
+    "transformations": []
+  },
+  {
+    "path": "configs/roi_preparation_v01.json",
+    "source_sha256": "b43b319cd1ebbbfbfad9ed49d9ba4ffe8539bf8f465b591488be10faad8f4ee9",
+    "exported_sha256": "b43b319cd1ebbbfbfad9ed49d9ba4ffe8539bf8f465b591488be10faad8f4ee9",
+    "bytes": 602,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260915_文献索引_v01.md",
+    "source_sha256": "58cd45243263b0d39dc67077c706d7a85f06673f7ef43b5fcc2a808da096a3a9",
+    "exported_sha256": "58cd45243263b0d39dc67077c706d7a85f06673f7ef43b5fcc2a808da096a3a9",
+    "bytes": 12403,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260915_文献证据清单.json",
+    "source_sha256": "f8f24aa769b75f38e4ec845a42f58185ca68af4ef05661657fd44b173559e41d",
+    "exported_sha256": "f8f24aa769b75f38e4ec845a42f58185ca68af4ef05661657fd44b173559e41d",
+    "bytes": 1755,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260915_现有数据与精简方案对照.md",
+    "source_sha256": "6e56ff1a3407fedf6f8968f3d6626905a8ae60c3e0b1396ab83225e62daf84b1",
+    "exported_sha256": "56d115bc8eb9c3e245c63f0f0b20111f19ff617b115611747309e0bc81720aee",
+    "bytes": 5820,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260915_研究问题与实验设计_v01.md",
+    "source_sha256": "6366e4c358aa92783cebb970cf4e3a803de4bff4b3cb0e9b1acb151ccddd8c2b",
+    "exported_sha256": "6366e4c358aa92783cebb970cf4e3a803de4bff4b3cb0e9b1acb151ccddd8c2b",
+    "bytes": 20707,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260915_精简方案可行性评估_v01.md",
+    "source_sha256": "9884ec5cc545d2be5a7d46a0e0a0183ef9fde6485c5ee0de02506393a65931a9",
+    "exported_sha256": "9884ec5cc545d2be5a7d46a0e0a0183ef9fde6485c5ee0de02506393a65931a9",
+    "bytes": 14128,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260915_营养信息操纵评估与实验草案_v01.md",
+    "source_sha256": "ce2cccb3323287f764846fd29e289c90e78af063fa402413c44154950170ab42",
+    "exported_sha256": "ce2cccb3323287f764846fd29e289c90e78af063fa402413c44154950170ab42",
+    "bytes": 19379,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260915_营养辅助预测精简方案_v02.md",
+    "source_sha256": "96d9c1fc6864720208f3b4e8dec1a7bc3dbe40be482f91bb5660a4d83c7824b1",
+    "exported_sha256": "96d9c1fc6864720208f3b4e8dec1a7bc3dbe40be482f91bb5660a4d83c7824b1",
+    "bytes": 8914,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260916_AB接口与全量特征提取记录.md",
+    "source_sha256": "94f0df8efa34c2d93d75202f9f82e426de9fcff99907d84f2bbade52c3fdce53",
+    "exported_sha256": "94f0df8efa34c2d93d75202f9f82e426de9fcff99907d84f2bbade52c3fdce53",
+    "bytes": 8479,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260916_RSA适用性与MSE后续路线.md",
+    "source_sha256": "504cbb814db3737a964209e59f171683cc2b6d6a8eeb10afccd288036bf47697",
+    "exported_sha256": "79b798cc590a57551a0cecb75ffdf70d8305f602b4cdb45d41b1cc5c57ddb319",
+    "bytes": 8057,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260916_fMRI与LLM对应及beta阶段核查.md",
+    "source_sha256": "8b9e1e374c1a3ccf0dea37b2661ad013e5baede69eb199ead79c42b3ae52a973",
+    "exported_sha256": "4d43ae80d0b027398f06e1b99e0d3ae03c8a107c9f3628601d8d2ee004ee14e5",
+    "bytes": 9462,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260916_raw试次RSA最小执行方案_v06_1.md",
+    "source_sha256": "26aca437a236f89da425723a93d01bb7eef05611066d2e8b7de49f358c7d9af5",
+    "exported_sha256": "26aca437a236f89da425723a93d01bb7eef05611066d2e8b7de49f358c7d9af5",
+    "bytes": 9003,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260916_trial划分决定与缺失均值复核.md",
+    "source_sha256": "ef981fd9979e4797cd06477efcc35f7b0491a345eaddd5f0f51bdbfb0653c1b0",
+    "exported_sha256": "88223daf9cb685aa6c854d330e4b83828d036e333ebfe2530ffd99cdd752320e",
+    "bytes": 6361,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260916_两条截断试次正式剔除记录.md",
+    "source_sha256": "d04383704ef975297dcb7722358f447072c5f33e44e76f8bb47de518eeb08291",
+    "exported_sha256": "1836403a39b855f908c1007448690d84d429221aeab5ff93cc597c50a47155ef",
+    "bytes": 4218,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260916_外置盘SPM复核与脑信号诊断.md",
+    "source_sha256": "30743ada2cfc76d9863d437e7b262e199c245039c220297eae3c5edc4fd71de7",
+    "exported_sha256": "a51d9e661243b57ebee2de997eaa7928216561c6c42a56193abfe40edaa87268",
+    "bytes": 11165,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260916_提示冻结与准备记录.md",
+    "source_sha256": "d1464efc430e982563857835646b7c0be7909c41af8dd9806a1131d2c2e734eb",
+    "exported_sha256": "bc500382793c4fc97768accb23dd623b20ca2ba40ab6fc3c70b89b9e8b27382f",
+    "bytes": 2731,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "docs/research/20260916_简化提示与逐层营养对齐方案_v05.md",
+    "source_sha256": "2a68dbba0fcb322f86a2f7741387d4257cdd43a77ac3e3af66f72d437829fea5",
+    "exported_sha256": "c501fa57fc4d9a83b07714583e97f9e47348310c7904fbb4243302b042d0aec3",
+    "bytes": 9882,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260916_营养条件化模型脑表征RSA方案_v06.md",
+    "source_sha256": "094489be77044585e4186999dde482c5f685aa2f22b28b1127dcf3c08f126773",
+    "exported_sha256": "094489be77044585e4186999dde482c5f685aa2f22b28b1127dcf3c08f126773",
+    "bytes": 17034,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260916_营养诱导逐层价值对齐方案_v04.md",
+    "source_sha256": "0948bf7df7e09d71bb26b122278cd8dac274c2c514d8a80b775eeae7045066e7",
+    "exported_sha256": "04def1ab7a0de6398bd6517379d6a2fd2cd4313eed78d6b4bba5af86c424ad5d",
+    "bytes": 18566,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260916_逐层wanting与vmPFC对齐方案_v03.md",
+    "source_sha256": "ac3c928701da589e4d015d43efc0f739b6fc3fce9113b6fb05a548cba6643465",
+    "exported_sha256": "ac3c928701da589e4d015d43efc0f739b6fc3fce9113b6fb05a548cba6643465",
+    "bytes": 16925,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260916_逐层行为与vmPFC首轮结果.md",
+    "source_sha256": "f7d1075e1b2b44abd7a618181aa3a8da419e53dde9cb8e051bc279150482e5b8",
+    "exported_sha256": "68d2c4f1a034ee24767a29a1f6f8031ef1b8f9635f333c02ea6cbcbbeee21ee0",
+    "bytes": 8043,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260917_HCP区域比较与旧ROI连续性方案_v08.md",
+    "source_sha256": "597d95b1e50a93d8ce05407a13759f7106e9ed9b3d41aba8855ef136dd7f2a6f",
+    "exported_sha256": "597d95b1e50a93d8ce05407a13759f7106e9ed9b3d41aba8855ef136dd7f2a6f",
+    "bytes": 7187,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260917_HCP执行与核查_v08_1.md",
+    "source_sha256": "6584d370ce96c658b0d875e4dc1598901a5cc800a7e96c9daf11cea5dc66cd79",
+    "exported_sha256": "9aaed97efbf9ada98f3f490bd7d93c2fd581b1228b8325d9960f4e2c96561ba5",
+    "bytes": 4900,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260917_raw_RSA首轮执行与结果.md",
+    "source_sha256": "0badffca216686f4ca53678b5e2602b3e995af4ae143ea8bf4bb417e9a042ec1",
+    "exported_sha256": "fd2a3bf6e7d4573caddcd3a2fbcb078651d02231e5ac70e65a64f5134c388040",
+    "bytes": 3221,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260917_多营养与OFC执行记录_v07_1.md",
+    "source_sha256": "2ea054513ce849ade9225dd3a7ec6c4fd77224f1bf09377561e5b7b08b8430da",
+    "exported_sha256": "70fe7ed24f8d5dec686ee50bca3bd14d8890949694e6556c26b4af7c643e01e3",
+    "bytes": 11414,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260917_多营养属性与OFC扩展设计_v07.md",
+    "source_sha256": "a6d7d8df0306e69262ae28311a95c1a5197dbe50f2967f5d0327a79329b2d5fd",
+    "exported_sha256": "d84aa212c47dec437a8912225b7f4a579d329b95403e83053dd26235a6cd3107",
+    "bytes": 12894,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/20260918_区域控制对照口径修订_v09_1.md",
+    "source_sha256": "414376b594311be650984c14850bd21dd305bdad22aff8fc4a214d22ee453a48",
+    "exported_sha256": "414376b594311be650984c14850bd21dd305bdad22aff8fc4a214d22ee453a48",
+    "bytes": 3534,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/20260918_无关词与随机分区健壮性设计_v09.md",
+    "source_sha256": "cd97365f762f4f118b200e5f451019c30274aae03dc5d16ab1ccac3f17737757",
+    "exported_sha256": "d54b8f359ec65960497e6badffc64e3dd4246c3a226dfaa5a2b6b296920a3b30",
+    "bytes": 6503,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/research/inputs/20260915_用户提供_精简研究方案.txt",
+    "source_sha256": "2f1bce909fda8ec41806b2cecb537c5520a5410efd13e538d398ee438ccf3512",
+    "exported_sha256": "2f1bce909fda8ec41806b2cecb537c5520a5410efd13e538d398ee438ccf3512",
+    "bytes": 12493,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/inputs/20260915_用户提供_营养信息操纵意见.txt",
+    "source_sha256": "e313ec94a9c68fbfa01dee2805d7a33c348491efe4ee707f30af4796a2cb99b2",
+    "exported_sha256": "e313ec94a9c68fbfa01dee2805d7a33c348491efe4ee707f30af4796a2cb99b2",
+    "bytes": 14897,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/inputs/20260915_用户提供_营养方案精简意见.txt",
+    "source_sha256": "b12b37d49f40d9298edf53a72ab990272bf71a83e8b01348577511742ed30502",
+    "exported_sha256": "b12b37d49f40d9298edf53a72ab990272bf71a83e8b01348577511742ed30502",
+    "bytes": 13472,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/inputs/20260916_用户意见_raw_trial_RSA简化.md",
+    "source_sha256": "73d7d33d48f57d55d3587f1a50418b23072189bbdbd5b15805e8434a7f88fdca",
+    "exported_sha256": "73d7d33d48f57d55d3587f1a50418b23072189bbdbd5b15805e8434a7f88fdca",
+    "bytes": 9537,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/inputs/20260916_用户意见_简化任务提示与双提示稳健性.md",
+    "source_sha256": "8bd05953fc6af381b75d36818f5418e5b511e5c84a67d75cfa0e6519a946e1bf",
+    "exported_sha256": "8bd05953fc6af381b75d36818f5418e5b511e5c84a67d75cfa0e6519a946e1bf",
+    "bytes": 1779,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/inputs/20260916_用户提供_任务提示与模型部署意见.txt",
+    "source_sha256": "778c2f7e47f3db94c2248013250e4c6930ac56afc06f67f844e0dffe245aac27",
+    "exported_sha256": "778c2f7e47f3db94c2248013250e4c6930ac56afc06f67f844e0dffe245aac27",
+    "bytes": 9588,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/inputs/20260916_用户提供_营养诱导逐层价值对齐意见.txt",
+    "source_sha256": "485a226fb17165f97ce9d21bf75477c86b82d97f98891bb7fa25dd7e93c90fc1",
+    "exported_sha256": "485a226fb17165f97ce9d21bf75477c86b82d97f98891bb7fa25dd7e93c90fc1",
+    "bytes": 18341,
+    "transformations": []
+  },
+  {
+    "path": "docs/research/inputs/20260916_用户提供_逐层wanting与vmPFC对齐意见.txt",
+    "source_sha256": "fb9a119df1e22c8169a7107637fcb42f256f7444cb8dc39687873f042ec3522b",
+    "exported_sha256": "fb9a119df1e22c8169a7107637fcb42f256f7444cb8dc39687873f042ec3522b",
+    "bytes": 15736,
+    "transformations": []
+  },
+  {
+    "path": "docs/templates/experiment.md",
+    "source_sha256": "1c7271fcd08486626e6eadcac30c5466b4f176e1c9a399322a5691e6df81529f",
+    "exported_sha256": "1c7271fcd08486626e6eadcac30c5466b4f176e1c9a399322a5691e6df81529f",
+    "bytes": 683,
+    "transformations": []
+  },
+  {
+    "path": "docs/数据与迁移.md",
+    "source_sha256": "7f5c4083645c2535d8c572de3f064741af091c353b0d69691ef50294c9edcd9d",
+    "exported_sha256": "8aaa78f73837ef22cf1eda10b14ee190f448bf8cbb3c70acb3c614d57fa5422d",
+    "bytes": 4155,
+    "transformations": [
+      "deployment_path_or_host_placeholder",
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "docs/研究状态与下一阶段.md",
+    "source_sha256": "fb178a9ff8c6758acc3e4d7ba9b1667ce8f6ab67e40f47a510286706c2b13f7b",
+    "exported_sha256": "853710f82c5a145b857a35022a067ebff6df72865c8ac1f0124dc69de2785385",
+    "bytes": 17573,
+    "transformations": [
+      "deployment_path_or_host_placeholder",
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/absolute_alignment_curves.csv",
+    "source_sha256": "4e09fabad683391d2125df8777cd1063195bd9e39fc3c3f9101cb282293d0187",
+    "exported_sha256": "4e09fabad683391d2125df8777cd1063195bd9e39fc3c3f9101cb282293d0187",
+    "bytes": 889873,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/acquisition_and_consistency_QC.csv",
+    "source_sha256": "699c6e48b5118a7cd3d85e1495843787d40bff6eec37aa13074d3e7e30ac91f2",
+    "exported_sha256": "699c6e48b5118a7cd3d85e1495843787d40bff6eec37aa13074d3e7e30ac91f2",
+    "bytes": 224270,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/all_layer_summary.csv",
+    "source_sha256": "69c3cc29c9497ef2cf2cbc92c992a44ca5c0b0a6e3a92aee91ff912d728fcf2a",
+    "exported_sha256": "69c3cc29c9497ef2cf2cbc92c992a44ca5c0b0a6e3a92aee91ff912d728fcf2a",
+    "bytes": 55213,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/audit.json",
+    "source_sha256": "74f2c3f4d9023e66e8cb4095cdcbe9c7cefe233de3fb07ff6a97cd1e8467f791",
+    "exported_sha256": "e601db4a0212c9fb7c20434eaf1e5be756862fbe68951520cf4e62a694c1bb3b",
+    "bytes": 409507,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/completion_receipt.json",
+    "source_sha256": "4293b85ecaec1f81413077a4336fd1da98880dc88aa619c45c4b8e02df86328c",
+    "exported_sha256": "4293b85ecaec1f81413077a4336fd1da98880dc88aa619c45c4b8e02df86328c",
+    "bytes": 2737,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/OFC_minus_higher_visual.png",
+    "source_sha256": "6edc38e189e8b891c802b29c7df29fcfc03c140505a7168151207e2b584e3ca4",
+    "exported_sha256": "6edc38e189e8b891c802b29c7df29fcfc03c140505a7168151207e2b584e3ca4",
+    "bytes": 500862,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/OFC_minus_higher_visual.svg",
+    "source_sha256": "4152fd1afe48a14068a15c3137bd3548b595456881d59493e3f9b0d6ad558204",
+    "exported_sha256": "4152fd1afe48a14068a15c3137bd3548b595456881d59493e3f9b0d6ad558204",
+    "bytes": 177099,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/ROI_quality_context.png",
+    "source_sha256": "a0eeb55409fdb198babd9315f0b094ee31d49e18aaed7ba7a66118e40a096306",
+    "exported_sha256": "a0eeb55409fdb198babd9315f0b094ee31d49e18aaed7ba7a66118e40a096306",
+    "bytes": 98805,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/ROI_quality_context.svg",
+    "source_sha256": "9fe73359205343efc6c38e0230367a0f3029e03de81a8225845a3e681395ac73",
+    "exported_sha256": "9fe73359205343efc6c38e0230367a0f3029e03de81a8225845a3e681395ac73",
+    "bytes": 52820,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/absolute_regional_alignment_A.png",
+    "source_sha256": "ba0208f35f8b08bfebf53ccb8e4759ef1d7244689557c3d2e9bf9dc7faad98ee",
+    "exported_sha256": "ba0208f35f8b08bfebf53ccb8e4759ef1d7244689557c3d2e9bf9dc7faad98ee",
+    "bytes": 603832,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/absolute_regional_alignment_A.svg",
+    "source_sha256": "e27a2ac14f4dab09cae7db93518c5fc8e57573ccbee4426b236f63477bfbffd5",
+    "exported_sha256": "e27a2ac14f4dab09cae7db93518c5fc8e57573ccbee4426b236f63477bfbffd5",
+    "bytes": 141249,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/absolute_regional_alignment_B.png",
+    "source_sha256": "69ec0dc2e5d048785cb06f348aea4fc68a28a954eb89d74161e88819fb56d80a",
+    "exported_sha256": "69ec0dc2e5d048785cb06f348aea4fc68a28a954eb89d74161e88819fb56d80a",
+    "bytes": 570531,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/absolute_regional_alignment_B.svg",
+    "source_sha256": "a745f38df83a08feb39a4980d501fa83a229aac5e6b89d9011931fe475c153a2",
+    "exported_sha256": "a745f38df83a08feb39a4980d501fa83a229aac5e6b89d9011931fe475c153a2",
+    "bytes": 141830,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/all_ROI_heatmap_A.png",
+    "source_sha256": "f86fd4e766ab5118f97f8fe57c8e5c17701edf47d50070ac9d5c3f2ed9cdbd92",
+    "exported_sha256": "f86fd4e766ab5118f97f8fe57c8e5c17701edf47d50070ac9d5c3f2ed9cdbd92",
+    "bytes": 163666,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/all_ROI_heatmap_A.svg",
+    "source_sha256": "0de0877d92e2a22be730006c925610fb83e4245ff42d5df208a65f3f3af1a3ae",
+    "exported_sha256": "0de0877d92e2a22be730006c925610fb83e4245ff42d5df208a65f3f3af1a3ae",
+    "bytes": 117459,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/all_ROI_heatmap_B.png",
+    "source_sha256": "a15e1208b23e184656da56e557360e35e037ed5d458394476699f8d9261323f2",
+    "exported_sha256": "a15e1208b23e184656da56e557360e35e037ed5d458394476699f8d9261323f2",
+    "bytes": 162868,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/all_ROI_heatmap_B.svg",
+    "source_sha256": "29aa168b2b3955f73360ae0c4152b440310afce236ce7246251a7754c02a8d5e",
+    "exported_sha256": "29aa168b2b3955f73360ae0c4152b440310afce236ce7246251a7754c02a8d5e",
+    "bytes": 116534,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/carbs_100g_nine_OFC_parcels.png",
+    "source_sha256": "8ba63055e85ca350dd1f25367bd1827821dc3748b422b2a75a71561cdd5f8fd7",
+    "exported_sha256": "8ba63055e85ca350dd1f25367bd1827821dc3748b422b2a75a71561cdd5f8fd7",
+    "bytes": 293278,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/carbs_100g_nine_OFC_parcels.svg",
+    "source_sha256": "dc67585bc4f11c3f806763d1c4bfae54e4ffd865431cde404f123adf72f865fb",
+    "exported_sha256": "dc67585bc4f11c3f806763d1c4bfae54e4ffd865431cde404f123adf72f865fb",
+    "bytes": 84136,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/fat_100g_nine_OFC_parcels.png",
+    "source_sha256": "1a286dd283d8b9697235d6eb76564a26f6c6ebc59bb2a6cc5f7000a7d1d001d5",
+    "exported_sha256": "1a286dd283d8b9697235d6eb76564a26f6c6ebc59bb2a6cc5f7000a7d1d001d5",
+    "bytes": 260425,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/fat_100g_nine_OFC_parcels.svg",
+    "source_sha256": "83c3c4de7c1f239def1576009cec1b3de827f2686346a618fe58dfb071e73049",
+    "exported_sha256": "83c3c4de7c1f239def1576009cec1b3de827f2686346a618fe58dfb071e73049",
+    "bytes": 87064,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/fibre_100g_nine_OFC_parcels.png",
+    "source_sha256": "add8404149d2156229a96b8d4041e3bdd8b8b54b34ee85ebc1d20020ef2eca75",
+    "exported_sha256": "add8404149d2156229a96b8d4041e3bdd8b8b54b34ee85ebc1d20020ef2eca75",
+    "bytes": 330475,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/fibre_100g_nine_OFC_parcels.svg",
+    "source_sha256": "62b4bb36138849c155eb317b906ee1642f3042a4c845a625f7f2cc190dcd6abb",
+    "exported_sha256": "62b4bb36138849c155eb317b906ee1642f3042a4c845a625f7f2cc190dcd6abb",
+    "bytes": 89785,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/protein_100g_nine_OFC_parcels.png",
+    "source_sha256": "9433df99ec029bb0d20f5e23a3fc01bd13b5c781e6a77ad9263b46ac72b40824",
+    "exported_sha256": "9433df99ec029bb0d20f5e23a3fc01bd13b5c781e6a77ad9263b46ac72b40824",
+    "bytes": 363253,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/protein_100g_nine_OFC_parcels.svg",
+    "source_sha256": "d155518befd4f2fb0d8441d747b68c3f7a9c768eb953fe7166a512554baa713f",
+    "exported_sha256": "d155518befd4f2fb0d8441d747b68c3f7a9c768eb953fe7166a512554baa713f",
+    "bytes": 84109,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/regional_gains.png",
+    "source_sha256": "00087931e87f6da766882bbb6b846b33f5b664448e3e64ee119a66a37f9b80c0",
+    "exported_sha256": "00087931e87f6da766882bbb6b846b33f5b664448e3e64ee119a66a37f9b80c0",
+    "bytes": 686697,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/figures/regional_gains.svg",
+    "source_sha256": "f5f5c18f53fe351389c0259f6de2a41af6114bccc4cab410e57b18de2f0cd6f3",
+    "exported_sha256": "f5f5c18f53fe351389c0259f6de2a41af6114bccc4cab410e57b18de2f0cd6f3",
+    "bytes": 106488,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/group_contrast_curves.csv",
+    "source_sha256": "d4593acfd35eb1e78e80176712ab9b106da391d2bc030b59a4e9c5018a8e76aa",
+    "exported_sha256": "d4593acfd35eb1e78e80176712ab9b106da391d2bc030b59a4e9c5018a8e76aa",
+    "bytes": 1796328,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/index.json",
+    "source_sha256": "4c8fb686696dc5b17ea69019990e1d84484dd3bd0e873e0a8daa0ac6ac43894f",
+    "exported_sha256": "4c8fb686696dc5b17ea69019990e1d84484dd3bd0e873e0a8daa0ac6ac43894f",
+    "bytes": 7037,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/participant_all_layer_summary.csv",
+    "source_sha256": "62f33916de60b1474d66009608680482a2f5ad26aab302f1f7b29d4d73240d50",
+    "exported_sha256": "62f33916de60b1474d66009608680482a2f5ad26aab302f1f7b29d4d73240d50",
+    "bytes": 752898,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/report_audit.json",
+    "source_sha256": "4595e62caf88ffd9ded779ca02cdb6eebe35068fdaeaf7f4487cd5e4585cbc38",
+    "exported_sha256": "4595e62caf88ffd9ded779ca02cdb6eebe35068fdaeaf7f4487cd5e4585cbc38",
+    "bytes": 3132,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/report_script_snapshot.py",
+    "source_sha256": "7490b09ce245909188f332c8bf02cdd7faa7574677c2b1a596fff4e9134f2d20",
+    "exported_sha256": "7490b09ce245909188f332c8bf02cdd7faa7574677c2b1a596fff4e9134f2d20",
+    "bytes": 8301,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/script_snapshot.py",
+    "source_sha256": "7307b24cb06ef629a600ae684f23dfe9d17491d407745b1f7ecfaac9b8b1a69d",
+    "exported_sha256": "7307b24cb06ef629a600ae684f23dfe9d17491d407745b1f7ecfaac9b8b1a69d",
+    "bytes": 12684,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/validation.json",
+    "source_sha256": "09764536af52a25639e619bd4759d63e6b53e5d0d59b6347eb99c80badf80396",
+    "exported_sha256": "09764536af52a25639e619bd4759d63e6b53e5d0d59b6347eb99c80badf80396",
+    "bytes": 685,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/visual_QA.json",
+    "source_sha256": "29413f653760bbeb6297f4fcec7b9fd09014bf8a663f01d30744ef726d0cb8a0",
+    "exported_sha256": "29413f653760bbeb6297f4fcec7b9fd09014bf8a663f01d30744ef726d0cb8a0",
+    "bytes": 3393,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_HCP_RSA_v01/结果解读.md",
+    "source_sha256": "f1ff5774a954a86d027fe168af4ba2b2445ca5badc9b81d07483e72cbe27f987",
+    "exported_sha256": "26f390387e47e8a8000d0b66dbe15e80d4604f975faea2bf62e5bdcb164e42f9",
+    "bytes": 13390,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/A_layer_curves.png",
+    "source_sha256": "5238dffb82b3e4d707b793a178d30180b57f35154b4c5e9eb207f3c9991b6e33",
+    "exported_sha256": "5238dffb82b3e4d707b793a178d30180b57f35154b4c5e9eb207f3c9991b6e33",
+    "bytes": 447372,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/B_layer_curves.png",
+    "source_sha256": "38339c31ad95c487920d3618dc782a9072b5f3c5513f5595bd71961c7d5be706",
+    "exported_sha256": "38339c31ad95c487920d3618dc782a9072b5f3c5513f5595bd71961c7d5be706",
+    "bytes": 462748,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/coverage_and_acquisition_QC.png",
+    "source_sha256": "da661dc898d59dd628a9a5b1a56f41e64e7d2b0cd4fdc2cbe2fde71e3cae3aff",
+    "exported_sha256": "da661dc898d59dd628a9a5b1a56f41e64e7d2b0cd4fdc2cbe2fde71e3cae3aff",
+    "bytes": 142430,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/final_validation.json",
+    "source_sha256": "56c2bdac9c4df43ee0a439142c1ab8907cd6eaab217d52a4cdb7956a7c6a7036",
+    "exported_sha256": "56c2bdac9c4df43ee0a439142c1ab8907cd6eaab217d52a4cdb7956a7c6a7036",
+    "bytes": 1858,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/participant_contrasts.png",
+    "source_sha256": "95002ca08cacdfad1ede182f19db28ada6abbf6a8c7a9f06470494be4bab3d35",
+    "exported_sha256": "95002ca08cacdfad1ede182f19db28ada6abbf6a8c7a9f06470494be4bab3d35",
+    "bytes": 170034,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/participant_plot_provenance.json",
+    "source_sha256": "3b34dd1c48f260a460091a389689acfb6d5b6e30b96888db100284da428d0513",
+    "exported_sha256": "3b34dd1c48f260a460091a389689acfb6d5b6e30b96888db100284da428d0513",
+    "bytes": 727,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/report_audit.json",
+    "source_sha256": "603cf8f3e6c0e777c603fb5934eec68f1e59cea442bdde943b4e012cbf91e8a2",
+    "exported_sha256": "eb9d270f21875ff919506fb3be9b036289534b2a12fab29fe22fc1eb2ade2532",
+    "bytes": 1586,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/script_snapshot.py",
+    "source_sha256": "88d5f7b5a01851e295bd7837c93e8d4b905aac4813d5d63a73778adcc5ce2849",
+    "exported_sha256": "88d5f7b5a01851e295bd7837c93e8d4b905aac4813d5d63a73778adcc5ce2849",
+    "bytes": 8132,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/visual_QA.json",
+    "source_sha256": "33f2ec96f8e1003e9b6544781fa28793e4d030895728c4edb276b757433c2a0d",
+    "exported_sha256": "33f2ec96f8e1003e9b6544781fa28793e4d030895728c4edb276b757433c2a0d",
+    "bytes": 571,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/结果摘要.md",
+    "source_sha256": "26bcf6013f6450d8e2f9ada51985d905adcad50b780eaf4090a1db923be8a797",
+    "exported_sha256": "26bcf6013f6450d8e2f9ada51985d905adcad50b780eaf4090a1db923be8a797",
+    "bytes": 3119,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_OFC_kcal报告_v02/结果摘要_含逐人分布.md",
+    "source_sha256": "3b1dd4138608f3e812e03ef2c3f0565610e00bf89851dc2f1059514c2eda21cd",
+    "exported_sha256": "3b1dd4138608f3e812e03ef2c3f0565610e00bf89851dc2f1059514c2eda21cd",
+    "bytes": 3305,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/acquisition_QC.png",
+    "source_sha256": "e71ff50777c0e2be8063e3685fb09947080b7fa8abef9d477d83953e2d6e7cf5",
+    "exported_sha256": "e71ff50777c0e2be8063e3685fb09947080b7fa8abef9d477d83953e2d6e7cf5",
+    "bytes": 90595,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/behavioral_reference.png",
+    "source_sha256": "f57523e0445a9fc804c53e443578459901eaca1d2f37682ab8e8da685fe124a9",
+    "exported_sha256": "f57523e0445a9fc804c53e443578459901eaca1d2f37682ab8e8da685fe124a9",
+    "bytes": 159893,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/final_verification.json",
+    "source_sha256": "20312f75c03e2013be328e9231e342438f8353f8deada7473f41c2e30200e7f5",
+    "exported_sha256": "20312f75c03e2013be328e9231e342438f8353f8deada7473f41c2e30200e7f5",
+    "bytes": 300,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/neural_alignment.png",
+    "source_sha256": "7f6785e7d9447ea95692dc919ebcb6a3ff5856ac5d7d931295bd6acefbae1c2e",
+    "exported_sha256": "7f6785e7d9447ea95692dc919ebcb6a3ff5856ac5d7d931295bd6acefbae1c2e",
+    "bytes": 401244,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/participant_contrasts.png",
+    "source_sha256": "618ec9b2d70a8d1c476ab0009f1d7d1623e163c9a0557f178a6100d63e0429f1",
+    "exported_sha256": "618ec9b2d70a8d1c476ab0009f1d7d1623e163c9a0557f178a6100d63e0429f1",
+    "bytes": 272101,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/report_audit.json",
+    "source_sha256": "f1e370e8e51b1e808b865064672a81fa2052f244203773030e5b3bf124a5a9c7",
+    "exported_sha256": "f1e370e8e51b1e808b865064672a81fa2052f244203773030e5b3bf124a5a9c7",
+    "bytes": 1771,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/script_snapshot.py",
+    "source_sha256": "93790f6ec7f734131aa26a4168f6d9e491172721271be55bcc99c57ebda4e8ba",
+    "exported_sha256": "93790f6ec7f734131aa26a4168f6d9e491172721271be55bcc99c57ebda4e8ba",
+    "bytes": 11949,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/summary.json",
+    "source_sha256": "d1f0e942a84b726aa1b63766e67f16d91fef90eb202db363ec014fc5de336b46",
+    "exported_sha256": "d1f0e942a84b726aa1b63766e67f16d91fef90eb202db363ec014fc5de336b46",
+    "bytes": 2977,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_RSA描述性报告_v01/结果摘要.md",
+    "source_sha256": "b363cacda9a32b3c03f37cea3ccad8faefe988d9ed5298c725a3a041988cdc9f",
+    "exported_sha256": "dd6bc205e1b2706812dba257cb1f0369564925032626cd6e1034013b91817165",
+    "bytes": 4660,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/A_alignment.png",
+    "source_sha256": "d2083a4f6c60b2b7fab321fbe9997643fbd9137ba041f33addf9a0afe9de1b4f",
+    "exported_sha256": "d2083a4f6c60b2b7fab321fbe9997643fbd9137ba041f33addf9a0afe9de1b4f",
+    "bytes": 729184,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/A_contrasts.png",
+    "source_sha256": "47e0a13871bd2dc56f8a7d26c0c94be534287881b0dea097aae951e26f539f98",
+    "exported_sha256": "47e0a13871bd2dc56f8a7d26c0c94be534287881b0dea097aae951e26f539f98",
+    "bytes": 458126,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/A_participant_delta_0.png",
+    "source_sha256": "13e8c04f7059336fa22ffd4dd87a40168f380491d065eacb9bac2e9064263d94",
+    "exported_sha256": "13e8c04f7059336fa22ffd4dd87a40168f380491d065eacb9bac2e9064263d94",
+    "bytes": 158990,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/A_participant_delta_1.png",
+    "source_sha256": "963d2be814254b0738315f161ffafff51131cde3aa865fb557aba9acee4128e2",
+    "exported_sha256": "963d2be814254b0738315f161ffafff51131cde3aa865fb557aba9acee4128e2",
+    "bytes": 164092,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/A_wanting.png",
+    "source_sha256": "86573c6ddab60d9e164379cb42c5de56e68d37076630b2982bd369e38e0d850a",
+    "exported_sha256": "86573c6ddab60d9e164379cb42c5de56e68d37076630b2982bd369e38e0d850a",
+    "bytes": 148055,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/B_alignment.png",
+    "source_sha256": "5735b8652f284b2e94ab3607c7d6dd5ea963802394f90c9093e3a17931a706f6",
+    "exported_sha256": "5735b8652f284b2e94ab3607c7d6dd5ea963802394f90c9093e3a17931a706f6",
+    "bytes": 722293,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/B_contrasts.png",
+    "source_sha256": "a585e108a44ad61697c3e55880f54cef949208c8a0052a9a2b0e2e8144975e34",
+    "exported_sha256": "a585e108a44ad61697c3e55880f54cef949208c8a0052a9a2b0e2e8144975e34",
+    "bytes": 472678,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/B_participant_delta_0.png",
+    "source_sha256": "867d879b665ba4e91f827a3ed82aec96d126d5506f0b1ab508de90cb1ab6dfd0",
+    "exported_sha256": "867d879b665ba4e91f827a3ed82aec96d126d5506f0b1ab508de90cb1ab6dfd0",
+    "bytes": 160897,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/B_participant_delta_1.png",
+    "source_sha256": "b199b8c153468d218fd37aaa628bdb8c0c1bf4ad890915d810046107cbe9a0e7",
+    "exported_sha256": "b199b8c153468d218fd37aaa628bdb8c0c1bf4ad890915d810046107cbe9a0e7",
+    "bytes": 161391,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/B_wanting.png",
+    "source_sha256": "c53a1536d15eb2e33df08008f916bbea2890e10050dc95fa3969d6322a01a7de",
+    "exported_sha256": "c53a1536d15eb2e33df08008f916bbea2890e10050dc95fa3969d6322a01a7de",
+    "bytes": 145233,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/completion_receipt.json",
+    "source_sha256": "ae85ecaf4ad2f2cdba936d5f3679f29163703a6247d0bce8185934b0a54652cf",
+    "exported_sha256": "ae85ecaf4ad2f2cdba936d5f3679f29163703a6247d0bce8185934b0a54652cf",
+    "bytes": 3630,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/descriptive_summary.csv",
+    "source_sha256": "6dc1c0e78c8641b17e2dd86e9009947b8828709ba6dc90e09f7dc6f81aa5bdd4",
+    "exported_sha256": "6dc1c0e78c8641b17e2dd86e9009947b8828709ba6dc90e09f7dc6f81aa5bdd4",
+    "bytes": 4882,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/group_curves.csv",
+    "source_sha256": "9a534ce1d9c52df7dea2f81db1250a59e4bf6593ab3cc952ce19633619f0fd84",
+    "exported_sha256": "9a534ce1d9c52df7dea2f81db1250a59e4bf6593ab3cc952ce19633619f0fd84",
+    "bytes": 137592,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/participant_layer_mean_descriptive.csv",
+    "source_sha256": "458051fb40ddce6e43e5b614176e891a0d0e64ab496cbce70acfb2c112680a20",
+    "exported_sha256": "458051fb40ddce6e43e5b614176e891a0d0e64ab496cbce70acfb2c112680a20",
+    "bytes": 5056,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/report_audit.json",
+    "source_sha256": "99d39e7d4d24cd49d2f4e44cf919bd64324ebbce95595644d4e2ceb28fa2d5be",
+    "exported_sha256": "ddf3f6aabe1206f72f1499abc2e6a073a4a7a64b22ced5eebbb1807353c51ff1",
+    "bytes": 2784,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/script_snapshot.py",
+    "source_sha256": "60556d0e5b151078f7d3c429f3b502fbc5741a8b9e7c2d639d29cff3b6378d0b",
+    "exported_sha256": "60556d0e5b151078f7d3c429f3b502fbc5741a8b9e7c2d639d29cff3b6378d0b",
+    "bytes": 13598,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/version_record.json",
+    "source_sha256": "7bfbb44362da9b859b3e22d713a2c2bf7681554f51b7aa00e627ea6c69647a3a",
+    "exported_sha256": "7bfbb44362da9b859b3e22d713a2c2bf7681554f51b7aa00e627ea6c69647a3a",
+    "bytes": 265,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/visual_QA.json",
+    "source_sha256": "6700a564fca79c9732309130681e60fb3bda3b1d5f3aa299968f9f1e5073ee0e",
+    "exported_sha256": "6700a564fca79c9732309130681e60fb3bda3b1d5f3aa299968f9f1e5073ee0e",
+    "bytes": 597,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/结果摘要.md",
+    "source_sha256": "bd5035c2d1677a6d39b8309244bafcf14ba8ec968f8874352c58c7a416edfa7f",
+    "exported_sha256": "bd5035c2d1677a6d39b8309244bafcf14ba8ec968f8874352c58c7a416edfa7f",
+    "bytes": 5772,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260917_四营养RSA报告_v01/综合解读.md",
+    "source_sha256": "7132b32dc8c65e3b459f6ca95fd44d24814a12a64232422b8b3703e7b63cb387",
+    "exported_sha256": "7132b32dc8c65e3b459f6ca95fd44d24814a12a64232422b8b3703e7b63cb387",
+    "bytes": 4744,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制RSA_v01/absolute_curves.csv",
+    "source_sha256": "53a343758e9fe94d8ca5500f4177900492d7e3d3cbb788a0da298c400e79c579",
+    "exported_sha256": "53a343758e9fe94d8ca5500f4177900492d7e3d3cbb788a0da298c400e79c579",
+    "bytes": 2348645,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制RSA_v01/acquisition_and_consistency_QC.csv",
+    "source_sha256": "712c39cfd75ed5f0b97a4af170065fc728e3d391ac600ff1889b940acc8cdf56",
+    "exported_sha256": "712c39cfd75ed5f0b97a4af170065fc728e3d391ac600ff1889b940acc8cdf56",
+    "bytes": 456419,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制RSA_v01/audit.json",
+    "source_sha256": "6e5cca3376ab25c0949809ebec0ca480c2262246ec6ddcc00d683a0b185c53f3",
+    "exported_sha256": "3e312a1d47a4403895d05b5a50c526fb6d02b808f6985dcc79702d4c6ac8c39e",
+    "bytes": 835552,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "outputs/20260918_控制RSA_v01/contrast_curves.csv",
+    "source_sha256": "a306c8bdfafafe18fc46b2d6867bd9ce8894faea06a90b2a0222d0d5de6ff353",
+    "exported_sha256": "a306c8bdfafafe18fc46b2d6867bd9ce8894faea06a90b2a0222d0d5de6ff353",
+    "bytes": 4642855,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制RSA_v01/index.json",
+    "source_sha256": "6b10997c848253e2df831bdaec32daa1d177239e144dfd44a439ead752bb1d13",
+    "exported_sha256": "6b10997c848253e2df831bdaec32daa1d177239e144dfd44a439ead752bb1d13",
+    "bytes": 9403,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制RSA_v01/participant_window_summary.csv",
+    "source_sha256": "28ba569726a3a1d08052806da7ccceac26623e807727524899be40d97123b426",
+    "exported_sha256": "28ba569726a3a1d08052806da7ccceac26623e807727524899be40d97123b426",
+    "bytes": 5649597,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制RSA_v01/script_snapshot.py",
+    "source_sha256": "2bbded2958a468b04e64537f827b2b9c90140c635a26b857961a937da67de069",
+    "exported_sha256": "2bbded2958a468b04e64537f827b2b9c90140c635a26b857961a937da67de069",
+    "bytes": 11172,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制RSA_v01/window_summary.csv",
+    "source_sha256": "e49b0b8388dd5cd2721c7fd366a4d0adc7d59a2a935a130e69be6fd42ab50167",
+    "exported_sha256": "e49b0b8388dd5cd2721c7fd366a4d0adc7d59a2a935a130e69be6fd42ab50167",
+    "bytes": 393618,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/HCP_subject_quality.csv",
+    "source_sha256": "fcd2f86e1c23f8e79ee8360255b755ed056bae5868c52d0ee24a1a480d998b2f",
+    "exported_sha256": "fcd2f86e1c23f8e79ee8360255b755ed056bae5868c52d0ee24a1a480d998b2f",
+    "bytes": 103749,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/OFC_nine_reference_positions.csv",
+    "source_sha256": "447a34b9a95403356a4687aca8c7c85f8ad1b57347fc0c1880f4cca007b90831",
+    "exported_sha256": "447a34b9a95403356a4687aca8c7c85f8ad1b57347fc0c1880f4cca007b90831",
+    "bytes": 7436,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/ROI_quality_summary.csv",
+    "source_sha256": "b205635eb5ef05861b6610aead52ce8379f7bc898395e2f3cd95ee9d526f73f9",
+    "exported_sha256": "b205635eb5ef05861b6610aead52ce8379f7bc898395e2f3cd95ee9d526f73f9",
+    "bytes": 4820,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/audit.json",
+    "source_sha256": "6c2f3ac063dcd259b01f1b4436ecac8e57e3192aad0a0c7ac0b82f705bcd404e",
+    "exported_sha256": "6c2f3ac063dcd259b01f1b4436ecac8e57e3192aad0a0c7ac0b82f705bcd404e",
+    "bytes": 4801,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/completion_receipt.json",
+    "source_sha256": "17ec69b35c416a34088834137af3e1f0757cd18102aa7220ffc23008c101f11a",
+    "exported_sha256": "17ec69b35c416a34088834137af3e1f0757cd18102aa7220ffc23008c101f11a",
+    "bytes": 9365,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figure_contact_sheet.jpg",
+    "source_sha256": "8642c3a8b2218fd1f036893d4bd6f75d61e0291420f828a049b8097c109064f4",
+    "exported_sha256": "8642c3a8b2218fd1f036893d4bd6f75d61e0291420f828a049b8097c109064f4",
+    "bytes": 432559,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/absolute_A.png",
+    "source_sha256": "8e5115cf426d06ca7d5a0e0afce7339d7ad94b43a5499fc607b8fe28d07550d2",
+    "exported_sha256": "8e5115cf426d06ca7d5a0e0afce7339d7ad94b43a5499fc607b8fe28d07550d2",
+    "bytes": 704598,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/absolute_A.svg",
+    "source_sha256": "3158d120497e693e8e95a7bdcbf8785c381f8cb4581914c00d7e8bd9f8dec494",
+    "exported_sha256": "3158d120497e693e8e95a7bdcbf8785c381f8cb4581914c00d7e8bd9f8dec494",
+    "bytes": 186524,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/absolute_B.png",
+    "source_sha256": "a7c05af7fc68cfc5c07ebbb15bf210a759f9940b1006a4bb1ef9e704ea879882",
+    "exported_sha256": "a7c05af7fc68cfc5c07ebbb15bf210a759f9940b1006a4bb1ef9e704ea879882",
+    "bytes": 719446,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/absolute_B.svg",
+    "source_sha256": "70e1b601a2d70052869e05f0ec63a857e455e7d4de84639487eba632be591a73",
+    "exported_sha256": "70e1b601a2d70052869e05f0ec63a857e455e7d4de84639487eba632be591a73",
+    "bytes": 185376,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/all41_heatmap_A.png",
+    "source_sha256": "5084da1d691b4b961f313dd51cf3eed5d861f8f070c317863994dcd968be5838",
+    "exported_sha256": "5084da1d691b4b961f313dd51cf3eed5d861f8f070c317863994dcd968be5838",
+    "bytes": 202680,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/all41_heatmap_A.svg",
+    "source_sha256": "cbf6dcb563e4b766a3e66e95ad32b8c89d532ff56737ce858eeedbb4c692bf65",
+    "exported_sha256": "cbf6dcb563e4b766a3e66e95ad32b8c89d532ff56737ce858eeedbb4c692bf65",
+    "bytes": 252445,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/all41_heatmap_B.png",
+    "source_sha256": "bdef2fed0fcd33fde8d9428a7649b0812a9d6bc69fb4bc9d31e05c8bf374e394",
+    "exported_sha256": "bdef2fed0fcd33fde8d9428a7649b0812a9d6bc69fb4bc9d31e05c8bf374e394",
+    "bytes": 208519,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/all41_heatmap_B.svg",
+    "source_sha256": "53e5fb6289329a234cb949067f3e9e1a957aa3acfcbf892868b27e1d676f5c9f",
+    "exported_sha256": "53e5fb6289329a234cb949067f3e9e1a957aa3acfcbf892868b27e1d676f5c9f",
+    "bytes": 259484,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/consistency_scatter_A_all32.png",
+    "source_sha256": "4570ddc8c0e0592cf6b3e481ce801c152aeacb2e3770059a8bff20c2c5fcd52c",
+    "exported_sha256": "4570ddc8c0e0592cf6b3e481ce801c152aeacb2e3770059a8bff20c2c5fcd52c",
+    "bytes": 227458,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/consistency_scatter_A_all32.svg",
+    "source_sha256": "80bd58c985abaa88e572c13cefea518f70f3e8ac8caa4d068b9ae6fd1255c978",
+    "exported_sha256": "80bd58c985abaa88e572c13cefea518f70f3e8ac8caa4d068b9ae6fd1255c978",
+    "bytes": 150129,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/consistency_scatter_A_deep17_32.png",
+    "source_sha256": "a65b360494290c723f549d2f916bf4fde542812c046dafa96be6c5624f44501c",
+    "exported_sha256": "a65b360494290c723f549d2f916bf4fde542812c046dafa96be6c5624f44501c",
+    "bytes": 231873,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/consistency_scatter_A_deep17_32.svg",
+    "source_sha256": "e5f5c0a845a7d1eeba51c4162dea678cee2b29d5249519c34da43e1e4f7d3bfb",
+    "exported_sha256": "e5f5c0a845a7d1eeba51c4162dea678cee2b29d5249519c34da43e1e4f7d3bfb",
+    "bytes": 151797,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/consistency_scatter_B_all32.png",
+    "source_sha256": "b89ac38d17a01769aad450df540c31462251786620abdb156926be93c9fb1aa1",
+    "exported_sha256": "b89ac38d17a01769aad450df540c31462251786620abdb156926be93c9fb1aa1",
+    "bytes": 230411,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/consistency_scatter_B_all32.svg",
+    "source_sha256": "b299c0f7d36436ebdfd8e741a6904848215c81183b8290b71c0763e2d2d01a4f",
+    "exported_sha256": "b299c0f7d36436ebdfd8e741a6904848215c81183b8290b71c0763e2d2d01a4f",
+    "bytes": 152889,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/consistency_scatter_B_deep17_32.png",
+    "source_sha256": "1f7285a408179b4a28a0f316ac3b1cdd42b18cbd0f3447f8104a1fadf2c1c689",
+    "exported_sha256": "1f7285a408179b4a28a0f316ac3b1cdd42b18cbd0f3447f8104a1fadf2c1c689",
+    "bytes": 231831,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/consistency_scatter_B_deep17_32.svg",
+    "source_sha256": "9b63f77721e8d611f4f26e242059b7f0ad6248c84da4b77c7b9ecb15ebc490c6",
+    "exported_sha256": "9b63f77721e8d611f4f26e242059b7f0ad6248c84da4b77c7b9ecb15ebc490c6",
+    "bytes": 152350,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/contrasts_A.png",
+    "source_sha256": "7b8836ecba73f06ded21de11895ce44ef54c2ac52d01c61175407ad8726557c9",
+    "exported_sha256": "7b8836ecba73f06ded21de11895ce44ef54c2ac52d01c61175407ad8726557c9",
+    "bytes": 485399,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/contrasts_A.svg",
+    "source_sha256": "1e58582a5a0bfe5d5b300fd9a203ead53e50756006dc8fbe9ec81856078ec597",
+    "exported_sha256": "1e58582a5a0bfe5d5b300fd9a203ead53e50756006dc8fbe9ec81856078ec597",
+    "bytes": 110573,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/contrasts_B.png",
+    "source_sha256": "45e58c011b7c44c613e02caa63c56c639e92ed42d52176908ea1e09b5c2f3534",
+    "exported_sha256": "45e58c011b7c44c613e02caa63c56c639e92ed42d52176908ea1e09b5c2f3534",
+    "bytes": 492886,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/contrasts_B.svg",
+    "source_sha256": "4616ab8ba88f57c252a9cf26064a0b4da23000c31e6f39840efd7da2ac170441",
+    "exported_sha256": "4616ab8ba88f57c252a9cf26064a0b4da23000c31e6f39840efd7da2ac170441",
+    "bytes": 118542,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/nine_group_reference_all32.png",
+    "source_sha256": "1da0586fffeb7676b1979a1c0404a3828adafedf549440374cb7ebfcd263a0a2",
+    "exported_sha256": "1da0586fffeb7676b1979a1c0404a3828adafedf549440374cb7ebfcd263a0a2",
+    "bytes": 198801,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/nine_group_reference_all32.svg",
+    "source_sha256": "4126eec92657892d11a9731d8b970af935223d5674513fe89fedcbfc4e069741",
+    "exported_sha256": "4126eec92657892d11a9731d8b970af935223d5674513fe89fedcbfc4e069741",
+    "bytes": 102614,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/nine_group_reference_deep17_32.png",
+    "source_sha256": "30060dd0aa96f6da900979a90cdd8ee2d6b94b65baf36bf693d6fbc84a129b9a",
+    "exported_sha256": "30060dd0aa96f6da900979a90cdd8ee2d6b94b65baf36bf693d6fbc84a129b9a",
+    "bytes": 197049,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/nine_group_reference_deep17_32.svg",
+    "source_sha256": "2b539ac462e2576b7e33d875d20c250a7fc4fd10336591e0cff895afa1196a0a",
+    "exported_sha256": "2b539ac462e2576b7e33d875d20c250a7fc4fd10336591e0cff895afa1196a0a",
+    "bytes": 104808,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/participants_all32.png",
+    "source_sha256": "48fa320b3d827aea73d0370c88d1ed4c5a967e0afc1bc98a14d005cba5e11692",
+    "exported_sha256": "48fa320b3d827aea73d0370c88d1ed4c5a967e0afc1bc98a14d005cba5e11692",
+    "bytes": 323762,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/participants_all32.svg",
+    "source_sha256": "7caa8e478781afdda8ac8a696028ef4525e8be8f9873bea304e57d9fae412e89",
+    "exported_sha256": "7caa8e478781afdda8ac8a696028ef4525e8be8f9873bea304e57d9fae412e89",
+    "bytes": 435835,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/participants_deep17_32.png",
+    "source_sha256": "de4a9f801d5df5674aedf42e788a092a579d1054476a91e0aeda5a33888918fa",
+    "exported_sha256": "de4a9f801d5df5674aedf42e788a092a579d1054476a91e0aeda5a33888918fa",
+    "bytes": 338863,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/figures/participants_deep17_32.svg",
+    "source_sha256": "64a1ba2bdec58e9eb4664ffb7cbabd9338ec5ce90e13bd2b410d61584e351815",
+    "exported_sha256": "64a1ba2bdec58e9eb4664ffb7cbabd9338ec5ce90e13bd2b410d61584e351815",
+    "bytes": 437003,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/implementation_ranges.csv",
+    "source_sha256": "d65b75e37acdb1c39145861858f4af084ed9db518532f10e92da1b01eb653393",
+    "exported_sha256": "d65b75e37acdb1c39145861858f4af084ed9db518532f10e92da1b01eb653393",
+    "bytes": 266515,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/independent_validation.json",
+    "source_sha256": "90b7e7befe32acc620823a10a72e2ddbc3d2dc6ded71dc83c752b21e1f26f2a5",
+    "exported_sha256": "90b7e7befe32acc620823a10a72e2ddbc3d2dc6ded71dc83c752b21e1f26f2a5",
+    "bytes": 995,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/individual_HCP_reference_positions.csv",
+    "source_sha256": "cc0b0c1f2b1eafe0bf400209b68b4b8afa7b35fbecfc3a251741c2e53af20adf",
+    "exported_sha256": "cc0b0c1f2b1eafe0bf400209b68b4b8afa7b35fbecfc3a251741c2e53af20adf",
+    "bytes": 155015,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/matched_reference_members.json",
+    "source_sha256": "c2b58c3a5123ea601b8bdbdc27b816e7b5f2bd62ac3b3ed6b13185510ce884ce",
+    "exported_sha256": "c2b58c3a5123ea601b8bdbdc27b816e7b5f2bd62ac3b3ed6b13185510ce884ce",
+    "bytes": 1346,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/audit_control_tokens.py",
+    "source_sha256": "32282228c1510c67d4f06acff491ddc1ca0cf3d4d5a9e9b12abd1ea39a6de544",
+    "exported_sha256": "32282228c1510c67d4f06acff491ddc1ca0cf3d4d5a9e9b12abd1ea39a6de544",
+    "bytes": 4222,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/control_prompt_spec.py",
+    "source_sha256": "5478c93f4c540b072b0215e75b81c03e95b3778ffcc3591e934fca46353f0854",
+    "exported_sha256": "5478c93f4c540b072b0215e75b81c03e95b3778ffcc3591e934fca46353f0854",
+    "bytes": 575,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/extract_random_hcp_v09.py",
+    "source_sha256": "345e1393a19f1175132aa18cc81d5267459c9fd3feb83caea5926991d4374aca",
+    "exported_sha256": "345e1393a19f1175132aa18cc81d5267459c9fd3feb83caea5926991d4374aca",
+    "bytes": 6521,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/pilot_control_interface.py",
+    "source_sha256": "937366d2ef0d4023c0921ef646d921176266bd2c9421d242def7413b3e698070",
+    "exported_sha256": "937366d2ef0d4023c0921ef646d921176266bd2c9421d242def7413b3e698070",
+    "bytes": 15779,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/prepare_controls_v09.py",
+    "source_sha256": "180dc032d825b37a311d3bf9099e179671df35abccd444604e7928744d98a563",
+    "exported_sha256": "180dc032d825b37a311d3bf9099e179671df35abccd444604e7928744d98a563",
+    "bytes": 7754,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/prepare_random_hcp_v09.py",
+    "source_sha256": "be7a7fc57c561c434007f27cd995171fd06e630cae556b8d7f0dc46eae366bf4",
+    "exported_sha256": "be7a7fc57c561c434007f27cd995171fd06e630cae556b8d7f0dc46eae366bf4",
+    "bytes": 7722,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/rsa_core.py",
+    "source_sha256": "09048ad68b1d2f19d15d71742928c8022a597a8cf9682a7b2d3591a1b35c9f5a",
+    "exported_sha256": "09048ad68b1d2f19d15d71742928c8022a597a8cf9682a7b2d3591a1b35c9f5a",
+    "bytes": 2800,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/run_control_sequence.py",
+    "source_sha256": "4f4daef11386022faf7428d313691d1e6d6039d75791b351578645e251da0edd",
+    "exported_sha256": "82f73e7c3581969ffff46c9828798a816c4a3f1ccfd9b31bc72ae36193004189",
+    "bytes": 2327,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/run_controls_rsa_v09.py",
+    "source_sha256": "2bbded2958a468b04e64537f827b2b9c90140c635a26b857961a937da67de069",
+    "exported_sha256": "2bbded2958a468b04e64537f827b2b9c90140c635a26b857961a937da67de069",
+    "bytes": 11172,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/run_hcp_rsa.py",
+    "source_sha256": "7307b24cb06ef629a600ae684f23dfe9d17491d407745b1f7ecfaac9b8b1a69d",
+    "exported_sha256": "7307b24cb06ef629a600ae684f23dfe9d17491d407745b1f7ecfaac9b8b1a69d",
+    "bytes": 12684,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/summarize_controls_v09.py",
+    "source_sha256": "a3eb6a423bdde907f7cecb20d94c3ad27461211ebc930cfbe95228fb29b9f148",
+    "exported_sha256": "a3eb6a423bdde907f7cecb20d94c3ad27461211ebc930cfbe95228fb29b9f148",
+    "bytes": 14908,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/validate_controls_v09.py",
+    "source_sha256": "6c0daad1007e162ce1668e0eb18ab5fafda711376384e9bd5f7b38ce25986f1f",
+    "exported_sha256": "6c0daad1007e162ce1668e0eb18ab5fafda711376384e9bd5f7b38ce25986f1f",
+    "bytes": 4947,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/verify_build_controls.py",
+    "source_sha256": "5b5ea40ac9f9c85c6825c1cc911dd8c0cd3576ae225a6745d08001d6153361c4",
+    "exported_sha256": "5b5ea40ac9f9c85c6825c1cc911dd8c0cd3576ae225a6745d08001d6153361c4",
+    "bytes": 5839,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/verify_control_transfer_v09.py",
+    "source_sha256": "f50db43e7583c17afecbf63029fa8a39f0685e43f77553b1e9591c67d239f662",
+    "exported_sha256": "dd5ec45dcbbb3fb6f0a1ecdc8c0379ae7c264fdb5b8b064c66f863e9bae48af6",
+    "bytes": 2946,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/provenance/write_controls_report_v09.py",
+    "source_sha256": "81b0e1110ef2cfcf15d0c0837e9ddd770bd8fbb8fda5ebc8c467c8f7787b44e8",
+    "exported_sha256": "81b0e1110ef2cfcf15d0c0837e9ddd770bd8fbb8fda5ebc8c467c8f7787b44e8",
+    "bytes": 13778,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/random_nine_group_quality.csv",
+    "source_sha256": "415b2c086a39022307735f4dc323a37ebb9b02f2019bc24f8953d4b68351895f",
+    "exported_sha256": "415b2c086a39022307735f4dc323a37ebb9b02f2019bc24f8953d4b68351895f",
+    "bytes": 61415,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/reference_index.json",
+    "source_sha256": "a73be7b5fd5d30ba06eef90beab8df911534a3e4c2210d38972a25ee5c44689b",
+    "exported_sha256": "a73be7b5fd5d30ba06eef90beab8df911534a3e4c2210d38972a25ee5c44689b",
+    "bytes": 136745,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/script_snapshot.py",
+    "source_sha256": "a3eb6a423bdde907f7cecb20d94c3ad27461211ebc930cfbe95228fb29b9f148",
+    "exported_sha256": "a3eb6a423bdde907f7cecb20d94c3ad27461211ebc930cfbe95228fb29b9f148",
+    "bytes": 14908,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/visual_QA.json",
+    "source_sha256": "cfa411ec6285cc78a17a6e1db26567006336a9ab71e9f2b0465420270c462120",
+    "exported_sha256": "cfa411ec6285cc78a17a6e1db26567006336a9ab71e9f2b0465420270c462120",
+    "bytes": 2308,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v01/结果报告.md",
+    "source_sha256": "0e296ab44cc6cd172af321e7fec7142530bbd63344666aec299ae6a22c7d9fe2",
+    "exported_sha256": "451f7148eb4097097e8523f16544fefd99f7ec047a5ddb31c623072b1fce1811",
+    "bytes": 13586,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v02/parallel_region_summary.csv",
+    "source_sha256": "22122e3aaeb192556e2d430a67d05049e9dabef31ba515264e2248c03fbc8717",
+    "exported_sha256": "22122e3aaeb192556e2d430a67d05049e9dabef31ba515264e2248c03fbc8717",
+    "bytes": 151638,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v02/revision_audit.json",
+    "source_sha256": "142fb31a31c00580a75c390fe577d18796c18b0ad6a2bfd9782da2a9d99ef3cf",
+    "exported_sha256": "142fb31a31c00580a75c390fe577d18796c18b0ad6a2bfd9782da2a9d99ef3cf",
+    "bytes": 15129,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v02/script_snapshot.py",
+    "source_sha256": "872ebdc80a19de72b62fa2660576e85381735b186c2b4a74aa85cfe51d4eb919",
+    "exported_sha256": "872ebdc80a19de72b62fa2660576e85381735b186c2b4a74aa85cfe51d4eb919",
+    "bytes": 14425,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v02/全部区域并列摘要.md",
+    "source_sha256": "86d38b360b89abc05a6ed541b23c1d557f8856d9f0274b851e04031761e8567a",
+    "exported_sha256": "86d38b360b89abc05a6ed541b23c1d557f8856d9f0274b851e04031761e8567a",
+    "bytes": 64783,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v02/结果报告.md",
+    "source_sha256": "dea3289cf90e8400ce9ecfad1a6d86d084b11eaf507434f908cc6a58b4a739f9",
+    "exported_sha256": "37e6634e3a9c9d2fa3e485146635b123bb8a875cad368d9b1100edb6ebeb45dc",
+    "bytes": 21600,
+    "transformations": [
+      "omitted_dependency_links_annotated"
+    ]
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/AB_consistency.csv",
+    "source_sha256": "e39b13904f8b4d0ee0cc2489d95b20127749561b8c0b42ad9e6aa190948a59cc",
+    "exported_sha256": "e39b13904f8b4d0ee0cc2489d95b20127749561b8c0b42ad9e6aa190948a59cc",
+    "bytes": 165943,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/ROI_quality_summary.csv",
+    "source_sha256": "b205635eb5ef05861b6610aead52ce8379f7bc898395e2f3cd95ee9d526f73f9",
+    "exported_sha256": "b205635eb5ef05861b6610aead52ce8379f7bc898395e2f3cd95ee9d526f73f9",
+    "bytes": 4820,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/completion_receipt.json",
+    "source_sha256": "ef4ce04e211c9d97630c9491c32b9c091969cee99f76c2a3ee78491e6e5ede52",
+    "exported_sha256": "ef4ce04e211c9d97630c9491c32b9c091969cee99f76c2a3ee78491e6e5ede52",
+    "bytes": 18339,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/contact_sheet_1.jpg",
+    "source_sha256": "a9da17d926ce6a371c204db3c3874ac6269fb3333d4661a4f55c40d2a15aec29",
+    "exported_sha256": "a9da17d926ce6a371c204db3c3874ac6269fb3333d4661a4f55c40d2a15aec29",
+    "bytes": 361155,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/contact_sheet_2.jpg",
+    "source_sha256": "ec6bfbabec81bd2f3363923c6a79482fe7c93d04b01744748650776576a29090",
+    "exported_sha256": "ec6bfbabec81bd2f3363923c6a79482fe7c93d04b01744748650776576a29090",
+    "bytes": 352143,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/contact_sheet_3.jpg",
+    "source_sha256": "f698f453f0b94efaf443d5fb8437778637a184e8b197bd07cece4cd7df0b1876",
+    "exported_sha256": "f698f453f0b94efaf443d5fb8437778637a184e8b197bd07cece4cd7df0b1876",
+    "bytes": 307137,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/contact_sheet_4.jpg",
+    "source_sha256": "a78617ea34602bebe3042bd36a5695de3c48dd1905c4a8441f79bce8ac24a37a",
+    "exported_sha256": "a78617ea34602bebe3042bd36a5695de3c48dd1905c4a8441f79bce8ac24a37a",
+    "bytes": 312250,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/contact_sheet_5.jpg",
+    "source_sha256": "a89973d1620264ed3343490651dbcb166d6e4cf32ba5dfaa52f2e74fcc5ccfe4",
+    "exported_sha256": "a89973d1620264ed3343490651dbcb166d6e4cf32ba5dfaa52f2e74fcc5ccfe4",
+    "bytes": 302474,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/contact_sheet_6.jpg",
+    "source_sha256": "1368bc968afe6c20451fd9bca84bed1879e8bd47c3892feb8069aecfb610c237",
+    "exported_sha256": "1368bc968afe6c20451fd9bca84bed1879e8bd47c3892feb8069aecfb610c237",
+    "bytes": 224000,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/contact_sheet_supplement.jpg",
+    "source_sha256": "3d7e68d8c87164b43269d1129eee28d13283ec5f6aacbe993376f210010d5785",
+    "exported_sha256": "3d7e68d8c87164b43269d1129eee28d13283ec5f6aacbe993376f210010d5785",
+    "bytes": 171382,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/AB_direction_all32.png",
+    "source_sha256": "235c3ef605e7858504d5d45793a624a05e2f2992ddf991183483db03440886f1",
+    "exported_sha256": "235c3ef605e7858504d5d45793a624a05e2f2992ddf991183483db03440886f1",
+    "bytes": 85033,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/AB_direction_all32.svg",
+    "source_sha256": "12b3ede087c26718b40a0373de600fa1abc3d1862e046fc3a6524abfd45785d4",
+    "exported_sha256": "12b3ede087c26718b40a0373de600fa1abc3d1862e046fc3a6524abfd45785d4",
+    "bytes": 60118,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/AB_direction_deep17_32.png",
+    "source_sha256": "73397b3e3704fef8e2a65b7601cf954f9053bb3ba32cb8176c55e2a277656397",
+    "exported_sha256": "73397b3e3704fef8e2a65b7601cf954f9053bb3ba32cb8176c55e2a277656397",
+    "bytes": 85239,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/AB_direction_deep17_32.svg",
+    "source_sha256": "bc38e0625a0b33769cb75bbcec48249392ac903d2ef54ca531c866e42387ac0d",
+    "exported_sha256": "bc38e0625a0b33769cb75bbcec48249392ac903d2ef54ca531c866e42387ac0d",
+    "bytes": 59878,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/absolute_0.png",
+    "source_sha256": "8c99a20780aeaac8b8d2cb2f47bf923f49891b467fd123ecb1ef135bcd5cc0db",
+    "exported_sha256": "8c99a20780aeaac8b8d2cb2f47bf923f49891b467fd123ecb1ef135bcd5cc0db",
+    "bytes": 578896,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/absolute_0.svg",
+    "source_sha256": "26bcbbb5713074026f4352c569f816a4751a41adc37381c83d3b823bcbfaa2b1",
+    "exported_sha256": "26bcbbb5713074026f4352c569f816a4751a41adc37381c83d3b823bcbfaa2b1",
+    "bytes": 192067,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/absolute_1.png",
+    "source_sha256": "96baba59b8b482c9c21e8d5544450adc2f221b8b79fd4570606278c9318a94b1",
+    "exported_sha256": "96baba59b8b482c9c21e8d5544450adc2f221b8b79fd4570606278c9318a94b1",
+    "bytes": 585891,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/absolute_1.svg",
+    "source_sha256": "d444e2967a1dea3bce4748753e716426e02ce5291a3e7800583c54412e02d00c",
+    "exported_sha256": "d444e2967a1dea3bce4748753e716426e02ce5291a3e7800583c54412e02d00c",
+    "bytes": 192070,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/absolute_2.png",
+    "source_sha256": "cef5e49e12387dfb8e672d87f0a86863f868d79626b7b69c94d83af3585435bb",
+    "exported_sha256": "cef5e49e12387dfb8e672d87f0a86863f868d79626b7b69c94d83af3585435bb",
+    "bytes": 619606,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/absolute_2.svg",
+    "source_sha256": "c38682708774ef2d505dbcdcf432e080ec0d1b6d718a2fd46c2baff3da3f5f04",
+    "exported_sha256": "c38682708774ef2d505dbcdcf432e080ec0d1b6d718a2fd46c2baff3da3f5f04",
+    "bytes": 196459,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/absolute_3.png",
+    "source_sha256": "af9ec69181507d6258d384a21eea73f35c260623ec9d1a75bdda2d987c065813",
+    "exported_sha256": "af9ec69181507d6258d384a21eea73f35c260623ec9d1a75bdda2d987c065813",
+    "bytes": 598849,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/absolute_3.svg",
+    "source_sha256": "ba78dc193d7505a7112448cee7ca6fbd11cf437a60780666cf7e483150165ffc",
+    "exported_sha256": "ba78dc193d7505a7112448cee7ca6fbd11cf437a60780666cf7e483150165ffc",
+    "bytes": 194230,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/all41_A.png",
+    "source_sha256": "e4264a8e320c722bffce0b4f4d23a590c472d6e2f655dbfef3fe6833c298e40d",
+    "exported_sha256": "e4264a8e320c722bffce0b4f4d23a590c472d6e2f655dbfef3fe6833c298e40d",
+    "bytes": 472219,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/all41_A.svg",
+    "source_sha256": "e3218ab9405bd243b1d19d515a0d9c2bd3b4a06dffe6e39bc8a277946e58defe",
+    "exported_sha256": "e3218ab9405bd243b1d19d515a0d9c2bd3b4a06dffe6e39bc8a277946e58defe",
+    "bytes": 638709,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/all41_B.png",
+    "source_sha256": "6635f489f1c38e80671690439f493ab5d1ca10d7bb533b35bee7141f8d4f2ccd",
+    "exported_sha256": "6635f489f1c38e80671690439f493ab5d1ca10d7bb533b35bee7141f8d4f2ccd",
+    "bytes": 471798,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/all41_B.svg",
+    "source_sha256": "0a47e5b9416a2aa23cec0e321a88ad783f989095c588d3da0e42885716c9d81a",
+    "exported_sha256": "0a47e5b9416a2aa23cec0e321a88ad783f989095c588d3da0e42885716c9d81a",
+    "bytes": 637611,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/contrasts_0.png",
+    "source_sha256": "62607a060e55d059940c044494b6b8cb80a94774e769544aee5f36eef7b42b36",
+    "exported_sha256": "62607a060e55d059940c044494b6b8cb80a94774e769544aee5f36eef7b42b36",
+    "bytes": 642938,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/contrasts_0.svg",
+    "source_sha256": "87198e6f60e9cb380c5b4b4ce61e48cb88b5fcf669121d6f0ff262a708dd8b66",
+    "exported_sha256": "87198e6f60e9cb380c5b4b4ce61e48cb88b5fcf669121d6f0ff262a708dd8b66",
+    "bytes": 236240,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/contrasts_1.png",
+    "source_sha256": "52358e1ac2f1a28dd6b16655a293dc84f706d4f04639f49a1990df530b4e4fef",
+    "exported_sha256": "52358e1ac2f1a28dd6b16655a293dc84f706d4f04639f49a1990df530b4e4fef",
+    "bytes": 633283,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/contrasts_1.svg",
+    "source_sha256": "84cc1aa46c032c8f40f1c780266f690aaebf4c7aef82a8ce68a0f06f92bdfdfb",
+    "exported_sha256": "84cc1aa46c032c8f40f1c780266f690aaebf4c7aef82a8ce68a0f06f92bdfdfb",
+    "bytes": 239244,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/contrasts_2.png",
+    "source_sha256": "a854eee1d514dc3504edc91433ecc1001dbc8b4a58d9795366dfd664730ca2c5",
+    "exported_sha256": "a854eee1d514dc3504edc91433ecc1001dbc8b4a58d9795366dfd664730ca2c5",
+    "bytes": 625457,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/contrasts_2.svg",
+    "source_sha256": "17c1ad40791da98aeac3612e4ebb5b5c5de992a0f91965928ca6ef7cd928cd3c",
+    "exported_sha256": "17c1ad40791da98aeac3612e4ebb5b5c5de992a0f91965928ca6ef7cd928cd3c",
+    "bytes": 234334,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/contrasts_3.png",
+    "source_sha256": "ccc5b502209e7154448578abe9a0b12810deb2afd95b168571114bcdd43a6c87",
+    "exported_sha256": "ccc5b502209e7154448578abe9a0b12810deb2afd95b168571114bcdd43a6c87",
+    "bytes": 541866,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/contrasts_3.svg",
+    "source_sha256": "717f1ccefc90411961f5e5f9c3485eeefa4143dc6b4c11bc2930c3d682f3de36",
+    "exported_sha256": "717f1ccefc90411961f5e5f9c3485eeefa4143dc6b4c11bc2930c3d682f3de36",
+    "bytes": 234165,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_0_all32.png",
+    "source_sha256": "e775534ddd00ffb685bf33db7d585d67adbc6730e16dd0080088e675efbb3be5",
+    "exported_sha256": "e775534ddd00ffb685bf33db7d585d67adbc6730e16dd0080088e675efbb3be5",
+    "bytes": 345666,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_0_all32.svg",
+    "source_sha256": "eb21fb1bb343893387a021d5c2f90291313efbd5768ecd7f100538d44f6d6c86",
+    "exported_sha256": "eb21fb1bb343893387a021d5c2f90291313efbd5768ecd7f100538d44f6d6c86",
+    "bytes": 396268,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_0_deep17_32.png",
+    "source_sha256": "3e19e482cf80730874ef3fc68e97beecc6b77fc2d5fe59fbf8407cf5b208298d",
+    "exported_sha256": "3e19e482cf80730874ef3fc68e97beecc6b77fc2d5fe59fbf8407cf5b208298d",
+    "bytes": 350665,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_0_deep17_32.svg",
+    "source_sha256": "ac49421196ee80c91a3b9b67c7b6318fa9bc73cff2c70df41d7a18b2892b38dd",
+    "exported_sha256": "ac49421196ee80c91a3b9b67c7b6318fa9bc73cff2c70df41d7a18b2892b38dd",
+    "bytes": 382632,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_1_all32.png",
+    "source_sha256": "764df73f475a3f8ba06c226c5e7e758022539aa1efc2fbfba0e2b7d3ae76e31c",
+    "exported_sha256": "764df73f475a3f8ba06c226c5e7e758022539aa1efc2fbfba0e2b7d3ae76e31c",
+    "bytes": 348284,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_1_all32.svg",
+    "source_sha256": "ab9adecc9eca916fa4e43bcb0f13f4c6c7eae8ab7092e80be047da4aecc2257c",
+    "exported_sha256": "ab9adecc9eca916fa4e43bcb0f13f4c6c7eae8ab7092e80be047da4aecc2257c",
+    "bytes": 393386,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_1_deep17_32.png",
+    "source_sha256": "a66c095b0bedc0145303c519ac19e5c28890f39e84920ff1b6568a3ed7afb66c",
+    "exported_sha256": "a66c095b0bedc0145303c519ac19e5c28890f39e84920ff1b6568a3ed7afb66c",
+    "bytes": 349332,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_1_deep17_32.svg",
+    "source_sha256": "4658498f6e8761cdd1665a818d1ed5f08517e4762528ddf4fc7ccc822e78dec1",
+    "exported_sha256": "4658498f6e8761cdd1665a818d1ed5f08517e4762528ddf4fc7ccc822e78dec1",
+    "bytes": 381483,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_2_all32.png",
+    "source_sha256": "012e39044468e4fe7fa9e301dad8dc741d4f4a66a3cc5f0fc4f3ea0cf0a7eb10",
+    "exported_sha256": "012e39044468e4fe7fa9e301dad8dc741d4f4a66a3cc5f0fc4f3ea0cf0a7eb10",
+    "bytes": 300499,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_2_all32.svg",
+    "source_sha256": "c0345cef85be992cc1636d221985607701b19de6a4f8f924ce68f688ea004d45",
+    "exported_sha256": "c0345cef85be992cc1636d221985607701b19de6a4f8f924ce68f688ea004d45",
+    "bytes": 385897,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_2_deep17_32.png",
+    "source_sha256": "e8bddf59776c1333202c2bba39bdd9b5af5f18fe4e83718074404568ff45a5ae",
+    "exported_sha256": "e8bddf59776c1333202c2bba39bdd9b5af5f18fe4e83718074404568ff45a5ae",
+    "bytes": 354231,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_2_deep17_32.svg",
+    "source_sha256": "4778f9022ead6fd91dbb84c87598ede9189d286cdd6be24b0cb9f528beed06e2",
+    "exported_sha256": "4778f9022ead6fd91dbb84c87598ede9189d286cdd6be24b0cb9f528beed06e2",
+    "bytes": 387573,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_3_all32.png",
+    "source_sha256": "8bdff91cfeaef5ad4e84219bd2c8be2509d1dc6f9dd04ac6b107adf65c037cc3",
+    "exported_sha256": "8bdff91cfeaef5ad4e84219bd2c8be2509d1dc6f9dd04ac6b107adf65c037cc3",
+    "bytes": 341617,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_3_all32.svg",
+    "source_sha256": "6a3cdddfa4b7730b5aa8b63416972b793769dbf0b0c62250831a5dcd1ea006e1",
+    "exported_sha256": "6a3cdddfa4b7730b5aa8b63416972b793769dbf0b0c62250831a5dcd1ea006e1",
+    "bytes": 386858,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_3_deep17_32.png",
+    "source_sha256": "e5da1cfc1aef28cea01455897b47413b5af1d244d1082b9a7d1a4f2d58b766c5",
+    "exported_sha256": "e5da1cfc1aef28cea01455897b47413b5af1d244d1082b9a7d1a4f2d58b766c5",
+    "bytes": 353955,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/participants_3_deep17_32.svg",
+    "source_sha256": "a67bf5caf500288457d01d2b6046ddb664642523af9a457bc71df6d3e390dd10",
+    "exported_sha256": "a67bf5caf500288457d01d2b6046ddb664642523af9a457bc71df6d3e390dd10",
+    "bytes": 384255,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/quality_all41.png",
+    "source_sha256": "b9257700cd6f24fbc15f9410cdd4c052df85a77b32c26def6c4102d94eb4c096",
+    "exported_sha256": "b9257700cd6f24fbc15f9410cdd4c052df85a77b32c26def6c4102d94eb4c096",
+    "bytes": 98431,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/quality_all41.svg",
+    "source_sha256": "bde420570ce421eed2588f48f172f9b39876b64531bfa157c8ef0cd80e65f7a3",
+    "exported_sha256": "bde420570ce421eed2588f48f172f9b39876b64531bfa157c8ef0cd80e65f7a3",
+    "bytes": 131681,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/random_0.png",
+    "source_sha256": "1e1597d9b9ebc622f89318082ad094bde42edcb29096c782fc479c173d6efec9",
+    "exported_sha256": "1e1597d9b9ebc622f89318082ad094bde42edcb29096c782fc479c173d6efec9",
+    "bytes": 183038,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/random_0.svg",
+    "source_sha256": "e5cdf6f5eedd056d818d40101e00bc45c74965b9fc3fcb8b42f57e9d5dd0ba8c",
+    "exported_sha256": "e5cdf6f5eedd056d818d40101e00bc45c74965b9fc3fcb8b42f57e9d5dd0ba8c",
+    "bytes": 168518,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/random_1.png",
+    "source_sha256": "d24b23df3b4ab88703de2a9460305f07ac2ffabb017f3d7f28702275bbf1fb37",
+    "exported_sha256": "d24b23df3b4ab88703de2a9460305f07ac2ffabb017f3d7f28702275bbf1fb37",
+    "bytes": 183557,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/random_1.svg",
+    "source_sha256": "4f850ecd631c8e9bdd2922b34867ddc092227557e826c8657983055f3571194d",
+    "exported_sha256": "4f850ecd631c8e9bdd2922b34867ddc092227557e826c8657983055f3571194d",
+    "bytes": 169603,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/random_2.png",
+    "source_sha256": "68356e9135d3965bb1be7c1d52fa61edebb0fea07d48eb34adb3fe5ad286bcc4",
+    "exported_sha256": "68356e9135d3965bb1be7c1d52fa61edebb0fea07d48eb34adb3fe5ad286bcc4",
+    "bytes": 186534,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/random_2.svg",
+    "source_sha256": "8871e3fcf7c2d36524b335aafc920ac2a236997e253034da6d8c351cefde2106",
+    "exported_sha256": "8871e3fcf7c2d36524b335aafc920ac2a236997e253034da6d8c351cefde2106",
+    "bytes": 171161,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/random_3.png",
+    "source_sha256": "cd3e521d62aef2397d263b4f679dac77765ea3c2425a057d9dc7046c1e9d4cbc",
+    "exported_sha256": "cd3e521d62aef2397d263b4f679dac77765ea3c2425a057d9dc7046c1e9d4cbc",
+    "bytes": 184904,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/random_3.svg",
+    "source_sha256": "289721e7f8dc165ca3160ca4e5d54df1fc01cdebc70c7614733c85f7b89f5ee1",
+    "exported_sha256": "289721e7f8dc165ca3160ca4e5d54df1fc01cdebc70c7614733c85f7b89f5ee1",
+    "bytes": 168373,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_10v.png",
+    "source_sha256": "b5a789c38f60b4890ff8770a2459b4d89444c25ff5402a5a9a897cf818cc6547",
+    "exported_sha256": "b5a789c38f60b4890ff8770a2459b4d89444c25ff5402a5a9a897cf818cc6547",
+    "bytes": 669116,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_10v.svg",
+    "source_sha256": "f8fe28d66e192bc14e2abf249de03c5dbfa19dc85bad17875191bd5ccf9792e9",
+    "exported_sha256": "f8fe28d66e192bc14e2abf249de03c5dbfa19dc85bad17875191bd5ccf9792e9",
+    "bytes": 221082,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_11l.png",
+    "source_sha256": "d8a6a227bb784dfb718da9b814c6fcddf4fd8a21e7f3cb8db75d5ab2226f6c43",
+    "exported_sha256": "d8a6a227bb784dfb718da9b814c6fcddf4fd8a21e7f3cb8db75d5ab2226f6c43",
+    "bytes": 732194,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_11l.svg",
+    "source_sha256": "1e846a28b8d07cb87b67f43a5144958d0852039073682eab83721b3986fb413b",
+    "exported_sha256": "1e846a28b8d07cb87b67f43a5144958d0852039073682eab83721b3986fb413b",
+    "bytes": 226587,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_13l.png",
+    "source_sha256": "3b13ca27e77b936bb3060ea970465c81244bd1692c4c9c9743e14f691cbc75ec",
+    "exported_sha256": "3b13ca27e77b936bb3060ea970465c81244bd1692c4c9c9743e14f691cbc75ec",
+    "bytes": 644841,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_13l.svg",
+    "source_sha256": "9c6da7a90d7a50d964798fd25c03e2d7e911e5ead43528df8b841fc2d188dc1e",
+    "exported_sha256": "9c6da7a90d7a50d964798fd25c03e2d7e911e5ead43528df8b841fc2d188dc1e",
+    "bytes": 230932,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_33pr.png",
+    "source_sha256": "6a20cc3763ce83e46f5a06ae654ccf81cf44f9e241edde7269ee2ce79d54805c",
+    "exported_sha256": "6a20cc3763ce83e46f5a06ae654ccf81cf44f9e241edde7269ee2ce79d54805c",
+    "bytes": 619647,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_33pr.svg",
+    "source_sha256": "b562daeeef7d78188192b4ba9210c3e46d1b550f6a7122eec91385a90bb3f130",
+    "exported_sha256": "b562daeeef7d78188192b4ba9210c3e46d1b550f6a7122eec91385a90bb3f130",
+    "bytes": 224418,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_4.png",
+    "source_sha256": "f457f74840136297fddb35d871e8b1794ae2aa19ec9d27fd351799c8fe9f8466",
+    "exported_sha256": "f457f74840136297fddb35d871e8b1794ae2aa19ec9d27fd351799c8fe9f8466",
+    "bytes": 669077,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_4.svg",
+    "source_sha256": "e60260a180ee90f730eace6a6b0a65b8c5db6091374512a4f78038f94d72bb52",
+    "exported_sha256": "e60260a180ee90f730eace6a6b0a65b8c5db6091374512a4f78038f94d72bb52",
+    "bytes": 219945,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_47l.png",
+    "source_sha256": "9a45fd61fa9dd8bc55ee614c12e1d5573719c6b19e821ddf9b96a8130573d74c",
+    "exported_sha256": "9a45fd61fa9dd8bc55ee614c12e1d5573719c6b19e821ddf9b96a8130573d74c",
+    "bytes": 723350,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_47l.svg",
+    "source_sha256": "cb460b82e7e11aeb09963464f1c2c511b00971c639327705e153be5cace71a7a",
+    "exported_sha256": "cb460b82e7e11aeb09963464f1c2c511b00971c639327705e153be5cace71a7a",
+    "bytes": 223427,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_47m.png",
+    "source_sha256": "5a40ae20163e40bee31c5716f7b964dde65aa2984e4adff4bd0acca8658eb7c9",
+    "exported_sha256": "5a40ae20163e40bee31c5716f7b964dde65aa2984e4adff4bd0acca8658eb7c9",
+    "bytes": 640515,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_47m.svg",
+    "source_sha256": "86455839568005230e5cd1dd03032a448de893b39f74bfe3cb70d18dfae81595",
+    "exported_sha256": "86455839568005230e5cd1dd03032a448de893b39f74bfe3cb70d18dfae81595",
+    "bytes": 229134,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_47s.png",
+    "source_sha256": "50d564fd116cec5d769ec407b1ecf9d5173e878522bef7445742bfb95918765b",
+    "exported_sha256": "50d564fd116cec5d769ec407b1ecf9d5173e878522bef7445742bfb95918765b",
+    "bytes": 608383,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_47s.svg",
+    "source_sha256": "a56a84cf5a7876b674e2085b58c36f375ef5c6c1a5711d65c45ace63ff14dea6",
+    "exported_sha256": "a56a84cf5a7876b674e2085b58c36f375ef5c6c1a5711d65c45ace63ff14dea6",
+    "bytes": 214605,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_6d.png",
+    "source_sha256": "6f86d6abc01661dcd3aa15aa1a32178a1e9ba0d6e84b0bf2406af2a594d229c8",
+    "exported_sha256": "6f86d6abc01661dcd3aa15aa1a32178a1e9ba0d6e84b0bf2406af2a594d229c8",
+    "bytes": 648939,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_6d.svg",
+    "source_sha256": "dcd85ea6e5e2a0ea6c585f5fc92f3ce798075dd96c6587ffa35a737359e478a8",
+    "exported_sha256": "dcd85ea6e5e2a0ea6c585f5fc92f3ce798075dd96c6587ffa35a737359e478a8",
+    "bytes": 222221,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_7AL.png",
+    "source_sha256": "67bde5f26ee7b3bb3b2a78222522bcd928bd83685037a5aaedb560c32e9a9a49",
+    "exported_sha256": "67bde5f26ee7b3bb3b2a78222522bcd928bd83685037a5aaedb560c32e9a9a49",
+    "bytes": 632855,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_7AL.svg",
+    "source_sha256": "4ffcda6e4c3880619b9e6e128f123581abbb3443140cbd532461ef669754c743",
+    "exported_sha256": "4ffcda6e4c3880619b9e6e128f123581abbb3443140cbd532461ef669754c743",
+    "bytes": 218940,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_9p.png",
+    "source_sha256": "3b857f1ea8646ef954c808a78b8eac07f5eb18df4aa155a6bfe4cd1bb4a467bb",
+    "exported_sha256": "3b857f1ea8646ef954c808a78b8eac07f5eb18df4aa155a6bfe4cd1bb4a467bb",
+    "bytes": 656599,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_9p.svg",
+    "source_sha256": "729bfc4900dbd2357bf95d5c3bfc28cab10a2945e76491e67375f6eb6d4cb49c",
+    "exported_sha256": "729bfc4900dbd2357bf95d5c3bfc28cab10a2945e76491e67375f6eb6d4cb49c",
+    "bytes": 221161,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_FEF.png",
+    "source_sha256": "b8c4bc1b465c4aefa80781157b6153f9bdbaf9ee5d4b0dbce990a0a3641f6daf",
+    "exported_sha256": "b8c4bc1b465c4aefa80781157b6153f9bdbaf9ee5d4b0dbce990a0a3641f6daf",
+    "bytes": 598399,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_FEF.svg",
+    "source_sha256": "addaa10dde38ee6a92fe5c9f22bf0ab512107828c9cacec8767c341902e5a09a",
+    "exported_sha256": "addaa10dde38ee6a92fe5c9f22bf0ab512107828c9cacec8767c341902e5a09a",
+    "bytes": 220123,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_IFJp.png",
+    "source_sha256": "a66ac70b400bcb10d73c46fb7e1dbc6138e936b56f95c93f5bb5aba0c9319d7d",
+    "exported_sha256": "a66ac70b400bcb10d73c46fb7e1dbc6138e936b56f95c93f5bb5aba0c9319d7d",
+    "bytes": 604109,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_IFJp.svg",
+    "source_sha256": "76289231c669e3f3cbec530b1580076941d1b97ff60b7f4be4061eddc9e17443",
+    "exported_sha256": "76289231c669e3f3cbec530b1580076941d1b97ff60b7f4be4061eddc9e17443",
+    "bytes": 217980,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_IFSa.png",
+    "source_sha256": "076e4e2611de4ed3844ed3a189e9ff32eb36ad2b595b0c1d9c866cf88f601f4f",
+    "exported_sha256": "076e4e2611de4ed3844ed3a189e9ff32eb36ad2b595b0c1d9c866cf88f601f4f",
+    "bytes": 638237,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_IFSa.svg",
+    "source_sha256": "ebd2e841c8a110eb017a0c3d8a8ad7759de29d942b7eddd21026e00e1a30fbf1",
+    "exported_sha256": "ebd2e841c8a110eb017a0c3d8a8ad7759de29d942b7eddd21026e00e1a30fbf1",
+    "bytes": 214649,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_LO1.png",
+    "source_sha256": "750d261472092010ba0b9a70bd89e746b9a8900455d38092cceeb243699b66be",
+    "exported_sha256": "750d261472092010ba0b9a70bd89e746b9a8900455d38092cceeb243699b66be",
+    "bytes": 596871,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_LO1.svg",
+    "source_sha256": "b412a1afc7c387d151b576fae6b2a14772eab0644d0eafb1e486421080bfbeea",
+    "exported_sha256": "b412a1afc7c387d151b576fae6b2a14772eab0644d0eafb1e486421080bfbeea",
+    "bytes": 220111,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_LO2.png",
+    "source_sha256": "53a621baab02851d86844c14444a98c5eb5c066fa48eb746f27ad60fe3259ab4",
+    "exported_sha256": "53a621baab02851d86844c14444a98c5eb5c066fa48eb746f27ad60fe3259ab4",
+    "bytes": 617870,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_LO2.svg",
+    "source_sha256": "e0d11cbc60f3f74c048e0fd9c1d2e6c83bdcc6faee19e6ca57f3982b953a0af0",
+    "exported_sha256": "e0d11cbc60f3f74c048e0fd9c1d2e6c83bdcc6faee19e6ca57f3982b953a0af0",
+    "bytes": 225553,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_OFC.png",
+    "source_sha256": "742f3ed07d504322ec503502b4f7b362d2845021a7e47b7b3dc62f953b58000c",
+    "exported_sha256": "742f3ed07d504322ec503502b4f7b362d2845021a7e47b7b3dc62f953b58000c",
+    "bytes": 675144,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_OFC.svg",
+    "source_sha256": "c6eb9b62662039a337235726d7d0235b18de19462a506ed616eaa283b921e973",
+    "exported_sha256": "c6eb9b62662039a337235726d7d0235b18de19462a506ed616eaa283b921e973",
+    "bytes": 220249,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_OFC_nine.png",
+    "source_sha256": "deaff4e3c0e297918826298cd518728b28ff697a37950c1f1e1608e8b99ac4cc",
+    "exported_sha256": "deaff4e3c0e297918826298cd518728b28ff697a37950c1f1e1608e8b99ac4cc",
+    "bytes": 650731,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_OFC_nine.svg",
+    "source_sha256": "0620a62f3c5c5ea177e4c575c33be1e2bce413f63515bda7b4445500023e271b",
+    "exported_sha256": "0620a62f3c5c5ea177e4c575c33be1e2bce413f63515bda7b4445500023e271b",
+    "bytes": 223391,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_OP2-3.png",
+    "source_sha256": "02cb701e2ba9968bd8abababc6ee104c9fb5c094fe5ac1bab37b2373d2439061",
+    "exported_sha256": "02cb701e2ba9968bd8abababc6ee104c9fb5c094fe5ac1bab37b2373d2439061",
+    "bytes": 648678,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_OP2-3.svg",
+    "source_sha256": "8c8269cdf820a6885b2761e8a6f80c0dba06d73cef017eb4475a07e94620c0f4",
+    "exported_sha256": "8c8269cdf820a6885b2761e8a6f80c0dba06d73cef017eb4475a07e94620c0f4",
+    "bytes": 213717,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_PIT.png",
+    "source_sha256": "e9563363311c13eb1faa784bcac46f52c486f59721f206f41309ec262a7f2430",
+    "exported_sha256": "e9563363311c13eb1faa784bcac46f52c486f59721f206f41309ec262a7f2430",
+    "bytes": 581182,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_PIT.svg",
+    "source_sha256": "e35b347928a23c63896117b79a93786437858b4ccf3901fe83cdbc996eda1036",
+    "exported_sha256": "e35b347928a23c63896117b79a93786437858b4ccf3901fe83cdbc996eda1036",
+    "bytes": 215760,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_POS2.png",
+    "source_sha256": "c7c1dc94bbe0908cce6a6a8db504ad9cb8fcc3294250499b215c6392a3465d1e",
+    "exported_sha256": "c7c1dc94bbe0908cce6a6a8db504ad9cb8fcc3294250499b215c6392a3465d1e",
+    "bytes": 693778,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_POS2.svg",
+    "source_sha256": "e8a424d576745daab4270b3434c52ba8552ecdbe108e9d79ebd85c1389ad22ad",
+    "exported_sha256": "e8a424d576745daab4270b3434c52ba8552ecdbe108e9d79ebd85c1389ad22ad",
+    "bytes": 221279,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_RSC.png",
+    "source_sha256": "1b4b441d486041a837ae345b327f2eab3068fcc819439bfa0c44981030cc270f",
+    "exported_sha256": "1b4b441d486041a837ae345b327f2eab3068fcc819439bfa0c44981030cc270f",
+    "bytes": 633963,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_RSC.svg",
+    "source_sha256": "feed419f0634014fbf15c7fdd1fa57aa3cb06000a942c6b63d363515b24f9ea8",
+    "exported_sha256": "feed419f0634014fbf15c7fdd1fa57aa3cb06000a942c6b63d363515b24f9ea8",
+    "bytes": 220100,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_STV.png",
+    "source_sha256": "c102aa7c3e749931d0fc288178b9319b29429165c332f2e63d61f9d053e94242",
+    "exported_sha256": "c102aa7c3e749931d0fc288178b9319b29429165c332f2e63d61f9d053e94242",
+    "bytes": 653189,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_STV.svg",
+    "source_sha256": "2b27b440bb5cfa54713f08e1be08f9ab6199722c3ad80c8f4f57fcb2350d1d7a",
+    "exported_sha256": "2b27b440bb5cfa54713f08e1be08f9ab6199722c3ad80c8f4f57fcb2350d1d7a",
+    "bytes": 223349,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_TE1a.png",
+    "source_sha256": "a8b63d0d004796f6cf648d1adc65d1de4239d52e9753f0e63962df257b0ba40b",
+    "exported_sha256": "a8b63d0d004796f6cf648d1adc65d1de4239d52e9753f0e63962df257b0ba40b",
+    "bytes": 675915,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_TE1a.svg",
+    "source_sha256": "d6c1e8b3f3078dfa4db2f2f8ad8d740c1dad747df7765590d4bde6bb8ad816dd",
+    "exported_sha256": "d6c1e8b3f3078dfa4db2f2f8ad8d740c1dad747df7765590d4bde6bb8ad816dd",
+    "bytes": 223429,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_TPOJ1.png",
+    "source_sha256": "cd78e2322736d7df8f49ae8af36cd34a4de5e75aaac4d02f620d4c38ece4777d",
+    "exported_sha256": "cd78e2322736d7df8f49ae8af36cd34a4de5e75aaac4d02f620d4c38ece4777d",
+    "bytes": 593851,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_TPOJ1.svg",
+    "source_sha256": "ec47218f37d2138d1efb77427f7cfa35f148ebcd05ddc2ca9b8e1251c2d518ea",
+    "exported_sha256": "ec47218f37d2138d1efb77427f7cfa35f148ebcd05ddc2ca9b8e1251c2d518ea",
+    "bytes": 230156,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_TPOJ2.png",
+    "source_sha256": "7163b9362f0ba9d83142dca779fadd8ace854bf5e0574f5bc0785c294b3b62d8",
+    "exported_sha256": "7163b9362f0ba9d83142dca779fadd8ace854bf5e0574f5bc0785c294b3b62d8",
+    "bytes": 568720,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_TPOJ2.svg",
+    "source_sha256": "f042d8aaee23d547b45ce237b65acedff08f962d5a16dfeb8579200ee947cf7c",
+    "exported_sha256": "f042d8aaee23d547b45ce237b65acedff08f962d5a16dfeb8579200ee947cf7c",
+    "bytes": 219118,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_V1.png",
+    "source_sha256": "ba07f4be40fe7b053af86cc31bfb338c977ba6b0ba782699f9361af1cb598d91",
+    "exported_sha256": "ba07f4be40fe7b053af86cc31bfb338c977ba6b0ba782699f9361af1cb598d91",
+    "bytes": 623999,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_V1.svg",
+    "source_sha256": "37f68fda7b1ea0b2e8b0024eb808fe30538c97c267ffb2e06dc5df8cb430ca51",
+    "exported_sha256": "37f68fda7b1ea0b2e8b0024eb808fe30538c97c267ffb2e06dc5df8cb430ca51",
+    "bytes": 214629,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_V2.png",
+    "source_sha256": "304328238ad618f308ed4625fd1ae5e723dcf85f2fcc28154b3f5d1d42675405",
+    "exported_sha256": "304328238ad618f308ed4625fd1ae5e723dcf85f2fcc28154b3f5d1d42675405",
+    "bytes": 599261,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_V2.svg",
+    "source_sha256": "2e9c47718e01cc7f5308b44cfcaa3d6c111006629e77386384c0d02f86ba928f",
+    "exported_sha256": "2e9c47718e01cc7f5308b44cfcaa3d6c111006629e77386384c0d02f86ba928f",
+    "bytes": 222338,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_V3B.png",
+    "source_sha256": "6d2a80c0d423a447acf05fdf0f806f2ff65406f6d09b7a198f4c87413ffc050b",
+    "exported_sha256": "6d2a80c0d423a447acf05fdf0f806f2ff65406f6d09b7a198f4c87413ffc050b",
+    "bytes": 608984,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_V3B.svg",
+    "source_sha256": "8035e1ae3cdb85dc6dacf4e71c599e30d95a9406fe40b4db9240f5a992f4692a",
+    "exported_sha256": "8035e1ae3cdb85dc6dacf4e71c599e30d95a9406fe40b4db9240f5a992f4692a",
+    "bytes": 225573,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_V4.png",
+    "source_sha256": "e646b9ef28417d051ae6499f66f66a09a864cb296c6af65b27d34a1d81f6d809",
+    "exported_sha256": "e646b9ef28417d051ae6499f66f66a09a864cb296c6af65b27d34a1d81f6d809",
+    "bytes": 575990,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_V4.svg",
+    "source_sha256": "52fe4cbb2e9adc598d538b92b9c15f7013bb5665453a86e52125441ff461b073",
+    "exported_sha256": "52fe4cbb2e9adc598d538b92b9c15f7013bb5665453a86e52125441ff461b073",
+    "bytes": 227764,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_VIP.png",
+    "source_sha256": "31b551f1759a462525607f56c3241d539e40c411bcf09666212500d8b4f63ee1",
+    "exported_sha256": "31b551f1759a462525607f56c3241d539e40c411bcf09666212500d8b4f63ee1",
+    "bytes": 597752,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_VIP.svg",
+    "source_sha256": "826ca8f2760a67c98fd0006a8e5affe7fcf45017ddd0f9ba67e727eeedf84ddf",
+    "exported_sha256": "826ca8f2760a67c98fd0006a8e5affe7fcf45017ddd0f9ba67e727eeedf84ddf",
+    "bytes": 221179,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_VMV1.png",
+    "source_sha256": "647eee3889048ab7f4b90bbc4d46bd71c25df535686e3f71791e95a544ca72a8",
+    "exported_sha256": "647eee3889048ab7f4b90bbc4d46bd71c25df535686e3f71791e95a544ca72a8",
+    "bytes": 615479,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_VMV1.svg",
+    "source_sha256": "697cadf2761cfed6a58d0f588433a21cdfcf3940ba3fb1219ab4ed91ea9c6469",
+    "exported_sha256": "697cadf2761cfed6a58d0f588433a21cdfcf3940ba3fb1219ab4ed91ea9c6469",
+    "bytes": 216969,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_VMV3.png",
+    "source_sha256": "c1a6479189a016c313088d9cd4581eba4f84a4d90979d2d6538869e86127e832",
+    "exported_sha256": "c1a6479189a016c313088d9cd4581eba4f84a4d90979d2d6538869e86127e832",
+    "bytes": 579908,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_VMV3.svg",
+    "source_sha256": "27e265efe4c66d8ba2f6249f8d68e55132a6ae8f69bc92b406e76b8713413c7d",
+    "exported_sha256": "27e265efe4c66d8ba2f6249f8d68e55132a6ae8f69bc92b406e76b8713413c7d",
+    "bytes": 221171,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_VVC.png",
+    "source_sha256": "f46a143191a3356b55624ae17b42c5989c1a5cac48a66b12ba51c307da78ac50",
+    "exported_sha256": "f46a143191a3356b55624ae17b42c5989c1a5cac48a66b12ba51c307da78ac50",
+    "bytes": 583444,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_VVC.svg",
+    "source_sha256": "d26b8b904dfc32b66dafcd524107be20f7b198fc87f61768772b4a4e32c91028",
+    "exported_sha256": "d26b8b904dfc32b66dafcd524107be20f7b198fc87f61768772b4a4e32c91028",
+    "bytes": 221186,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_a24.png",
+    "source_sha256": "854500b9d4662b12c059179f0c827ef3fb32fd2ad125300f4dbac80483574698",
+    "exported_sha256": "854500b9d4662b12c059179f0c827ef3fb32fd2ad125300f4dbac80483574698",
+    "bytes": 644300,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_a24.svg",
+    "source_sha256": "8d48ac35668ecce72f95806d0ba651df646f7a31d8df1a6a3dcad9d3bd6e4cc7",
+    "exported_sha256": "8d48ac35668ecce72f95806d0ba651df646f7a31d8df1a6a3dcad9d3bd6e4cc7",
+    "bytes": 223374,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_a47r.png",
+    "source_sha256": "7e872cbce2aadb3eeb962f21a6b27e20dd526f79e45c2c55fe16477906031583",
+    "exported_sha256": "7e872cbce2aadb3eeb962f21a6b27e20dd526f79e45c2c55fe16477906031583",
+    "bytes": 705790,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_a47r.svg",
+    "source_sha256": "7ec7d68ef8d2e9f76626e3368f19d5ce3ead416f9a0c40bc64cdd0b5c65b721d",
+    "exported_sha256": "7ec7d68ef8d2e9f76626e3368f19d5ce3ead416f9a0c40bc64cdd0b5c65b721d",
+    "bytes": 226636,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_early_intermediate_visual.png",
+    "source_sha256": "c4b23b13bac658d6c2245f6bce140d3e591cfc1b0d11bf78d41cacd587bb71c4",
+    "exported_sha256": "c4b23b13bac658d6c2245f6bce140d3e591cfc1b0d11bf78d41cacd587bb71c4",
+    "bytes": 600365,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_early_intermediate_visual.svg",
+    "source_sha256": "a66eaa63413e6c66520fdda1f645547288d2223fec4f9ffb3f450b677530c360",
+    "exported_sha256": "a66eaa63413e6c66520fdda1f645547288d2223fec4f9ffb3f450b677530c360",
+    "bytes": 222289,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_higher_visual.png",
+    "source_sha256": "7f42ab25c07562e68054d3d2736232706f491713cbc000e80e9c046f50e34ea9",
+    "exported_sha256": "7f42ab25c07562e68054d3d2736232706f491713cbc000e80e9c046f50e34ea9",
+    "bytes": 578100,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_higher_visual.svg",
+    "source_sha256": "27a53f9c8282a351b789556b7507bb58b3544867324b55f614c6f1f71ede3fe5",
+    "exported_sha256": "27a53f9c8282a351b789556b7507bb58b3544867324b55f614c6f1f71ede3fe5",
+    "bytes": 212504,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_lOFC.png",
+    "source_sha256": "93988a2055207f21d11bb3aa4a452c3fecd217c8395250c3b91b0c3c23ef2117",
+    "exported_sha256": "93988a2055207f21d11bb3aa4a452c3fecd217c8395250c3b91b0c3c23ef2117",
+    "bytes": 659096,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_lOFC.svg",
+    "source_sha256": "db92aed470010d3998ededb6be23cce8cefe8708423d2f822c3d43f9f7663beb",
+    "exported_sha256": "db92aed470010d3998ededb6be23cce8cefe8708423d2f822c3d43f9f7663beb",
+    "bytes": 214602,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_lateral_OFC.png",
+    "source_sha256": "265c9f3358ed26b452058a64b8617dafedb1c64123aa03ebecf8d06ae74177ac",
+    "exported_sha256": "265c9f3358ed26b452058a64b8617dafedb1c64123aa03ebecf8d06ae74177ac",
+    "bytes": 655646,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_lateral_OFC.svg",
+    "source_sha256": "5a2b0385c9146a6a6ce51fc6c56a7c4e70b2573f721c6a89c27bd77b4b5b8b53",
+    "exported_sha256": "5a2b0385c9146a6a6ce51fc6c56a7c4e70b2573f721c6a89c27bd77b4b5b8b53",
+    "bytes": 217971,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_mOFC.png",
+    "source_sha256": "75c4ee293b0149f1294b6d74bd6fafff4853836d5adb79f492aef5ba515600f3",
+    "exported_sha256": "75c4ee293b0149f1294b6d74bd6fafff4853836d5adb79f492aef5ba515600f3",
+    "bytes": 665102,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_mOFC.svg",
+    "source_sha256": "e1295a998c19964cb9f182e64795eedff7c7ed89b7de2d178dac9a88a313441a",
+    "exported_sha256": "e1295a998c19964cb9f182e64795eedff7c7ed89b7de2d178dac9a88a313441a",
+    "bytes": 216779,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_medial_OFC.png",
+    "source_sha256": "ef7df371b95bdfa75880b818c67aa0b3668cd9fe778f99816081501b30407153",
+    "exported_sha256": "ef7df371b95bdfa75880b818c67aa0b3668cd9fe778f99816081501b30407153",
+    "bytes": 654915,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_medial_OFC.svg",
+    "source_sha256": "81aec8515734143d3542aa9db142313cb0d7052b4238347e5a38fb40788c7527",
+    "exported_sha256": "81aec8515734143d3542aa9db142313cb0d7052b4238347e5a38fb40788c7527",
+    "bytes": 222106,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_p47r.png",
+    "source_sha256": "688f8035640b0b0de72bd6c4bd6e2585b07b32001694c998c33d2f7a3b81415c",
+    "exported_sha256": "688f8035640b0b0de72bd6c4bd6e2585b07b32001694c998c33d2f7a3b81415c",
+    "bytes": 670220,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_p47r.svg",
+    "source_sha256": "d31949d1d9c6c318bcb748d4d67b0a34890ab95e1414725b8f3782ddad377bc4",
+    "exported_sha256": "d31949d1d9c6c318bcb748d4d67b0a34890ab95e1414725b8f3782ddad377bc4",
+    "bytes": 212514,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_pOFC.png",
+    "source_sha256": "778fced7f45126fe5f08af1dccb9acc5fbdc422fe87c7523cb9670b2b057538a",
+    "exported_sha256": "778fced7f45126fe5f08af1dccb9acc5fbdc422fe87c7523cb9670b2b057538a",
+    "bytes": 664274,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_pOFC.svg",
+    "source_sha256": "044a4729f8e2387bf38cf7d689a0c0913da891f42b984ff521830569f1dff41c",
+    "exported_sha256": "044a4729f8e2387bf38cf7d689a0c0913da891f42b984ff521830569f1dff41c",
+    "bytes": 212553,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_s32.png",
+    "source_sha256": "8b4d579ad674ded8a954dfdf3dfbc0d4fc75d5307643f7b6ac93be5ef1126532",
+    "exported_sha256": "8b4d579ad674ded8a954dfdf3dfbc0d4fc75d5307643f7b6ac93be5ef1126532",
+    "bytes": 653104,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_s32.svg",
+    "source_sha256": "3a4c19c219af6bb1fa9a5ce5d0585a00f27022bb4084d2c38f8753c3b9506a41",
+    "exported_sha256": "3a4c19c219af6bb1fa9a5ce5d0585a00f27022bb4084d2c38f8753c3b9506a41",
+    "bytes": 221139,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_vmPFC.png",
+    "source_sha256": "10e14cb67a86de95d7cb808ed0496a3cc5749abc4fbf478a2362884e5e8444dd",
+    "exported_sha256": "10e14cb67a86de95d7cb808ed0496a3cc5749abc4fbf478a2362884e5e8444dd",
+    "bytes": 654330,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/figures/region_vmPFC.svg",
+    "source_sha256": "a2c279d4377876141d20a2776f85879be841a84987db3c3235fc7599085d4f1d",
+    "exported_sha256": "a2c279d4377876141d20a2776f85879be841a84987db3c3235fc7599085d4f1d",
+    "bytes": 222291,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/generation_audit.json",
+    "source_sha256": "237e7b0e400c951722ee63d1a6994cf4f3b61f56056b972d9e6d8bc2988f517b",
+    "exported_sha256": "237e7b0e400c951722ee63d1a6994cf4f3b61f56056b972d9e6d8bc2988f517b",
+    "bytes": 32151,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/implementation_consistency.csv",
+    "source_sha256": "8e15e71b67b878e56c759be2e618082b7fde65b4d269573d1d2b857c4d3e6a52",
+    "exported_sha256": "8e15e71b67b878e56c759be2e618082b7fde65b4d269573d1d2b857c4d3e6a52",
+    "bytes": 220489,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/narrative_audit.json",
+    "source_sha256": "eb102d312dcbb2437e0a2654cbc1d0569b0b76f8c3b474661411f40d41f2192d",
+    "exported_sha256": "eb102d312dcbb2437e0a2654cbc1d0569b0b76f8c3b474661411f40d41f2192d",
+    "bytes": 326,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/narrative_script_snapshot.py",
+    "source_sha256": "c79068f925a26162aea3d3414253f007b70a009438259762f3c517b89a1c20fe",
+    "exported_sha256": "c79068f925a26162aea3d3414253f007b70a009438259762f3c517b89a1c20fe",
+    "bytes": 20491,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/parallel_region_summary.csv",
+    "source_sha256": "22122e3aaeb192556e2d430a67d05049e9dabef31ba515264e2248c03fbc8717",
+    "exported_sha256": "22122e3aaeb192556e2d430a67d05049e9dabef31ba515264e2248c03fbc8717",
+    "bytes": 151638,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/participant_summary.csv",
+    "source_sha256": "f046efc02c7c33827b0390f25fb161445346e404c37a3f74dc4b71f130e9e048",
+    "exported_sha256": "f046efc02c7c33827b0390f25fb161445346e404c37a3f74dc4b71f130e9e048",
+    "bytes": 388743,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/random_region_summary.csv",
+    "source_sha256": "116efa94e6ab2aec5471373c005fbb434f2e3d5d066080a24ccf5f2869140c70",
+    "exported_sha256": "116efa94e6ab2aec5471373c005fbb434f2e3d5d066080a24ccf5f2869140c70",
+    "bytes": 7239,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/script_snapshot.py",
+    "source_sha256": "30793ab34637aea15880c785669f2bef86e9e138b945d03be9552ebec3f5b55c",
+    "exported_sha256": "30793ab34637aea15880c785669f2bef86e9e138b945d03be9552ebec3f5b55c",
+    "bytes": 19257,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/validation_script_snapshot.py",
+    "source_sha256": "325100b33a3239770b0a65f57d179aa11000571193156efb989dcc491ac0aacd",
+    "exported_sha256": "325100b33a3239770b0a65f57d179aa11000571193156efb989dcc491ac0aacd",
+    "bytes": 6803,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/visual_QA.json",
+    "source_sha256": "368ce5d15509b120a1dbfdcf66d1f00e3f5091cf3288067e102bb0d713654c10",
+    "exported_sha256": "368ce5d15509b120a1dbfdcf66d1f00e3f5091cf3288067e102bb0d713654c10",
+    "bytes": 679,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/一致性与个体结果.md",
+    "source_sha256": "87899649b846c0f9e893fca1e7fe5815af2da870f338b1ef2149140be25ac33a",
+    "exported_sha256": "87899649b846c0f9e893fca1e7fe5815af2da870f338b1ef2149140be25ac33a",
+    "bytes": 226768,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/全部区域并列摘要.md",
+    "source_sha256": "86d38b360b89abc05a6ed541b23c1d557f8856d9f0274b851e04031761e8567a",
+    "exported_sha256": "86d38b360b89abc05a6ed541b23c1d557f8856d9f0274b851e04031761e8567a",
+    "bytes": 64783,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/结果报告.md",
+    "source_sha256": "609b36fb60add77c6d038ad304b22a7b5bd2e72e2c439bcc7f27667532803289",
+    "exported_sha256": "609b36fb60add77c6d038ad304b22a7b5bd2e72e2c439bcc7f27667532803289",
+    "bytes": 16874,
+    "transformations": []
+  },
+  {
+    "path": "outputs/20260918_控制实验报告_v03/逐区域曲线索引.md",
+    "source_sha256": "c7f9e7bb1ec223b0c21464be63c7f7faa40bb5e688fa6cc8d76edac8d4e2b2a9",
+    "exported_sha256": "c7f9e7bb1ec223b0c21464be63c7f7faa40bb5e688fa6cc8d76edac8d4e2b2a9",
+    "bytes": 3769,
+    "transformations": []
+  },
+  {
+    "path": "scripts/adopt_neural_trial_exclusions.py",
+    "source_sha256": "73648e8cc96ff81e3c8c43bbbf585f4273c83fa406c7e192e78212384bf984fc",
+    "exported_sha256": "73648e8cc96ff81e3c8c43bbbf585f4273c83fa406c7e192e78212384bf984fc",
+    "bytes": 13186,
+    "transformations": []
+  },
+  {
+    "path": "scripts/assess_rsa_split.py",
+    "source_sha256": "58cc1e0f95d3b864f92d824dbf763a183af382fd131dea970f8b55ddac4fa158",
+    "exported_sha256": "58cc1e0f95d3b864f92d824dbf763a183af382fd131dea970f8b55ddac4fa158",
+    "bytes": 3682,
+    "transformations": []
+  },
+  {
+    "path": "scripts/audit_control_tokens.py",
+    "source_sha256": "32282228c1510c67d4f06acff491ddc1ca0cf3d4d5a9e9b12abd1ea39a6de544",
+    "exported_sha256": "32282228c1510c67d4f06acff491ddc1ca0cf3d4d5a9e9b12abd1ea39a6de544",
+    "bytes": 4222,
+    "transformations": []
+  },
+  {
+    "path": "scripts/audit_design_inputs.py",
+    "source_sha256": "5fef9882e1f1efd9c548996c702f3953f35326e7ad4c701a0b68cee6314e889e",
+    "exported_sha256": "5fef9882e1f1efd9c548996c702f3953f35326e7ad4c701a0b68cee6314e889e",
+    "bytes": 13673,
+    "transformations": []
+  },
+  {
+    "path": "scripts/audit_external_spm.py",
+    "source_sha256": "7fcaf9419f1b11a040a62903354f1393f54ded25fb490ae268223574f0c3c5f0",
+    "exported_sha256": "7fcaf9419f1b11a040a62903354f1393f54ded25fb490ae268223574f0c3c5f0",
+    "bytes": 11519,
+    "transformations": []
+  },
+  {
+    "path": "scripts/audit_fmri_llm_correspondence.py",
+    "source_sha256": "6def11125a027de59cbb427e0a67fc61f387cdafcd088baaabe6bf404dab5e3a",
+    "exported_sha256": "6def11125a027de59cbb427e0a67fc61f387cdafcd088baaabe6bf404dab5e3a",
+    "bytes": 9547,
+    "transformations": []
+  },
+  {
+    "path": "scripts/audit_hcp_design_inputs.py",
+    "source_sha256": "6618d3c63bd1354effb73bfee5dd9e87ca15651a6ca1893c1b5127fc30e89f5f",
+    "exported_sha256": "e2b34785174d2839d2f53222f88865ad91dad7b8ec12c387bb3cf4ef34287857",
+    "bytes": 6121,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "scripts/audit_missingness_and_prepare_trial_folds.py",
+    "source_sha256": "6fc1266cafb39bb127bb62994b0add7639f921e597bca308deea26693f6d70ec",
+    "exported_sha256": "6fc1266cafb39bb127bb62994b0add7639f921e597bca308deea26693f6d70ec",
+    "bytes": 7936,
+    "transformations": []
+  },
+  {
+    "path": "scripts/audit_nutrient_extension.py",
+    "source_sha256": "dbe2ad84b282238d1046093a3a3eec50e970a9f89a48af1f88de1a0a001ab23c",
+    "exported_sha256": "dbe2ad84b282238d1046093a3a3eec50e970a9f89a48af1f88de1a0a001ab23c",
+    "bytes": 4515,
+    "transformations": []
+  },
+  {
+    "path": "scripts/audit_spm_scan_identity.py",
+    "source_sha256": "620f7f2e3e6dee69ddebb4df797311c6729b64dddc985505d209a934b41ecfe9",
+    "exported_sha256": "80011478786981a1bf5401c1438ccee9a264acdd0d3b8c8932af87a4db3643cf",
+    "bytes": 5030,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "scripts/batched_readout.py",
+    "source_sha256": "977ba84927d6fabc65aedf0f4d1f7105da0ecb470f19b2682c1b41bc1b670f83",
+    "exported_sha256": "977ba84927d6fabc65aedf0f4d1f7105da0ecb470f19b2682c1b41bc1b670f83",
+    "bytes": 4276,
+    "transformations": []
+  },
+  {
+    "path": "scripts/build_feature_matrices.py",
+    "source_sha256": "86dcb89251cbf603d41c0627f089f01815f9755be9a94e0e74335ce219f9d25b",
+    "exported_sha256": "86dcb89251cbf603d41c0627f089f01815f9755be9a94e0e74335ce219f9d25b",
+    "bytes": 3972,
+    "transformations": []
+  },
+  {
+    "path": "scripts/compare_direct_ratings.py",
+    "source_sha256": "4b43759e20fae43584aae0a8e6ae57fe47c297e087b6384f38081814d1dc7e27",
+    "exported_sha256": "4b43759e20fae43584aae0a8e6ae57fe47c297e087b6384f38081814d1dc7e27",
+    "bytes": 12706,
+    "transformations": []
+  },
+  {
+    "path": "scripts/complete_controls_report_v09_2.py",
+    "source_sha256": "30793ab34637aea15880c785669f2bef86e9e138b945d03be9552ebec3f5b55c",
+    "exported_sha256": "30793ab34637aea15880c785669f2bef86e9e138b945d03be9552ebec3f5b55c",
+    "bytes": 19257,
+    "transformations": []
+  },
+  {
+    "path": "scripts/continue_multi_nutrient_sequence.py",
+    "source_sha256": "53619922ce98b9d26944784d11c82d479de6cc9173eb5439eeb893def110ace3",
+    "exported_sha256": "53619922ce98b9d26944784d11c82d479de6cc9173eb5439eeb893def110ace3",
+    "bytes": 2524,
+    "transformations": []
+  },
+  {
+    "path": "scripts/control_prompt_spec.py",
+    "source_sha256": "5478c93f4c540b072b0215e75b81c03e95b3778ffcc3591e934fca46353f0854",
+    "exported_sha256": "5478c93f4c540b072b0215e75b81c03e95b3778ffcc3591e934fca46353f0854",
+    "bytes": 575,
+    "transformations": []
+  },
+  {
+    "path": "scripts/diagnose_acquisition_coverage.py",
+    "source_sha256": "4a358d8a8582622609f36ada019b4ee60dc5a22434c8441506c32920ecc72e3a",
+    "exported_sha256": "4a358d8a8582622609f36ada019b4ee60dc5a22434c8441506c32920ecc72e3a",
+    "bytes": 3616,
+    "transformations": []
+  },
+  {
+    "path": "scripts/diagnose_human_brain_control.py",
+    "source_sha256": "8457f9a52474a7426ee492a8ddf005ee48680683eeaa3d4447b415547e6e943a",
+    "exported_sha256": "8457f9a52474a7426ee492a8ddf005ee48680683eeaa3d4447b415547e6e943a",
+    "bytes": 8639,
+    "transformations": []
+  },
+  {
+    "path": "scripts/diagnose_timing_neural_sensitivity.py",
+    "source_sha256": "ebcc09d98d853e406d86d358895cdb02159fc30353fbf5840e901de5728ce2eb",
+    "exported_sha256": "ebcc09d98d853e406d86d358895cdb02159fc30353fbf5840e901de5728ce2eb",
+    "bytes": 5912,
+    "transformations": []
+  },
+  {
+    "path": "scripts/download_qwen.py",
+    "source_sha256": "2434b1a1c65fd0f7e041be6bb710255c1d891af61a8ec0db23e14682f3524fcf",
+    "exported_sha256": "2434b1a1c65fd0f7e041be6bb710255c1d891af61a8ec0db23e14682f3524fcf",
+    "bytes": 1122,
+    "transformations": []
+  },
+  {
+    "path": "scripts/extract_hcp_patterns.py",
+    "source_sha256": "efcbcd90d54595c920feaccd031f2b445f20311788b02450cebfd8bc5f5d5772",
+    "exported_sha256": "efcbcd90d54595c920feaccd031f2b445f20311788b02450cebfd8bc5f5d5772",
+    "bytes": 6521,
+    "transformations": []
+  },
+  {
+    "path": "scripts/extract_random_hcp_v09.py",
+    "source_sha256": "345e1393a19f1175132aa18cc81d5267459c9fd3feb83caea5926991d4374aca",
+    "exported_sha256": "345e1393a19f1175132aa18cc81d5267459c9fd3feb83caea5926991d4374aca",
+    "bytes": 6521,
+    "transformations": []
+  },
+  {
+    "path": "scripts/extract_rsa_patterns.py",
+    "source_sha256": "3e1e137fe3dff3b52931b30411a037e62dd37332f4d8a1bc862792894a287ee7",
+    "exported_sha256": "d12f61b6becef576e93b7815bd9ab37dbc50fa7d022be84fbc66fa39275fd090",
+    "bytes": 8515,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "scripts/feature_inputs.py",
+    "source_sha256": "98cae4fdfaf1d390815dbea14c58dcec5c0b915ba0933f63d8ae5996b0e0e55b",
+    "exported_sha256": "98cae4fdfaf1d390815dbea14c58dcec5c0b915ba0933f63d8ae5996b0e0e55b",
+    "bytes": 2608,
+    "transformations": []
+  },
+  {
+    "path": "scripts/frozen_readout.py",
+    "source_sha256": "b9c5c7e0216dc99836b0ca8d1b441a9f8f149044d43de78bef8391c4b2d16cf4",
+    "exported_sha256": "b9c5c7e0216dc99836b0ca8d1b441a9f8f149044d43de78bef8391c4b2d16cf4",
+    "bytes": 3541,
+    "transformations": []
+  },
+  {
+    "path": "scripts/migrate_handoff.py",
+    "source_sha256": "778a7760f9eda961411d752e3d5f407584f44c1bdba1063dfccc33fbe1fc1e8f",
+    "exported_sha256": "c7a11e45d9deb68358b1b760dc78d8aa61c1ab0caf62ff59e17621b5b7708ad0",
+    "bytes": 8945,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "scripts/multi_nutrient_prompt_spec.py",
+    "source_sha256": "a5ca7abbfda3a2468df2b6aad246205443881328e1805fd28beba340e407d246",
+    "exported_sha256": "a5ca7abbfda3a2468df2b6aad246205443881328e1805fd28beba340e407d246",
+    "bytes": 714,
+    "transformations": []
+  },
+  {
+    "path": "scripts/pilot_control_interface.py",
+    "source_sha256": "937366d2ef0d4023c0921ef646d921176266bd2c9421d242def7413b3e698070",
+    "exported_sha256": "937366d2ef0d4023c0921ef646d921176266bd2c9421d242def7413b3e698070",
+    "bytes": 15779,
+    "transformations": []
+  },
+  {
+    "path": "scripts/pilot_multi_nutrient_interface.py",
+    "source_sha256": "f6e5d3b8da4d86d22386304b567c4d0ac9c9988bfff7eff3acb2a19401bb67c3",
+    "exported_sha256": "f6e5d3b8da4d86d22386304b567c4d0ac9c9988bfff7eff3acb2a19401bb67c3",
+    "bytes": 15800,
+    "transformations": []
+  },
+  {
+    "path": "scripts/pilot_qwen_interface.py",
+    "source_sha256": "58b79f6da9a966637125b8d8d1b23d9507ac469b57ba4e758fab03791063b97f",
+    "exported_sha256": "58b79f6da9a966637125b8d8d1b23d9507ac469b57ba4e758fab03791063b97f",
+    "bytes": 15789,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prepare_analysis_tables.py",
+    "source_sha256": "f02a2b009020bd58148b5e96fed53ef62736ed0e77ce89319c34072d430118c1",
+    "exported_sha256": "f02a2b009020bd58148b5e96fed53ef62736ed0e77ce89319c34072d430118c1",
+    "bytes": 5954,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prepare_controls_v09.py",
+    "source_sha256": "180dc032d825b37a311d3bf9099e179671df35abccd444604e7928744d98a563",
+    "exported_sha256": "180dc032d825b37a311d3bf9099e179671df35abccd444604e7928744d98a563",
+    "bytes": 7754,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prepare_github_share.py",
+    "source_sha256": "7cc52a52db9bb183e582215037bade3151206bfef323112a275c8f33a4e7c67c",
+    "exported_sha256": "26772f7d8afefe6ab40bb63e1aa558a5fb37fcaf1a40ba5890c6a295564b316b",
+    "bytes": 10429,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "scripts/prepare_hcp_atlas.py",
+    "source_sha256": "e921a40e5afb6a2a53367131c0fa490c8924a3d5105851ff542242dec7130ced",
+    "exported_sha256": "e921a40e5afb6a2a53367131c0fa490c8924a3d5105851ff542242dec7130ced",
+    "bytes": 6871,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prepare_multi_nutrients.py",
+    "source_sha256": "ef5e08b7cae05d16d520a9ec1de1179261c2a87b63271c17e06996bc9a7b4f5d",
+    "exported_sha256": "ef5e08b7cae05d16d520a9ec1de1179261c2a87b63271c17e06996bc9a7b4f5d",
+    "bytes": 10355,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prepare_ofc_patterns.py",
+    "source_sha256": "757a85b5207e58195dc3a495cee0b2b45c99497edc9026a219cde1b3933fddc6",
+    "exported_sha256": "757a85b5207e58195dc3a495cee0b2b45c99497edc9026a219cde1b3933fddc6",
+    "bytes": 7379,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prepare_random_hcp_v09.py",
+    "source_sha256": "be7a7fc57c561c434007f27cd995171fd06e630cae556b8d7f0dc46eae366bf4",
+    "exported_sha256": "be7a7fc57c561c434007f27cd995171fd06e630cae556b8d7f0dc46eae366bf4",
+    "bytes": 7722,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prepare_roi.py",
+    "source_sha256": "04d700c09d30ef55a1452d3229cba61bb75e36356d7760e0fdfc090c856b9644",
+    "exported_sha256": "04d700c09d30ef55a1452d3229cba61bb75e36356d7760e0fdfc090c856b9644",
+    "bytes": 9039,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prepare_stimuli.py",
+    "source_sha256": "5e643dea2bb84778f1a6e56bcc565c8f4001a0358d2583cc453a02b5a41c57f8",
+    "exported_sha256": "5e643dea2bb84778f1a6e56bcc565c8f4001a0358d2583cc453a02b5a41c57f8",
+    "bytes": 14276,
+    "transformations": []
+  },
+  {
+    "path": "scripts/prompt_spec.py",
+    "source_sha256": "99f8a6dc75b173e4fe0b7491e031d7db358f17ece4b438f2d999019f0167b6aa",
+    "exported_sha256": "99f8a6dc75b173e4fe0b7491e031d7db358f17ece4b438f2d999019f0167b6aa",
+    "bytes": 963,
+    "transformations": []
+  },
+  {
+    "path": "scripts/register_aal_template.py",
+    "source_sha256": "344577286585994a5e68822dcabd2880b401a96fa8bf1fdfa15a5165b76dc73a",
+    "exported_sha256": "344577286585994a5e68822dcabd2880b401a96fa8bf1fdfa15a5165b76dc73a",
+    "bytes": 3207,
+    "transformations": []
+  },
+  {
+    "path": "scripts/report_hcp_rsa.py",
+    "source_sha256": "7490b09ce245909188f332c8bf02cdd7faa7574677c2b1a596fff4e9134f2d20",
+    "exported_sha256": "7490b09ce245909188f332c8bf02cdd7faa7574677c2b1a596fff4e9134f2d20",
+    "bytes": 8301,
+    "transformations": []
+  },
+  {
+    "path": "scripts/report_multi_nutrient_rsa.py",
+    "source_sha256": "60556d0e5b151078f7d3c429f3b502fbc5741a8b9e7c2d639d29cff3b6378d0b",
+    "exported_sha256": "60556d0e5b151078f7d3c429f3b502fbc5741a8b9e7c2d639d29cff3b6378d0b",
+    "bytes": 13598,
+    "transformations": []
+  },
+  {
+    "path": "scripts/report_ofc_rsa.py",
+    "source_sha256": "88d5f7b5a01851e295bd7837c93e8d4b905aac4813d5d63a73778adcc5ce2849",
+    "exported_sha256": "88d5f7b5a01851e295bd7837c93e8d4b905aac4813d5d63a73778adcc5ce2849",
+    "bytes": 8132,
+    "transformations": []
+  },
+  {
+    "path": "scripts/report_raw_rsa.py",
+    "source_sha256": "93790f6ec7f734131aa26a4168f6d9e491172721271be55bcc99c57ebda4e8ba",
+    "exported_sha256": "93790f6ec7f734131aa26a4168f6d9e491172721271be55bcc99c57ebda4e8ba",
+    "bytes": 11949,
+    "transformations": []
+  },
+  {
+    "path": "scripts/rsa_core.py",
+    "source_sha256": "09048ad68b1d2f19d15d71742928c8022a597a8cf9682a7b2d3591a1b35c9f5a",
+    "exported_sha256": "09048ad68b1d2f19d15d71742928c8022a597a8cf9682a7b2d3591a1b35c9f5a",
+    "bytes": 2800,
+    "transformations": []
+  },
+  {
+    "path": "scripts/run_behavior_sensitivity.py",
+    "source_sha256": "3b4e6fee61deefa7ec5c091744adcc6795ba4cf282fc6dfa96796811997c75ae",
+    "exported_sha256": "3b4e6fee61deefa7ec5c091744adcc6795ba4cf282fc6dfa96796811997c75ae",
+    "bytes": 6793,
+    "transformations": []
+  },
+  {
+    "path": "scripts/run_control_sequence.py",
+    "source_sha256": "4f4daef11386022faf7428d313691d1e6d6039d75791b351578645e251da0edd",
+    "exported_sha256": "82f73e7c3581969ffff46c9828798a816c4a3f1ccfd9b31bc72ae36193004189",
+    "bytes": 2327,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "scripts/run_controls_rsa_v09.py",
+    "source_sha256": "2bbded2958a468b04e64537f827b2b9c90140c635a26b857961a937da67de069",
+    "exported_sha256": "2bbded2958a468b04e64537f827b2b9c90140c635a26b857961a937da67de069",
+    "bytes": 11172,
+    "transformations": []
+  },
+  {
+    "path": "scripts/run_hcp_rsa.py",
+    "source_sha256": "7307b24cb06ef629a600ae684f23dfe9d17491d407745b1f7ecfaac9b8b1a69d",
+    "exported_sha256": "7307b24cb06ef629a600ae684f23dfe9d17491d407745b1f7ecfaac9b8b1a69d",
+    "bytes": 12684,
+    "transformations": []
+  },
+  {
+    "path": "scripts/run_layer_analysis.py",
+    "source_sha256": "758e7308674e1743dc3b80f8f65545f07f209d235308a2082a42d3213811215d",
+    "exported_sha256": "758e7308674e1743dc3b80f8f65545f07f209d235308a2082a42d3213811215d",
+    "bytes": 9096,
+    "transformations": []
+  },
+  {
+    "path": "scripts/run_multi_nutrient_rsa.py",
+    "source_sha256": "e8c02a46e890cd0a8fb494b0a128f9fb258c4c0857bbedd8bc005d08bbb11297",
+    "exported_sha256": "e8c02a46e890cd0a8fb494b0a128f9fb258c4c0857bbedd8bc005d08bbb11297",
+    "bytes": 9619,
+    "transformations": []
+  },
+  {
+    "path": "scripts/run_ofc_rsa.py",
+    "source_sha256": "90907cfa0663646e18a5b221f6b203eadb34e16b62d27ad5343411c5c412788a",
+    "exported_sha256": "90907cfa0663646e18a5b221f6b203eadb34e16b62d27ad5343411c5c412788a",
+    "bytes": 7299,
+    "transformations": []
+  },
+  {
+    "path": "scripts/run_output_baselines.py",
+    "source_sha256": "09ccc24c204fe58cde1bc24d3b9bf0ef1563342015fcf4badc104af63c43b290",
+    "exported_sha256": "09ccc24c204fe58cde1bc24d3b9bf0ef1563342015fcf4badc104af63c43b290",
+    "bytes": 4113,
+    "transformations": []
+  },
+  {
+    "path": "scripts/run_raw_rsa.py",
+    "source_sha256": "53903e7b9844f6b407c9dc71d96fd2f3168b2d7b9cf9ce6f1c2534a81767aa0d",
+    "exported_sha256": "53903e7b9844f6b407c9dc71d96fd2f3168b2d7b9cf9ce6f1c2534a81767aa0d",
+    "bytes": 9940,
+    "transformations": []
+  },
+  {
+    "path": "scripts/summarize_controls_v09.py",
+    "source_sha256": "a3eb6a423bdde907f7cecb20d94c3ad27461211ebc930cfbe95228fb29b9f148",
+    "exported_sha256": "a3eb6a423bdde907f7cecb20d94c3ad27461211ebc930cfbe95228fb29b9f148",
+    "bytes": 14908,
+    "transformations": []
+  },
+  {
+    "path": "scripts/summarize_layer_analysis.py",
+    "source_sha256": "c261f0a80f9964d8aeddc9207fbe119fbee1f9a8eeb7208a341d768651fa9198",
+    "exported_sha256": "c261f0a80f9964d8aeddc9207fbe119fbee1f9a8eeb7208a341d768651fa9198",
+    "bytes": 11498,
+    "transformations": []
+  },
+  {
+    "path": "scripts/two_stage_estimator.py",
+    "source_sha256": "5b59e1489170ea24f344877bf1d6f25a80a70e7145a92e54dee82bcb1c1d5220",
+    "exported_sha256": "5b59e1489170ea24f344877bf1d6f25a80a70e7145a92e54dee82bcb1c1d5220",
+    "bytes": 4722,
+    "transformations": []
+  },
+  {
+    "path": "scripts/validate_batched_analysis.py",
+    "source_sha256": "7ab4b78e8e9b2a20019ceb3607d8785e1f9b65e70977c36ac2471dbe40658dd5",
+    "exported_sha256": "7ab4b78e8e9b2a20019ceb3607d8785e1f9b65e70977c36ac2471dbe40658dd5",
+    "bytes": 5515,
+    "transformations": []
+  },
+  {
+    "path": "scripts/validate_controls_complete_report.py",
+    "source_sha256": "325100b33a3239770b0a65f57d179aa11000571193156efb989dcc491ac0aacd",
+    "exported_sha256": "325100b33a3239770b0a65f57d179aa11000571193156efb989dcc491ac0aacd",
+    "bytes": 6803,
+    "transformations": []
+  },
+  {
+    "path": "scripts/validate_controls_v09.py",
+    "source_sha256": "6c0daad1007e162ce1668e0eb18ab5fafda711376384e9bd5f7b38ce25986f1f",
+    "exported_sha256": "6c0daad1007e162ce1668e0eb18ab5fafda711376384e9bd5f7b38ce25986f1f",
+    "bytes": 4947,
+    "transformations": []
+  },
+  {
+    "path": "scripts/validate_hcp_results.py",
+    "source_sha256": "6d3bc0a09646c447726ad6a90d87338d25055cca9e1442c71ddc8506aa92fec7",
+    "exported_sha256": "6d3bc0a09646c447726ad6a90d87338d25055cca9e1442c71ddc8506aa92fec7",
+    "bytes": 2797,
+    "transformations": []
+  },
+  {
+    "path": "scripts/validate_preparation.py",
+    "source_sha256": "60980048981960c255a59e2033dd28e89e4a57bb6a227f6c1864e597d57de547",
+    "exported_sha256": "60980048981960c255a59e2033dd28e89e4a57bb6a227f6c1864e597d57de547",
+    "bytes": 5648,
+    "transformations": []
+  },
+  {
+    "path": "scripts/validate_rsa_plan.py",
+    "source_sha256": "ada7d1b81529755196fc394ab03c0ab74e0efefe6072a493d05b6a39d343ad0d",
+    "exported_sha256": "ada7d1b81529755196fc394ab03c0ab74e0efefe6072a493d05b6a39d343ad0d",
+    "bytes": 8641,
+    "transformations": []
+  },
+  {
+    "path": "scripts/validate_two_stage_core.py",
+    "source_sha256": "83068e048765c578376e1635acda5a293556f8f0fc0a2e96012c178c9b99124a",
+    "exported_sha256": "83068e048765c578376e1635acda5a293556f8f0fc0a2e96012c178c9b99124a",
+    "bytes": 3735,
+    "transformations": []
+  },
+  {
+    "path": "scripts/verify_build_controls.py",
+    "source_sha256": "5b5ea40ac9f9c85c6825c1cc911dd8c0cd3576ae225a6745d08001d6153361c4",
+    "exported_sha256": "5b5ea40ac9f9c85c6825c1cc911dd8c0cd3576ae225a6745d08001d6153361c4",
+    "bytes": 5839,
+    "transformations": []
+  },
+  {
+    "path": "scripts/verify_build_multi_nutrients.py",
+    "source_sha256": "b8a7f0e245686a7a7eb0792ecf19d3eaa11495bd89f07c59d32588b73da4b27d",
+    "exported_sha256": "b8a7f0e245686a7a7eb0792ecf19d3eaa11495bd89f07c59d32588b73da4b27d",
+    "bytes": 5860,
+    "transformations": []
+  },
+  {
+    "path": "scripts/verify_control_transfer_v09.py",
+    "source_sha256": "f50db43e7583c17afecbf63029fa8a39f0685e43f77553b1e9591c67d239f662",
+    "exported_sha256": "dd5ec45dcbbb3fb6f0a1ecdc8c0379ae7c264fdb5b8b064c66f863e9bae48af6",
+    "bytes": 2946,
+    "transformations": [
+      "deployment_path_or_host_placeholder"
+    ]
+  },
+  {
+    "path": "scripts/verify_project.py",
+    "source_sha256": "e5b5310687669f170692c6e7057641199bb1001ed55a86936795319bb8193758",
+    "exported_sha256": "e5b5310687669f170692c6e7057641199bb1001ed55a86936795319bb8193758",
+    "bytes": 3851,
+    "transformations": []
+  },
+  {
+    "path": "scripts/verify_qwen_features.py",
+    "source_sha256": "801e558c6bb37cf32aa39cec5a583f901142b2ecccce68a51f4fa02e14323509",
+    "exported_sha256": "801e558c6bb37cf32aa39cec5a583f901142b2ecccce68a51f4fa02e14323509",
+    "bytes": 6325,
+    "transformations": []
+  },
+  {
+    "path": "scripts/write_controls_complete_narrative.py",
+    "source_sha256": "c79068f925a26162aea3d3414253f007b70a009438259762f3c517b89a1c20fe",
+    "exported_sha256": "c79068f925a26162aea3d3414253f007b70a009438259762f3c517b89a1c20fe",
+    "bytes": 20491,
+    "transformations": []
+  },
+  {
+    "path": "scripts/write_controls_report_v09.py",
+    "source_sha256": "81b0e1110ef2cfcf15d0c0837e9ddd770bd8fbb8fda5ebc8c467c8f7787b44e8",
+    "exported_sha256": "81b0e1110ef2cfcf15d0c0837e9ddd770bd8fbb8fda5ebc8c467c8f7787b44e8",
+    "bytes": 13778,
+    "transformations": []
+  },
+  {
+    "path": "scripts/write_controls_report_v09_1.py",
+    "source_sha256": "872ebdc80a19de72b62fa2660576e85381735b186c2b4a74aa85cfe51d4eb919",
+    "exported_sha256": "872ebdc80a19de72b62fa2660576e85381735b186c2b4a74aa85cfe51d4eb919",
+    "bytes": 14425,
+    "transformations": []
+  }
+]
