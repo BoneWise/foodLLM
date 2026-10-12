@@ -1,92 +1,27 @@
-> **分享状态（2026-09-18）**：已上传至本私有仓库；指定协作者的 Read 邀请已发送，待对方接受。
+# Nutrient-Informed Food Representations: Probing LLM–Brain Alignment
 
-> **私有代码与结果分享快照（2026-09-18）**：最新入口为下方 v03 报告。此包包含代码、方案、图表及匿名逐人 RSA 派生结果；完整原始数据、缓存与本地 Git 历史未收录。文件范围、路径替换和复现边界见 [分享说明](SHARING.md)。
+[中文说明](README.zh-CN.md)
 
-# foodLLM：营养条件化的模型—脑表征对齐
+This project examines how nutrient information in model inputs changes the alignment between Qwen3.5-9B food representations and human fMRI patterns. Layerwise representational similarity analysis (RSA) compares image-only, matched-nutrient, unrelated-text and mismatched-nutrient conditions.
 
-本项目于2026-09-15从既有研究交接包迁入，后续工作均在本目录开展。
+The current analysis covers **29 participants, 401 food images, 32 model layers and 41 brain regions**, with two prompt wordings and four nutrients: protein, fat, carbohydrate and fibre. OFC, vmPFC, visual and randomly sampled HCP regions provide regional comparisons.
 
-## 当前研究口径与最新报告：v09输入条件及区域控制对照
+## Results
 
-[完整描述性报告 v03](outputs/20260918_控制实验报告_v03/结果报告.md)：2,406个新模型输入、20对随机HCP分区，四营养A/B与全部32层；原18对HCP和旧3ROI全部保留，共41套区域结果。旧V/T/P逐值复用，完整分区／左右侧／个体结果和N/P实现范围可查。
+The descriptive results show nutrient-, region-, layer- and prompt-dependent changes in alignment. Protein and fat produce positive mean changes relative to image-only inputs in several prefrontal regions; carbohydrate and fibre show mixed regional patterns. Matched-versus-mismatched nutrient differences have a distinct distribution from the changes relative to image-only inputs.
 
-**OFC、vmPFC和视觉区域均作为区域控制对照，相互参照；随机区域扩展参照范围，不预设某一区域更强。** 当前问题是：加入营养信息后，不同区域的模型—脑对齐如何变化，与无关文本和错配营养条件有何差异？
+[Results and interpretation](docs/results.md) · [All regional curves](outputs/20260918_控制实验报告_v03/逐区域曲线索引.md)
 
-实际条件差值随营养、区域、层和提示而变：OFC九区的蛋白质／脂肪T−V及T−N在A/B全层均正；高阶视觉的脂肪对应差值更大；原vmPFC的N−V有提示依赖。各区域的绝对RSA与T−V、N−V、T−N、T−P并列报告，不以区域胜出与否判定实验成败。N不严格等长，未做显著性或等效性检验。
+## Reproduce the figures
 
-本次仅纠正助手先前加入的OFC特异性强假设与报告重心，没有新实验或RSA重算。见[获批口径修订](docs/research/20260918_区域控制对照口径修订_v09_1.md)、[全部区域并列摘要](outputs/20260918_控制实验报告_v02/全部区域并列摘要.md)及[修订核查](outputs/20260918_控制实验报告_v02/revision_audit.json)。原[冻结方案](docs/research/20260918_无关词与随机分区健壮性设计_v09.md)、[实验核查](outputs/20260918_控制实验报告_v01/independent_validation.json)、[完成回执](outputs/20260918_控制实验报告_v01/completion_receipt.json)和[v01历史报告](outputs/20260918_控制实验报告_v01/结果报告.md)保留溯源；历史表述不代表当前口径。
+The repository includes exported RSA tables and the original PNG/SVG figures. Redraw all 46 regional and summary curves, plus two 41-region heatmaps, on a CPU:
 
-
-## 修订口径后的报告补齐已完成
-
-已补齐71组PNG/SVG：OFC、vmPFC与两组视觉的并列绝对分数／四项差值、全部41区T−V在内的完整热图、46套区域及既有汇总的独立曲线、个体分布、A/B方向和区域测量背景。[逐区域曲线索引](outputs/20260918_控制实验报告_v03/逐区域曲线索引.md)与[一致性及个体附录](outputs/20260918_控制实验报告_v03/一致性与个体结果.md)覆盖全层及探索深层窗口。
-
-四营养综合解读同时报告前额叶、视觉及随机参照区域，区分净变化、相对无关文本差值和正确匹配差值。脂肪在20个固定随机区域的全层T−V及T−N在A/B均正；纤维在多数随机区域及视觉区域的T−V为负，部分T−P为正表示较错配下降得少。均为描述，不作区域优越性或显著性判断。
-
-本次仅汇总原分数和补齐报告，未新增实验、RSA或正式推断。原数据和v01/v02报告保持原字节；[完成核查](outputs/20260918_控制实验报告_v03/completion_receipt.json)记录数值、图形和文件验证。上面的v02链接保留解释修订历史，当前完整阅读入口为v03。
-
-## 前阶段：HCP区域比较与旧ROI连续性（v08.1）
-
-[结果解读与全部分区曲线](outputs/20260917_HCP_RSA_v01/结果解读.md)：18对HCP分区（36单侧分别RSA后平均）及原vmPFC球、AAL-lOFC/mOFC同条件参照，共21套ROI结果，四营养401图、29人、A/B、32层均已完成。九个OFC分区及左右侧完整保留，九区平均只是附加摘要；旧ROI不加入该摘要。
-
-蛋白质的OFC九区全层均值T−V、T−P在A/B均正，且T−V高于高阶视觉；但T−P的区域差全层均值均负。脂肪在高阶视觉的T−V更大；碳水/纤维的OFC自身T−V均负，其相对视觉优势主要来自视觉下降更多。仅描述，不作显著性声明。视觉跨人RDM一致性数值高于OFC，区域差仍须结合测量质量解释。
-
-[执行与核查](docs/research/20260917_HCP执行与核查_v08_1.md) · [冻结配置](configs/hcp_regional_execution_v01.json) · [完成回执](outputs/20260917_HCP_RSA_v01/completion_receipt.json) · [原v08方案](docs/research/20260917_HCP区域比较与旧ROI连续性方案_v08.md)。HCPex v1.1空间/标签/覆盖、1,044张新脑RDM和数值汇总均已验证；无新模型推理、排除、额外脑预处理或正式推断。以下为既有阶段记录。
-
-## 既有方法与早期阶段：v06.1 raw trial-β RSA
-
-早期v06.1以能量密度×vmPFC为执行范围，考察条件差值及层间变化。当前区域控制范围和研究问题见上方v09修订口径，不由早期单ROI执行范围推定区域特异性假设。
-
-该阶段采用固定方法的RSA：493图、29人、A主/B稳健性、V/T/P1–P5、32层。每人将三个session的有效valuation多体素β合成一个脑RDM；模型和脑均用1−Pearson距离，RDM间用Spearman比较。该阶段对比为T−V与T−五套P的RSA分数均值；v09另含N条件，使用401图范围。
-
-**RSA方案是在已看到旧MSE结果后确定的post-result follow-up。A/B全部描述性RSA已完成；正式推断与敏感性尚未运行。**MSE、encoding、trial五折和food×session留出退出后续主流程，旧记录全部保留。
-
-1. [最小RSA执行方案v06.1](docs/research/20260916_raw试次RSA最小执行方案_v06_1.md)：输入检查、原始β RSA、描述性曲线和分阶段执行。
-2. [RSA配置](configs/nutrient_conditioned_rsa_v06_1.json)：A先行、B随后、推断与敏感性后置。
-3. [研究状态与下一阶段](docs/研究状态与下一阶段.md)：已有资源和当前待办。
-4. [数据与迁移](docs/数据与迁移.md)、[完整交接（本分享包未收录）](SHARING.md#未收录材料)、[迭代记录](CHANGELOG.md)。
-
-## OFC与四营养扩展（v07.1）
-
-[实施记录](docs/research/20260917_多营养与OFC执行记录_v07_1.md)承接[v07草案](docs/research/20260917_多营养属性与OFC扩展设计_v07.md)。原版AAL lOFC/mOFC已完成模板配准、覆盖核查、29人raw β提取和既有493图kcal的A/B RSA；见[OFC结果与曲线](outputs/20260917_OFC_kcal报告_v02/结果摘要_含逐人分布.md)。仍未出现正确kcal信息稳定优于错配的清晰描述性模式，正式推断与敏感性未做。
-
-新增protein/fat/carbohydrate/fibre各自只输入一行g/100 g。仅用元数据确定401图共同集合及每属性5套保守错配；当前为助手说明后的实施默认值，非用户明确指定阈值。原493图kcal结果不变。A/B的19,248个新增输入、三个ROI共155,904个逐人RSA分数均已完成并验证；见[综合解读](outputs/20260917_四营养RSA报告_v01/综合解读.md)与[全部曲线](outputs/20260917_四营养RSA报告_v01/结果摘要.md)。蛋白质lOFC/vmPFC、纤维mOFC出现跨提示同向的相对差值，但绝对脑相关很小，部分仍负；wanting没有一致的正确匹配优势。这里只报告描述性结果，正式推断与敏感性仍未做。[冻结执行配置](configs/multi_nutrient_execution_v01.json)保持原字节，完成状态另记[执行回执](outputs/20260917_四营养RSA报告_v01/completion_receipt.json)。
-
-## 既有493图kcal × vmPFC结果（2026-09-17）
-
-**晚层T和P均较V上升，但正确T没有普遍优于错配P。**A的跨32层平均T−V为+0.000750、T−平均P为−0.000385；B方向相同。上述平均仅用于描述量级，不是新增主检验。
-
-脑RSA约10⁻³量级，wanting晚层对齐主要为V高于T/P。Session/run identity与脑RDM的平均ρ分别为0.0732/0.1529；按v06.1只报告，没有自动去均值或删pair。未做显著性声明。
-
-见[完整结果与曲线](outputs/20260917_RSA描述性报告_v01/结果摘要.md)、[执行记录](docs/research/20260917_raw_RSA首轮执行与结果.md)、[执行配置](configs/raw_rsa_execution_v01.json)。
-
-## 数据与执行状态
-
-- 行为29人、568图、15,869条评分；排除sub-004/sub-010、保留sub-016。493图主样本13,767条评分，沿用可用评分均值。
-- 脑端已剔除sub-002两条采集不完整试次；主493图13,765条脑观测，全568图15,867条。对应行为仍保留。
-- 新A/B全部7,202输入的Qwen特征与14组矩阵已验证，已先A后B构建448个模型RDM，14组源矩阵及索引哈希再次匹配，无新模型推理。
-- 已完成346个SPM来源核对和13,765条raw多体素pattern提取；29张脑RDM使用每人固定257–272个体素。模式均finite且非常数，ROI均值与旧账本完全一致；这些不证明表征可靠性。
-- 固定方法RSA无须训练/测试五折。wanting群体RDM作为行为锚点，kcal作为解释基线，session/run RDM只作描述性QC，不自动触发去均值、白化或删pair。
-- 现在固定participant统计单位与T−V/T−平均P两对比；首轮只展示均值曲线、逐人分布与P范围。正式推断、同时带、行为bootstrap和扫描结构敏感性均后置；v06的次数与校正方案不再是默认参数。
-- B是否执行取决于A流程正确性，不取决于A效果。run QC使用session＋run联合身份，原始脑RDM保持不变。
-
-## 历史证据
-
-[旧v05方案](docs/research/20260916_简化提示与逐层营养对齐方案_v05.md)、[MSE首轮结果](docs/research/20260916_逐层行为与vmPFC首轮结果.md)、[两条脑试次剔除](docs/research/20260916_两条截断试次正式剔除记录.md)、[已准备但未重算的trial方案](docs/research/20260916_trial划分决定与缺失均值复核.md)均保留溯源，不能作为RSA结果。既有模型评分与行为相关也不能直接当作RDM相关。
-
-## 目录与迭代
-
-```text
-archive/       原交接包与历史代码快照，保留原文和原字节
-data/raw/      原图、营养工作簿、原始事件
-data/prepared/ 已清理行为与图片索引，不重复基础清理
-data/external/ 行为—单试次β对应表，引用外置盘
-configs/       当前入口与各版历史配置
-docs/          研究状态、方案与实验记录
-scripts/       本项目脚本
-outputs/       YYYYMMDD_任务名_vNN独立输出
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install numpy matplotlib
+python scripts/reproduce_figures.py --output outputs/reproduced_figures
 ```
 
-从`configs/project.json`读取当前入口，路径相对项目根目录，ID按字符串保留前导零。每次输出记录输入哈希、配置、种子、代码版本、环境与验证；保留历史及外置盘原件。迁移核验使用`scripts/verify_project.py`；RSA方案入口核验使用`scripts/validate_rsa_plan.py`，不运行历史导入即执行的分析代码。
+[Figure guide](docs/README.md) explains the outputs, original figures and numerical checks. Recomputing model features and brain RSA requires the source data and caches listed in [SHARING.md](SHARING.md).
 
-原项目默认仅做本地Git管理；本次经用户明确授权，发布经过筛选的私有分享快照。原始数据、模型和大型中间输出未上传。服务器及存储说明见[连接记录（本分享包未收录）](SHARING.md#未收录材料)。
