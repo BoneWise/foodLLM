@@ -1,5 +1,9 @@
 # 迭代记录
 
+## 2026-10-12 · 按用户要求公开仓库
+
+- 将 huzhe3566/foodLLM 的可见性设为 Public，并同步分享说明中的当前访问状态。
+
 ## 2026-10-12 · 精简项目介绍并增加 CSV 图表复现入口
 
 - 项目展示标题统一为 Nutrient-Informed Food Representations: Probing LLM–Brain Alignment；新增中英文首页，集中说明研究问题、方法、结果和图表复现。
